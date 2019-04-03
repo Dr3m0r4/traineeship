@@ -1,14 +1,22 @@
+# %% init
+
 import tensorflow as tf
+
+print(tf.__version__)
 
 import matplotlib.pyplot    as plt
 import numpy                as np
 import random               as rd
+
+# %% data
 
 fashion_mnist = tf.keras.datasets.fashion_mnist
 
 (x_train, y_train), (x_test, y_test) = fashion_mnist.load_data()
 class_names = ['Top', 'Trouser', 'Pullover', 'Dress', 'Coat','Sandal',
     'Shirt', 'Sneaker', 'Bag', 'Ankle boot']
+
+# %% random image
 
 image = rd.randint(0,len(y_train))
 plt.figure()
@@ -17,6 +25,8 @@ plt.colorbar()
 plt.grid(False)
 plt.show()
 print(class_names[y_train[image]])
+
+# %% 25 first photos
 
 x_train, x_test = x_train/255.0, x_test/255.0
 
@@ -30,6 +40,8 @@ for i in range(25):
     plt.xlabel(class_names[y_train[i]])
 plt.show()
 
+# %% fitting
+
 model = tf.keras.Sequential([
     tf.keras.layers.Flatten(input_shape=(28,28)),
     tf.keras.layers.Dense(128, activation=tf.nn.relu),
@@ -42,7 +54,11 @@ model.compile(optimizer='adam',
 
 model.fit(x_train,y_train,epochs=8)
 
+# %% evaluation
+
 model.evaluate(x_test, y_test)
+
+# %% predictions
 
 image_test = rd.randint(0,len(y_test))
 
@@ -55,6 +71,8 @@ plt.show()
 
 prediction = model.predict(x_test)
 print(class_names[np.argmax(prediction[image_test])])
+
+# %% functions
 
 def plot_image(i, predictions_array, true_label, img):
   predictions_array, true_label, img = predictions_array[i], true_label[i], img[i]
@@ -87,6 +105,7 @@ def plot_value_array(i, predictions_array, true_label):
   thisplot[predicted_label].set_color('red')
   thisplot[true_label].set_color('blue')
 
+# %% predictions of 25 first images
 
 num_rows = 5
 num_cols = 5
@@ -99,6 +118,8 @@ for i in range(num_images):
   plot_value_array(i, prediction, y_test)
 plt.show()
 
+# %% new function
+
 def plot_array(i, predictions_array, true_label):
   predictions_array, true_label = predictions_array[0], true_label[i]
   plt.grid(False)
@@ -110,6 +131,8 @@ def plot_array(i, predictions_array, true_label):
 
   thisplot[predicted_label].set_color('red')
   thisplot[true_label].set_color('blue')
+
+# %% prediction of a single image
 
 n=rd.randint(0,len(y_test))
 img = x_test[n]
