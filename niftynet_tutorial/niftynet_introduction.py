@@ -1,5 +1,4 @@
 # %% initilisation
-
 import tensorflow   as tf
 import niftynet     as nf
 
@@ -35,4 +34,5 @@ plt.show()
 
 ClassAppli = nf.application.classification_application.ClassificationApplication
 
-datas = ClassAppli(net_param, action_param, action)
+datas = ClassAppli
+print(datas)
