@@ -1,0 +1,11 @@
+#! /bin/bash
+
+echo 'purge'
+rm -r images labels
+mkdir images labels
+
+echo 'deplacement'
+bash .dpl
+
+echo 'convert'
+bash .convert
