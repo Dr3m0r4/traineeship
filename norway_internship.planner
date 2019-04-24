@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<project name="Norway Internship" company="University of Bergen" manager="Arvid Lundervold" phase="&#xC9;tat de l'art" project-start="20190401T000000Z" mrproject-version="2" calendar="2">
+<project name="Norway Internship" company="University of Bergen" manager="Arvid Lundervold" phase="&#xC9;tat de l'art" project-start="20190401T000000Z" mrproject-version="2" calendar="1">
   <properties/>
   <phases>
     <phase name="&#xC9;tat de l'art"/>
@@ -11,17 +11,7 @@
       <day-type id="2" name="Utiliser la base" description="Utilise un jour du calendrier de base"/>
       <day-type id="3" name="Sp&#xE9;cial" description=""/>
     </day-types>
-    <calendar id="1" name="D&#xE9;faut">
-      <default-week mon="0" tue="0" wed="0" thu="0" fri="0" sat="1" sun="1"/>
-      <overridden-day-types>
-        <overridden-day-type id="0">
-          <interval start="0800" end="1200"/>
-          <interval start="1300" end="1700"/>
-        </overridden-day-type>
-      </overridden-day-types>
-      <days/>
-    </calendar>
-    <calendar id="2" name="Stage">
+    <calendar id="1" name="Stage">
       <default-week mon="0" tue="0" wed="0" thu="0" fri="0" sat="1" sun="1"/>
       <overridden-day-types>
         <overridden-day-type id="0">
@@ -34,13 +24,27 @@
         </overridden-day-type>
       </overridden-day-types>
       <days>
+        <day date="20190419" type="day-type" id="1"/>
+        <day date="20190422" type="day-type" id="1"/>
         <day date="20190401" type="day-type" id="1"/>
         <day date="20190402" type="day-type" id="3"/>
+        <day date="20190501" type="day-type" id="1"/>
+        <day date="20190418" type="day-type" id="1"/>
       </days>
+    </calendar>
+    <calendar id="2" name="D&#xE9;faut">
+      <default-week mon="0" tue="0" wed="0" thu="0" fri="0" sat="1" sun="1"/>
+      <overridden-day-types>
+        <overridden-day-type id="0">
+          <interval start="0800" end="1200"/>
+          <interval start="1300" end="1700"/>
+        </overridden-day-type>
+      </overridden-day-types>
+      <days/>
     </calendar>
   </calendars>
   <tasks>
-    <task id="1" name="&#xC9;tat de l'art" note="" work="198000" start="20190401T000000Z" end="20190410T183000Z" work-start="20190402T120000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+    <task id="1" name="&#xC9;tat de l'art" note="" work="399600" start="20190401T000000Z" end="20190424T183000Z" work-start="20190402T120000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
       <task id="2" name="Lire l'article &#xE9;crit au pr&#xE9;alable en d&#xE9;cembre 2018" note="" work="21600" start="20190401T000000Z" end="20190402T220000Z" work-start="20190402T120000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work"/>
       <task id="3" name="Documentation Tensor Flow" note="" work="7200" start="20190402T220000Z" end="20190403T100000Z" work-start="20190402T220000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
         <predecessors>
@@ -52,7 +56,7 @@
           <predecessor id="1" predecessor-id="3" type="FS"/>
         </predecessors>
       </task>
-      <task id="5" name="NiftyNet" note="" work="118800" start="20190403T173000Z" end="20190409T183000Z" work-start="20190403T173000Z" percent-complete="30" priority="0" type="normal" scheduling="fixed-work">
+      <task id="5" name="NiftyNet" note="" work="219600" start="20190403T173000Z" end="20190416T143000Z" work-start="20190403T173000Z" percent-complete="30" priority="0" type="normal" scheduling="fixed-work">
         <predecessors>
           <predecessor id="1" predecessor-id="4" type="FS"/>
           <predecessor id="1" predecessor-id="2" type="FS"/>
@@ -73,11 +77,27 @@
             <predecessor id="1" predecessor-id="8" type="FS"/>
           </predecessors>
         </task>
+        <task id="10" name="Writing of the configuration file" note="" work="100800" start="20190410T183000Z" end="20190416T143000Z" work-start="20190411T090000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="11" type="FS"/>
+          </predecessors>
+        </task>
       </task>
-      <task id="10" name="Tensorflow" note="" work="28800" start="20190409T183000Z" end="20190410T183000Z" work-start="20190410T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="11" name="Tensorflow" note="" work="28800" start="20190409T183000Z" end="20190410T183000Z" work-start="20190410T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
         <predecessors>
           <predecessor id="1" predecessor-id="9" type="FS"/>
         </predecessors>
+      </task>
+      <task id="12" name="Assert installation of tensorflow with GPU" note="" work="100800" start="20190416T143000Z" end="20190424T183000Z" work-start="20190416T143000Z" percent-complete="60" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="10" type="FS"/>
+        </predecessors>
+        <task id="13" name="tensorflow-gpu" note="" work="43200" start="20190416T143000Z" end="20190417T183000Z" work-start="20190416T143000Z" percent-complete="80" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="14" name="nvidia-cuda" note="" work="57600" start="20190417T183000Z" end="20190424T183000Z" work-start="20190423T090000Z" percent-complete="20" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="13" type="FS"/>
+          </predecessors>
+        </task>
       </task>
     </task>
   </tasks>
@@ -86,7 +106,11 @@
     <resource id="1" name="Julien" short-name="" type="1" units="0" email="julien.feuillas@etu.uca.fr" note="" std-rate="1"/>
   </resources>
   <allocations>
+    <allocation task-id="14" resource-id="1" units="100"/>
+    <allocation task-id="13" resource-id="1" units="100"/>
+    <allocation task-id="12" resource-id="1" units="100"/>
     <allocation task-id="10" resource-id="1" units="100"/>
+    <allocation task-id="11" resource-id="1" units="100"/>
     <allocation task-id="9" resource-id="1" units="100"/>
     <allocation task-id="8" resource-id="1" units="100"/>
     <allocation task-id="7" resource-id="1" units="100"/>
