@@ -44,7 +44,7 @@
     </calendar>
   </calendars>
   <tasks>
-    <task id="1" name="&#xC9;tat de l'art" note="" work="399600" start="20190401T000000Z" end="20190424T183000Z" work-start="20190402T120000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+    <task id="1" name="&#xC9;tat de l'art" note="" work="385200" start="20190401T000000Z" end="20190424T143000Z" work-start="20190402T120000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
       <task id="2" name="Lire l'article &#xE9;crit au pr&#xE9;alable en d&#xE9;cembre 2018" note="" work="21600" start="20190401T000000Z" end="20190402T220000Z" work-start="20190402T120000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work"/>
       <task id="3" name="Documentation Tensor Flow" note="" work="7200" start="20190402T220000Z" end="20190403T100000Z" work-start="20190402T220000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
         <predecessors>
@@ -56,7 +56,7 @@
           <predecessor id="1" predecessor-id="3" type="FS"/>
         </predecessors>
       </task>
-      <task id="5" name="NiftyNet" note="" work="219600" start="20190403T173000Z" end="20190416T143000Z" work-start="20190403T173000Z" percent-complete="30" priority="0" type="normal" scheduling="fixed-work">
+      <task id="5" name="NiftyNet" note="" work="219600" start="20190403T173000Z" end="20190416T143000Z" work-start="20190403T173000Z" percent-complete="80" priority="0" type="normal" scheduling="fixed-work">
         <predecessors>
           <predecessor id="1" predecessor-id="4" type="FS"/>
           <predecessor id="1" predecessor-id="2" type="FS"/>
@@ -83,22 +83,27 @@
           </predecessors>
         </task>
       </task>
-      <task id="11" name="Tensorflow" note="" work="28800" start="20190409T183000Z" end="20190410T183000Z" work-start="20190410T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="11" name="Tensorflow" note="" work="28800" start="20190409T183000Z" end="20190410T183000Z" work-start="20190410T090000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
         <predecessors>
           <predecessor id="1" predecessor-id="9" type="FS"/>
         </predecessors>
       </task>
-      <task id="12" name="Assert installation of tensorflow with GPU" note="" work="100800" start="20190416T143000Z" end="20190424T183000Z" work-start="20190416T143000Z" percent-complete="60" priority="0" type="normal" scheduling="fixed-work">
+      <task id="12" name="Assert installation of tensorflow with GPU" note="" work="86400" start="20190416T143000Z" end="20190424T143000Z" work-start="20190416T143000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
         <predecessors>
           <predecessor id="1" predecessor-id="10" type="FS"/>
         </predecessors>
-        <task id="13" name="tensorflow-gpu" note="" work="43200" start="20190416T143000Z" end="20190417T183000Z" work-start="20190416T143000Z" percent-complete="80" priority="0" type="normal" scheduling="fixed-work"/>
-        <task id="14" name="nvidia-cuda" note="" work="57600" start="20190417T183000Z" end="20190424T183000Z" work-start="20190423T090000Z" percent-complete="20" priority="0" type="normal" scheduling="fixed-work">
+        <task id="13" name="tensorflow-gpu" note="" work="43200" start="20190416T143000Z" end="20190417T183000Z" work-start="20190416T143000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="14" name="nvidia-cuda" note="" work="43200" start="20190417T183000Z" end="20190424T143000Z" work-start="20190423T090000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
           <predecessors>
             <predecessor id="1" predecessor-id="13" type="FS"/>
           </predecessors>
         </task>
       </task>
+    </task>
+    <task id="15" name="Research of the impact of learning rate on the training" note="" work="28800" start="20190424T143000Z" end="20190425T143000Z" work-start="20190424T143000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="1" type="FS"/>
+      </predecessors>
     </task>
   </tasks>
   <resource-groups/>
@@ -106,6 +111,7 @@
     <resource id="1" name="Julien" short-name="" type="1" units="0" email="julien.feuillas@etu.uca.fr" note="" std-rate="1"/>
   </resources>
   <allocations>
+    <allocation task-id="15" resource-id="1" units="100"/>
     <allocation task-id="14" resource-id="1" units="100"/>
     <allocation task-id="13" resource-id="1" units="100"/>
     <allocation task-id="12" resource-id="1" units="100"/>
