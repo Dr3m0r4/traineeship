@@ -1,5 +1,13 @@
 #! /bin/bash
 
+if [ -d FS_ouput ]
+then
+  echo 'it is ok'
+else
+  echo 'extract'
+  unzip labels.zip
+fi
+
 echo 'purge'
 rm -r images labels
 mkdir images labels

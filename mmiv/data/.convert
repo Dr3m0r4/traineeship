@@ -17,3 +17,6 @@ do
 	file=`basename $name .mgz`
 	mri_convert $lbl/$file.mgz $lbl/$file.nii.gz
 done
+
+rm $img/fs* $lbl/fs*
+rm $img/*.mgz $lbl/*.mgz

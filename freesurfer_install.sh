@@ -4,6 +4,8 @@ wget https://surfer.nmr.mgh.harvard.edu/pub/dist/freesurfer/6.0.0/freesurfer-Lin
 
 sudo tar -C /usr/local -xzvf freesurfer-Linux-centos6_x86_64-stable-pub-v6.0.0.tar.gz
 
+cat export FREESURFER_HOME=/usr/local/freesurfer >> ~/.bashrc
+cat source $FREESURFER_HOME/SetUpFreeSurfer.sh >> ~/.bashrc
 source ~/.bashrc
 
 rm freesurfer-Linux-centos6_x86_64-stable-pub-v6.0.0.tar.gz
