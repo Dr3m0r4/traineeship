@@ -4,10 +4,22 @@
 
   \indexspace
 
-  \item learning rate, \hyperpage{4}
+  \item Machine Learning, \hyperpage{4}
+    \subitem learning rate, \hyperpage{4}
+    \subitem neural networks, \hyperpage{4}
 
   \indexspace
 
-  \item neural network, \hyperpage{4}
+  \item NiftyNet, \hyperpage{4}
+
+  \indexspace
+
+  \item Python, \hyperpage{4}
+    \subitem Anaconda, \hyperpage{4}
+    \subitem TensorFlow, \hyperpage{4}
+
+  \indexspace
+
+  \item TensorFlow, \hyperpage{4}
 
 \end{theindex}

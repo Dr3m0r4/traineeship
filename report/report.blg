@@ -1,48 +1,48 @@
-This is BibTeX, Version 0.99d (TeX Live 2016/Debian)
+This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: report.aux
 The style file: plain.bst
 Database file #1: annex/biblio_stage.bib
 Warning--to sort, need author or key in tensorflow
-You've used 8 entries,
+You've used 9 entries,
             2118 wiz_defined-function locations,
-            536 strings with 6009 characters,
-and the built_in function-call counts, 3254 in all, are:
-= -- 261
-> -- 300
+            540 strings with 6214 characters,
+and the built_in function-call counts, 3972 in all, are:
+= -- 315
+> -- 388
 < -- 1
-+ -- 121
-- -- 112
-* -- 268
-:= -- 578
-add.period$ -- 24
-call.type$ -- 8
-change.case$ -- 79
++ -- 156
+- -- 146
+* -- 341
+:= -- 710
+add.period$ -- 28
+call.type$ -- 9
+change.case$ -- 99
 chr.to.int$ -- 0
-cite$ -- 9
-duplicate$ -- 73
-empty$ -- 173
-format.name$ -- 112
-if$ -- 625
+cite$ -- 10
+duplicate$ -- 80
+empty$ -- 195
+format.name$ -- 146
+if$ -- 754
 int.to.chr$ -- 0
-int.to.str$ -- 8
+int.to.str$ -- 9
 missing$ -- 4
-newline$ -- 43
-num.names$ -- 14
-pop$ -- 112
+newline$ -- 49
+num.names$ -- 16
+pop$ -- 136
 preamble$ -- 1
-purify$ -- 72
+purify$ -- 91
 quote$ -- 0
-skip$ -- 60
+skip$ -- 67
 stack$ -- 0
-substring$ -- 45
-swap$ -- 13
+substring$ -- 50
+swap$ -- 14
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 30
+type$ -- 34
 warning$ -- 1
-while$ -- 15
-width$ -- 9
-write$ -- 82
+while$ -- 17
+width$ -- 10
+write$ -- 94
 (There was 1 warning)

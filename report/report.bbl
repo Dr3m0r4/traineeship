@@ -19,6 +19,17 @@ Eli Gibson, Wenqi Li, Carole Sudre, Lucas Fidon, Dzhoshkun~I. Shakir, Guotai
   Cardoso, and Tom Vercauteren.
 \newblock Niftynet: a deep-learning platform for medical imaging.
 \newblock {\em Computer Methods and Programs in Biomedicine}, 2018.
+\newblock \mbox{\url{https://niftynet.readthedocs.io/en/dev/}}, date of
+  consultation : April 2019.
+
+\bibitem{nifty}
+Eli Gibson, Wenqi Li, Carole Sudre, Lucas Fidon, Dzhoshkun~I. Shakir, Guotai
+  Wang, Zach Eaton-Rosen, Robert Gray, Tom Doel, Yipeng Hu, Tom Whyntie,
+  Parashkev Nachev, Marc Modat, Dean~C. Barratt, Sébastien Ourselin, M.~Jorge
+  Cardoso, and Tom Vercauteren.
+\newblock Niftynet source code, April 2019.
+\newblock \mbox{\url{https://github.com/NifTK/NiftyNet}}, date of last
+  consultation : 25th April 2019.
 
 \bibitem{Goodfellow-et-al-2016}
 Ian Goodfellow, Yoshua Bengio, and Aaron Courville.
@@ -53,7 +64,7 @@ F.~Pedregosa, G.~Varoquaux, A.~Gramfort, V.~Michel, B.~Thirion, O.~Grisel,
 Wikipedia.
 \newblock Content-based image retrieval, March 2019.
 \newblock
-  \mbox{\url{https://en.wikipedia.org/wiki/Content-based_image_retrieval}},
+  \\\mbox{\url{https://en.wikipedia.org/wiki/Content-based_image_retrieval}},
   date of consultation : 3rd April 2019.
 
 \end{thebibliography}
