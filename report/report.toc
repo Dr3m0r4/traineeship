@@ -6,5 +6,5 @@
 \contentsline {section}{Liste des tableaux}{6}{chapter*.5}
 \contentsline {section}{Table des figures}{6}{chapter*.6}
 \contentsline {chapter}{Introduction}{7}{chapter*.7}
-\contentsline {chapter}{Index}{8}{chapter*.7}
-\contentsline {chapter}{Bibliographie}{8}{chapter*.8}
+\contentsline {chapter}{Index}{9}{chapter*.7}
+\contentsline {chapter}{Bibliographie}{9}{chapter*.8}
