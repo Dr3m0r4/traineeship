@@ -104,6 +104,7 @@
       <predecessors>
         <predecessor id="1" predecessor-id="1" type="FS"/>
       </predecessors>
+      <task id="16" name="Research of algorithms which change the lr during the training" note="" work="28800" start="20190424T143000Z" end="20190425T143000Z" work-start="20190424T143000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
     </task>
   </tasks>
   <resource-groups/>
@@ -111,6 +112,7 @@
     <resource id="1" name="Julien" short-name="" type="1" units="0" email="julien.feuillas@etu.uca.fr" note="" std-rate="1"/>
   </resources>
   <allocations>
+    <allocation task-id="16" resource-id="1" units="100"/>
     <allocation task-id="15" resource-id="1" units="100"/>
     <allocation task-id="14" resource-id="1" units="100"/>
     <allocation task-id="13" resource-id="1" units="100"/>
