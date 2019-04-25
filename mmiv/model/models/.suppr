@@ -1,0 +1,20 @@
+#!/bin/bash
+
+liste=`ls`
+
+for name in $liste
+do
+	if [ $name != checkpoint ]
+	then
+		if [ $name != model.ckpt-20000.data-00000-of-00001 ]
+		then
+			if [ $name != model.ckpt-20000.index ]
+			then
+				if [ $name != model.ckpt-20000.meta ]
+				then
+					rm $name
+				fi
+			fi
+		fi
+	fi
+done
