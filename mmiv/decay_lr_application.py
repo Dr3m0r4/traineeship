@@ -19,9 +19,9 @@ class DecayLearningRateApplication(SegmentationApplication):
         tf.logging.info('starting decay learning segmentation application')
         self.learning_rate = None
         self.current_lr = action_param.lr
-        # if self.action_param.validation_every_n > 0:
-        #     raise NotImplementedError("validation process is not implemented "
-        #                               "in this demo.")
+        if self.action_param.validation_every_n > 0:
+            raise NotImplementedError("validation process is not implemented "
+                                      "in this demo.")
 
     def connect_data_and_network(self,
                                  outputs_collector=None,
