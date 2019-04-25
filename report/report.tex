@@ -32,6 +32,98 @@
 \usepackage{makeidx}
 \usepackage{glossaries}
 
+\newcommand{\rouge}{\textcolor{red}}
+\newcommand{\bleu}{\textcolor{blue}}
+\newcommand{\p}{\vspace{0.2cm}}
+
+% \addto\captionsfrench{\renewcommand{\chaptername}{Partie}}
+\floatplacement{figure}{!ht}
+\floatplacement{table}{!ht}
+
+\newtheorem{definition}{Définition}[chapter]
+
+\lstset{
+	language=Python,        				% choix du langage
+	basicstyle=\footnotesize,       % taille de la police du code
+	numbers=left,                   % placer le numéro de chaque ligne à gauche (left)
+	numberstyle=\normalsize,        % taille de la police des numéros
+	numbersep=7pt,                  % distance entre le code et sa numérotation
+	breaklines=true
+}
+
+\makeindex
+\makeglossaries
+
+\input{annex/pagedegarde}
+
+\title{Amélioration d'algorithme d'apprentissage pour la localisation en environnement intérieur}
+\author{Julien \textsc{Feuillas}}
+\directeur{Arvid \textsc{Lundervold}}
+\encadrant{Alexander \textsc{Lundervold}}
+\adresse{\bsc{Isima} 1 rue de la Chebarde, Aubière 63170}
+\jurya{Arvid \bsc{Lundervold}}{Professeur UiB}{Tuteur}
+\juryb{Murielle \bsc{Mouzat}}{Professeure ISIMA}{Communication}
+\juryc{Vinvent \bsc{Barra}}{Professeur ISIMA}{Référent}
+\juryd{}{}{}
+
 \begin{document}
-  Hello
+\mainmatter
+
+\pagedegarde
+
+\thispagestyle{empty}
+\pagestyle{plain}
+
+\cleardoublepage
+\renewcommand{\cleardoublepage}{\clearpage}
+
+\addcontentsline{toc}{section}{Remerciements}
+\section*{Remerciements}
+\clearpage
+
+\addcontentsline{toc}{section}{Résumé}
+\section*{Résumé}
+
+\addcontentsline{toc}{section}{Abstract}
+\section*{Abstract}
+
+\setcounter{tocdepth}{3}
+\renewcommand{\contentsname}{Table des matières}
+\tableofcontents
+\addcontentsline{toc}{section}{Table des matières}
+
+\clearpage
+
+\begingroup
+\let\clearpage\relax
+\listoftables
+\addcontentsline{toc}{section}{Liste des tableaux}
+\listoffigures
+\addcontentsline{toc}{section}{Table des figures}
+\endgroup
+
+\clearpage
+
+\chapter*{Introduction}
+\addcontentsline{toc}{chapter}{Introduction}
+
+\backmatter
+
+% \newglossaryentry{alti}{
+%   name={Altipharma},
+%   plural={Altipharma},
+%   description={groupe de pharmacies}
+% }
+
+\addcontentsline{toc}{chapter}{Index}
+\printindex
+
+% \printglossary
+% \addcontentsline{toc}{chapter}{Glossaire}
+
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{annex/biblio_stage}
+\addcontentsline{toc}{chapter}{Bibliographie}
+
 \end{document}
