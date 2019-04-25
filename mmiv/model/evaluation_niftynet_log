@@ -1,0 +1,23 @@
+INFO:niftynet:2019-04-25 13:02:30,909: starting segmentation application
+INFO:niftynet:2019-04-25 13:02:30,909: `csv_file = ` not found, writing to "/home/julien/Documents/traineeship/mmiv/model/image.csv" instead.
+INFO:niftynet:2019-04-25 13:02:30,909: Overwriting existing: "/home/julien/Documents/traineeship/mmiv/model/image.csv".
+INFO:niftynet:2019-04-25 13:02:30,909: [image] search file folders, writing csv file /home/julien/Documents/traineeship/mmiv/model/image.csv
+INFO:niftynet:2019-04-25 13:02:30,945: `csv_file = ` not found, writing to "/home/julien/Documents/traineeship/mmiv/model/label.csv" instead.
+INFO:niftynet:2019-04-25 13:02:30,945: Overwriting existing: "/home/julien/Documents/traineeship/mmiv/model/label.csv".
+INFO:niftynet:2019-04-25 13:02:30,945: [label] search file folders, writing csv file /home/julien/Documents/traineeship/mmiv/model/label.csv
+INFO:niftynet:2019-04-25 13:02:30,981: `csv_file = /home/julien/Documents/traineeship/mmiv/model/output/inferred.csv` not found, writing to "/home/julien/Documents/traineeship/mmiv/model/inferred.csv" instead.
+INFO:niftynet:2019-04-25 13:02:30,982: [inferred] search file folders, writing csv file /home/julien/Documents/traineeship/mmiv/model/inferred.csv
+WARNING:niftynet:2019-04-25 13:02:31,017: Loading from existing partitioning file /home/julien/Documents/traineeship/mmiv/model/split.csv, ignoring partitioning ratios.
+INFO:niftynet:2019-04-25 13:02:31,020: 
+
+Number of subjects 581, input section names: ['subject_id', 'image', 'label', 'inferred']
+Dataset partitioning:
+-- training 405 cases (69.71%),
+-- validation 117 cases (20.14%),
+-- inference 59 cases (10.15%).
+
+INFO:niftynet:2019-04-25 13:02:31,493: Image reader: loading 59 subjects from sections ('image',) as input [image]
+INFO:niftynet:2019-04-25 13:02:31,493: Image reader: loading 59 subjects from sections ('label',) as input [label]
+INFO:niftynet:2019-04-25 13:02:31,493: Image reader: loading 59 subjects from sections ('inferred',) as input [inferred]
+INFO:niftynet:2019-04-25 13:02:31,494: label mapping ready for label:('label',), 5 classes
+INFO:niftynet:2019-04-25 13:02:31,494: label mapping ready for inferred:('inferred',), 5 classes
