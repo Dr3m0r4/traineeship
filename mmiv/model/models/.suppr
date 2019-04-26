@@ -1,16 +1,17 @@
 #!/bin/bash
 
 liste=`ls`
+num=20000
 
 for name in $liste
 do
 	if [ $name != checkpoint ]
 	then
-		if [ $name != model.ckpt-20000.data-00000-of-00001 ]
+		if [ $name != model.ckpt-$num.data-00000-of-00001 ]
 		then
-			if [ $name != model.ckpt-20000.index ]
+			if [ $name != model.ckpt-$num.index ]
 			then
-				if [ $name != model.ckpt-20000.meta ]
+				if [ $name != model.ckpt-$num.meta ]
 				then
 					rm $name
 				fi
