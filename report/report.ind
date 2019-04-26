@@ -4,9 +4,11 @@
 
   \indexspace
 
-  \item Machine Learning, \hyperpage{4}
+  \item Machine Learning, \hyperpage{4}, \hyperpage{7}
+    \subitem Deep Learning, \hyperpage{7}
     \subitem learning rate, \hyperpage{4}
-    \subitem neural networks, \hyperpage{4}
+    \subitem neural networks, \hyperpage{4}, \hyperpage{7}
+    \subitem sur-apprentissage, \hyperpage{7}
 
   \indexspace
 

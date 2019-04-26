@@ -120,7 +120,7 @@
 	\chapter*{Introduction}
 	\addcontentsline{toc}{chapter}{Introduction}
 
-		Actuellement, les techniques de Machine Learning\index{Machine Learning} sont de plus en plus utilisées dans beaucoup de domaines. Plus particulièrement, les méthodes de Deep Learning\index{Machine Learning!Deep Learning} et l'utilisation des réseaux de neurones\index{Machine Learning!neural networks} sont de plus en plus associés au domaine médical. Cependant, lors de l'entraînement d'un réseau de neurones\index{Machine Learning!neural networks}, un problème récurant s'impose à nous : \textbf{De quelle manière est-il possible d'éviter le sur-apprentissage ?}\index{Machine Learning!sur-apprentissage}\p
+		Actuellement, les techniques de Machine Learning\index{Machine Learning} sont de plus en plus utilisées dans beaucoup de domaines. Plus particulièrement, les méthodes de Deep Learning\index{Machine Learning!Deep Learning} et l'utilisation des réseaux de neurones\index{Machine Learning!neural networks} sont de plus en plus associés au domaine médical. Cependant, lors de l'entraînement d'un réseau de neurones\index{Maxhine Learning!neural networks}, un problème récurant s'impose à nous : De quelle manière est-il possible d'éviter le surapprentissage\index{Machine Learning!surapprentissage} ?
 
 	\backmatter
 
