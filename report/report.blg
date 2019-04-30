@@ -4,45 +4,45 @@ The top-level auxiliary file: report.aux
 The style file: plain.bst
 Database file #1: annex/biblio_stage.bib
 Warning--to sort, need author or key in tensorflow
-You've used 9 entries,
+You've used 10 entries,
             2118 wiz_defined-function locations,
-            540 strings with 6160 characters,
-and the built_in function-call counts, 3972 in all, are:
-= -- 315
-> -- 388
+            542 strings with 6341 characters,
+and the built_in function-call counts, 4182 in all, are:
+= -- 334
+> -- 395
 < -- 1
-+ -- 156
-- -- 146
-* -- 341
-:= -- 710
-add.period$ -- 28
-call.type$ -- 9
-change.case$ -- 99
++ -- 159
+- -- 148
+* -- 349
+:= -- 746
+add.period$ -- 31
+call.type$ -- 10
+change.case$ -- 103
 chr.to.int$ -- 0
-cite$ -- 10
-duplicate$ -- 80
-empty$ -- 195
-format.name$ -- 146
-if$ -- 754
+cite$ -- 11
+duplicate$ -- 87
+empty$ -- 217
+format.name$ -- 148
+if$ -- 799
 int.to.chr$ -- 0
-int.to.str$ -- 9
+int.to.str$ -- 10
 missing$ -- 4
-newline$ -- 49
-num.names$ -- 16
-pop$ -- 136
+newline$ -- 54
+num.names$ -- 18
+pop$ -- 145
 preamble$ -- 1
-purify$ -- 91
+purify$ -- 94
 quote$ -- 0
-skip$ -- 67
+skip$ -- 73
 stack$ -- 0
-substring$ -- 50
-swap$ -- 14
+substring$ -- 55
+swap$ -- 15
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 34
+type$ -- 38
 warning$ -- 1
-while$ -- 17
-width$ -- 10
-write$ -- 94
+while$ -- 19
+width$ -- 12
+write$ -- 104
 (There was 1 warning)
