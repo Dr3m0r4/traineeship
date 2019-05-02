@@ -22,6 +22,8 @@ class DecayLearningRateApplication(SegmentationApplication):
         if self.action_param.validation_every_n > 0:
             raise NotImplementedError("validation process is not implemented "
                                       "in this demo.")
+        self.prec_loss = 10.0
+        self.curent_loss = None
 
     def connect_data_and_network(self,
                                  outputs_collector=None,
@@ -45,6 +47,7 @@ class DecayLearningRateApplication(SegmentationApplication):
                 ground_truth=data_dict.get('label', None),
                 weight_map=data_dict.get('weight', None))
 
+            self.current_loss = data_loss
             loss = data_loss
             reg_losses = tf.get_collection(tf.GraphKeys.REGULARIZATION_LOSSES)
 
@@ -57,7 +60,7 @@ class DecayLearningRateApplication(SegmentationApplication):
             gradients_collector.add_to_collection([grads])
             # collecting output variables
             outputs_collector.add_to_collection(
-                var=data_loss, name='dice_loss',
+                var=self.current_loss, name='loss',
                 average_over_devices=False, collection=CONSOLE)
             outputs_collector.add_to_collection(
                 var=self.learning_rate, name='lr',
@@ -79,8 +82,13 @@ class DecayLearningRateApplication(SegmentationApplication):
         """
         current_iter = iteration_message.current_iter
         if iteration_message.is_training:
-            if current_iter > 0 and current_iter % 50 == 0:
-                self.current_lr = self.current_lr / 2.0
+            if current_iter > 1 :
+                if current_iter % 40 == 0:
+                    if self.prec_loss > self.current_loss.eval() :
+                        self.current_lr = self.current_lr * 0.5
+                    else:
+                        self.current_lr = self.current_lr * 1.5
+                    self.prec_loss = self.current_loss.eval()
             iteration_message.data_feed_dict[self.is_validation] = False
         elif iteration_message.is_validation:
             iteration_message.data_feed_dict[self.is_validation] = True

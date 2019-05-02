@@ -1,4 +1,4 @@
-Input params at 2019-04-26 14:16:28.
+Input params at 2019-04-26 19:10:46.
 [CUSTOM]
 -- num_classes: 5
 -- output_prob: False
@@ -10,11 +10,11 @@ Input params at 2019-04-26 14:16:28.
 -- min_numb_labels: 1
 -- proba_connect: True
 -- evaluation_units: foreground
+-- image: ('image',)
 -- weight: ()
 -- label: ('label',)
--- sampler: ()
 -- inferred: ()
--- image: ('image',)
+-- sampler: ()
 -- name: net_segment
 [CONFIG_FILE]
 -- path: /home/julien/traineeship/mmiv/config.ini
@@ -39,7 +39,7 @@ Input params at 2019-04-26 14:16:28.
 -- loader: None
 -- pixdim: ()
 -- axcodes: ('L', 'P', 'S')
--- spatial_window_size: (51, 51, 51)
+-- spatial_window_size: (93, 93, 93)
 [SYSTEM]
 -- cuda_devices: 0
 -- num_threads: 10
@@ -87,7 +87,7 @@ Input params at 2019-04-26 14:16:28.
 -- num_ctrl_points: 4
 -- deformation_sigma: 15
 -- proportion_to_deform: 0.5
--- lr: 0.001
+-- lr: 0.0001
 -- loss_type: CrossEntropy
 -- starting_iter: 0
 -- save_every_n: 5000
