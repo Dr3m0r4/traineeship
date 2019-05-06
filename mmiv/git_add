@@ -1,0 +1,12 @@
+#!/bin/bash
+
+liste=`ls`
+
+for name in $liste
+do
+	if [ -f $name ]
+	then
+		git add $name
+	fi
+done
+git commit -m "mise a jour"

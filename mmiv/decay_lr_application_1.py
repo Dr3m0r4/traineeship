@@ -7,8 +7,6 @@ from niftynet.engine.application_variables import CONSOLE, NETWORK_OUTPUT
 from niftynet.engine.application_variables import TF_SUMMARIES
 from niftynet.layer.loss_segmentation import LossFunction
 
-import numpy as np
-
 SUPPORTED_INPUT = set(['image', 'label', 'weight'])
 
 
@@ -20,12 +18,14 @@ class DecayLearningRateApplication(SegmentationApplication):
             self, net_param, action_param, is_training)
         tf.logging.info('starting decay learning segmentation application')
         self.learning_rate = None
-        self.current_lr = action_param.lr
+        # self.current_lr = action_param.lr
+        self.current_lr = 5e-3
+        self.count = 2
+        self.ini = 250
+        self.mod = self.ini
         if self.action_param.validation_every_n > 0:
             raise NotImplementedError("validation process is not implemented "
                                       "in this demo.")
-        self.prec_loss = 10.0
-        self.curent_loss = None
 
     def connect_data_and_network(self,
                                  outputs_collector=None,
@@ -49,8 +49,8 @@ class DecayLearningRateApplication(SegmentationApplication):
                 ground_truth=data_dict.get('label', None),
                 weight_map=data_dict.get('weight', None))
 
-            self.current_loss = data_loss
             loss = data_loss
+            print(data_loss)
             reg_losses = tf.get_collection(tf.GraphKeys.REGULARIZATION_LOSSES)
 
             if self.net_param.decay > 0.0 and reg_losses:
@@ -62,7 +62,7 @@ class DecayLearningRateApplication(SegmentationApplication):
             gradients_collector.add_to_collection([grads])
             # collecting output variables
             outputs_collector.add_to_collection(
-                var=self.current_loss, name='loss',
+                var=data_loss, name='dice_loss',
                 average_over_devices=False, collection=CONSOLE)
             outputs_collector.add_to_collection(
                 var=self.learning_rate, name='lr',
@@ -84,11 +84,13 @@ class DecayLearningRateApplication(SegmentationApplication):
         """
         current_iter = iteration_message.current_iter
         if iteration_message.is_training:
-            self.current_lr = (np.cos(current_iter*np.pi/1500.0)+1)/(current_iter/5000.0+1)
-            # if self.prec_loss > self.current_loss.eval() :
-            #     self.current_lr = self.current_lr * 0.9
-            #     self.prec_loss = self.current_loss.eval()
+            if current_iter > 0 and current_iter % self.mod == 0:
+                self.current_lr = self.current_lr / 2.0
+                self.mod = self.mod + self.ini*self.count
+                self.count = self.count+1
             iteration_message.data_feed_dict[self.is_validation] = False
         elif iteration_message.is_validation:
             iteration_message.data_feed_dict[self.is_validation] = True
         iteration_message.data_feed_dict[self.learning_rate] = self.current_lr
+        print(iteration_message.data_feed_dict)
+        print(iteration_message.ops_to_run)

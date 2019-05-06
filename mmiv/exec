@@ -2,20 +2,10 @@
 
 if [ $1 = train ]
 then
-  cp ./decay_lr_application.py ~/.conda/envs/niftynet/lib/python3.7/site-packages/niftynet/contrib/learning_rate_schedule/decay_lr_application.py
-  net_run train -a niftynet.contrib.learning_rate_schedule.decay_lr_application.DecayLearningRateApplication -c config.ini
-  cat model/training_niftynet_log | grep CRITICAL
-elif [ $1 = train2 ]
-then
-  cp ./decay_lr_application_2.py ~/.conda/envs/niftynet/lib/python3.7/site-packages/niftynet/contrib/learning_rate_schedule/decay_lr_application.py
-  net_run train -a niftynet.contrib.learning_rate_schedule.decay_lr_application.DecayLearningRateApplication -c config.ini
-  cat model/training_niftynet_log | grep CRITICAL
-elif [ $1 = train3 ]
-then
-  cp ./decay_lr_application_3.py ~/.conda/envs/niftynet/lib/python3.7/site-packages/niftynet/contrib/learning_rate_schedule/decay_lr_application.py
-  net_run train -a niftynet.contrib.learning_rate_schedule.decay_lr_application.DecayLearningRateApplication -c config.ini
-  cat model/training_niftynet_log | grep CRITICAL
+	cp ./decay_lr_application_$2.py ~/.conda/envs/niftynet/lib/python3.7/site-packages/niftynet/contrib/learning_rate_schedule/decay_lr_application.py
+  	net_run train -a niftynet.contrib.learning_rate_schedule.decay_lr_application.DecayLearningRateApplication -c config.ini
+  	cat model/training_niftynet_log | grep CRITICAL
 elif [ $1 = inference ]
 then
-  net_segment inference -c infer.ini
+	net_segment inference -c infer.ini
 fi
