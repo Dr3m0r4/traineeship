@@ -1,0 +1,585 @@
+\documentclass{beamer}
+
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage{xcolor}
+\usepackage{lmodern}
+\usepackage{ae, aecompl}
+
+\usepackage{soul}
+\usepackage{ulem}
+\usepackage{graphicx}
+\usepackage{eso-pic}
+\usepackage{float}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{mathrsfs}
+\usepackage{amsthm}
+\usepackage{url}
+\usepackage{listings}
+\usepackage{stmaryrd}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{verbatim}
+\usepackage{hyperref}
+
+\usetheme{Ilmenau}
+\setbeamertemplate{footline}
+{
+  \hbox{\begin{beamercolorbox}[wd=1\paperwidth,ht=2.25ex,dp=1ex,right]{framenumber}%
+      \usebeamerfont{framenumber}\insertframenumber{} / \inserttotalframenumber\hspace*{2ex}
+    \end{beamercolorbox}}%
+  \vskip0pt%
+}
+
+
+\AtBeginSection[]{
+  \begin{frame}
+    \frametitle{Plan}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+
+% \AtBeginSubsection{
+%   \begin{frame}
+%     \frametitle{Plan}
+%     \tableofcontents[currentsection,currentsubsection]
+%   \end{frame}
+% }
+
+\title[Soutenance de Stage]{Soutenance du Stage de deuxième année F4\\Amélioration d'algorithme d'apprentissage pour la localisation en environnement intérieur}
+\author{Julien Feuillas}
+\institute{\bsc{ISIMA}}
+\date{23 Mai 2019}
+
+\begin{document}
+
+\setbeamertemplate{section shaded}[ball unumberded]
+
+\begin{frame}
+  \includegraphics[width=0.2\textwidth]{annex/logo_UCA.png}
+  \hfill
+  \includegraphics[width=0.4\textwidth]{annex/isima.jpeg}
+  \titlepage
+\end{frame}
+
+% \begin{frame}
+%   \begin{itemize}
+%     \item bonjour
+%     \pause \item c'est une présentation
+%   \end{itemize}
+%
+%   \pause%\includegraphics[width=0.4\textwidth]{annexe/logo_UCA.png}
+% \end{frame}
+
+% \begin{frame}{test de blocs}
+%   \begin{block}{machin}
+%     un truc bleu
+%   \end{block}
+%
+%   \begin{alertblock}{lala}
+%     un truc rouge
+%   \end{alertblock}
+%
+%   \begin{exampleblock}{exemple}
+%     un exemple vert ?
+%   \end{exampleblock}
+%
+% \end{frame}
+
+\section*{Introduction}
+
+\subsection*{}
+
+
+\begin{frame}{Objectifs du groupe ALTIPHARMA}
+  \begin{itemize}
+    \item ALTIPHARMA
+    \begin{itemize}
+      \item Groupement de pharmacies en France
+      \item Clients potentiels : plus de 250 000 personnes
+      \item Représentant : M. PORTAL
+    \end{itemize}
+    \item[]
+    \item Objectifs
+    \begin{itemize}
+      \item Suivi de clients au sein de la pharmacie
+      \item Création d'offres personnalisées
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Travaux réalisés dans le cadre du projet}
+  \begin{itemize}
+    \item Stage de 6 mois
+    \item[]
+    \item Création de capteurs
+    \begin{itemize}
+      \item Utilisation des téléphones portables des clients
+      \item Informations recueillies :
+      \begin{itemize}
+        \item Puissance du signal
+        \item Adresse MAC
+        \item Date
+      \end{itemize}
+    \end{itemize}
+    \item[]
+    \item Mise en place d'une première solution
+    \begin{itemize}
+      \item Acquisition de données
+      \item Algorithme de Machine Learning
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Cadre du Projet}
+  \begin{itemize}
+    \item Nos Objectifs
+    \begin{itemize}
+      \item Calcul de la position des clients à un instant donné
+      \item \'Etude de différentes solutions
+    \end{itemize}
+    \item[]
+    \item Cadre d'étude
+    \begin{itemize}
+      \item Calcul mathématique direct ?
+      \item Machine Learning
+      \begin{itemize}
+        \item Classification
+        \item Régression
+      \end{itemize}
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Problématique}
+  \begin{beamercolorbox}[ht=5ex,dp=1.5ex,center]{frametitle}
+    Quelle est la méthode de Machine Learning la plus efficace pour effectuer de la localisation en environnement intérieur ?
+  \end{beamercolorbox}
+\end{frame}
+
+\section*{Plan}
+\begin{frame}{Plan}
+  \tableofcontents
+\end{frame}
+
+\section[Travaux précédents -- Déroulement]{Travaux précédents et Déroulement du Projet}
+
+\subsection*{}
+
+
+\begin{frame}{Acquisition des données}
+  \begin{itemize}
+    \item Découpage de la pharmacie en différentes zones
+    \item[]
+    \item Méthode d'acquisition des données :
+    \begin{itemize}
+      \item Téléphone posé dans une zone
+      \item \'Emission de signaux pendant une certaine durée
+    \end{itemize}
+    \item[]
+    \item Stockage des données :\\
+    \texttt{x;y;date;c1;c2;c3;c4}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Découpage de la pharmacie}
+  \begin{center}
+    %\includegraphics[scale=0.575]{annexe/rep_pharmacie.pdf}
+  \end{center}
+\end{frame}
+
+\begin{frame}{Machine Learning}
+  \begin{itemize}
+    \item Vocabulaire :
+    \begin{itemize}
+      \item Feature (\textit{c1,c2,c3,c4})
+      \item Target (\textit{x,y})
+    \end{itemize}
+    \item[]
+    \item Algorithmes paramétrés
+    \item[]
+    \item Deux étapes :
+    \begin{itemize}
+      \item Entraînement
+      \item Test
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Classification et Régression}
+  \begin{itemize}
+    \item Classification
+    \begin{itemize}
+      \item Regroupement en classes
+      \item Classes -- Targets
+    \end{itemize}
+    \item[]
+    \item Régression
+    \begin{itemize}
+      \item Forme de la fonction : features $\mapsto$ targets
+      \item Minimisation de l'erreur
+      \item Méthodes linéaires :
+      \begin{math}
+        \left\{
+        \begin{array}{c c c c c cccc}
+          t_1 &=& \alpha_{1,0} &+& \alpha_{1,1}f_1 &+& \dots &+& \alpha_{1,n}f_n\\
+          &&&&\vdots\\
+          t_m &=& \alpha_{m,0} &+& \alpha_{m,1}f_1 &+& \dots &+& \alpha_{m,n}f_n
+        \end{array}
+        \right.
+      \end{math}
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Outils utilisés}
+  \begin{itemize}
+    \item Python
+    \item[]
+    \item Bibliothèques Python :
+    \begin{itemize}
+      \item Numpy
+      \item Scikit-Learn et Pandas
+      \item Matplotlib et Seaborn
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Déroulement du projet}
+  \begin{itemize}
+    \item Rendez-vous hebdomadaires
+    \item[]
+    \item Objectifs définis au cours du projet
+  \end{itemize}
+\end{frame}
+
+\section[Méthodes]{Présentation des méthodes à implémenter}
+
+\subsection*{}
+
+\begin{frame}{Découpage du jeu de données}
+  \begin{center}
+    %\includegraphics[scale=0.15]{annexe/kaggle_train_test_split.png}
+  \end{center}
+\end{frame}
+
+\begin{frame}{Méthodes de Classification}
+  \begin{itemize}
+    \item K Nearest Neighbors
+    \begin{itemize}
+      \item Recherche des voisins
+      \item Détermination de la classe
+    \end{itemize}
+    \item[]
+    \item Support Vector Machine (SVM)
+    \begin{itemize}
+      \item Choix d'une méthode
+      \item Itération
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Métriques pour la Classification}
+  \begin{itemize}
+    \item $\text{Précision} = \frac{\text{Nombre de prédictions correctes}}{\text{Nombre de données}}$
+    \item Matrice de confusion :\\
+    \begin{center}
+      \begin{tabular}{>{\begin{bf}}c<{\end{bf}} | c c}
+        & \textbf{A} & \textbf{B}\\
+        \hline
+        A & 2345 & 0\\
+        B & 213 & 2143
+      \end{tabular}
+    \end{center}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Régressions linéaire et polynomiale}
+  \begin{itemize}
+    \item Régression linéaire
+    \begin{itemize}
+      \item Méthode des moindres carrés
+      \item Erreur : $\Vert.\Vert_2^2$
+    \end{itemize}
+    \item[]
+    \item Régression polynomiale
+    \begin{itemize}
+      \item Paramètre : degré
+      \item Exemple :\\
+      \begin{math}
+        t = a_0+a_1f_1+a_2f_2+a_3f_1^2+a_4f_2^2+a_5f_1f_2
+      \end{math}
+      \item Méthode linéaire ?
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Régressions linéaires paramétrées}
+  \begin{itemize}
+    \item Régression Ridge
+    \begin{itemize}
+      \item Redondance d'information entre les individus
+      \item Coefficient de pénalité $\alpha$
+    \end{itemize}
+    \item[]
+    \item Régression LASSO
+    \begin{itemize}
+      \item Redondance d'information dans les features
+      \item Coefficient de pénalité $\alpha$
+    \end{itemize}
+    \item[]
+    \item Régression Elastic-Net
+    \begin{itemize}
+      \item Combinaison des méthodes précédentes
+      \item Deux Coefficients :
+      \begin{itemize}
+        \item $\alpha$ : Coefficient de pénalité
+        \item $\rho \in [0,1]$ : Contrôle de la combinaision
+      \end{itemize}
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Métriques pour la régression}
+  \begin{itemize}
+    \item Erreur de "distance" :
+    \begin{itemize}
+      \item Erreur quadratique :
+      \begin{itemize}
+        \item $MSE(Y,Y_{pred}) = \frac{1}{N_{test}} \sum_{l=1}^{N_{test}} {(Y_l - Y_{pred,l})}^2$
+      \end{itemize}
+      \item Erreur moyenne absolue
+      \begin{itemize}
+        \item $MAE(Y,Y_{pred}) = \frac{1}{N_{test}} \sum_{l=1}^{N_{test}} |Y_l - Y_{pred,l}|$
+      \end{itemize}
+    \end{itemize}
+    \item[]
+    \item Capacité de prédiction du modèle
+    \begin{itemize}
+      \item Coefficient de détermination
+      \begin{itemize}
+        \item $R^2(Y,Y_{pred}) = 1 - \frac{\sum_{l=1}^{N_{test}} (Y_l - Y_{pred,l})^2}{\sum_{l=1}^{N_{test}} (Y_l - \bar{Y})^2}$
+      \end{itemize}
+      \item Score de variance expliquée
+      \begin{itemize}
+        \item $EVS(Y,Y_{pred}) = 1 - \frac{Var(Y - Y_{pred,l})}{Var(Y)}$
+      \end{itemize}
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Efficacité des méthodes de régression}
+  \begin{itemize}
+    \item Résultats dépendants du découpage initial
+    \item[]
+    \item \'Ecriture d'une fonction Python :
+    \begin{itemize}
+      \item \texttt{apply\_regressions}
+      \item Plusieurs applications du même modèle de régression
+      \item Renvoie la valeur des métriques pour chaque application
+      \item Variables d'entrée :
+      \begin{itemize}
+        \item Nombre de régressions
+        \item Le modèle à appliquer
+        \item Conservation des lignes dupliquées ?
+      \end{itemize}
+    \end{itemize}
+    \item[]
+    \item Utilisable pour la détermination de paramètres
+  \end{itemize}
+\end{frame}
+
+\section{Résultats}
+
+\subsection*{}
+
+\begin{frame}{K Nearest Neighbors}
+  \begin{center}
+    %\includegraphics[scale=0.57]{annexe/tables/K_Nearest/K.pdf}
+  \end{center}
+  \begin{itemize}
+    \item Précision = 98\%
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Support Vector Classification}
+  \begin{center}
+    %\includegraphics[scale=0.57]{annexe/tables/SVC/svc.pdf}
+  \end{center}
+  \begin{itemize}
+    \item Précision = 68\%
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Détermination des paramètres : polynomiale}
+  \begin{center}
+    %\includegraphics[scale=0.57]{annexe/param_poly.pdf}
+  \end{center}
+\end{frame}
+
+\begin{frame}{Détermination des paramètres : Ridge}
+  \begin{center}
+    %\includegraphics[scale=0.57]{annexe/param_ridge.pdf}
+  \end{center}
+\end{frame}
+
+\begin{frame}{Détermination des paramètres : LASSO}
+  \begin{center}
+    %\includegraphics[scale=0.57]{annexe/param_lasso.pdf}
+  \end{center}
+\end{frame}
+
+\begin{frame}{Détermination des paramètres : Elastic-Net}
+  \begin{itemize}
+    \item Méthode précédente non utilisable
+    \item[]
+    \item Utilisation d'un objet déjà implémenté :
+    \begin{itemize}
+      \item \texttt{MultiTaskElasticNetCV} de \texttt{sklearn.linear\_model}
+      \item Validation croisée + méthode de régression
+    \end{itemize}
+    \item[]
+    \item Paramètre de construction :
+    \begin{itemize}
+      \item Nombre de plis à effectuer
+      \item Un tableau de valeurs possibles pour $\alpha$ er $\rho$
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Tableau de résultats}
+  \begin{center}
+    \begin{tabular}{|c|c|c|c|c|c|}
+      \hline
+       & Duplications ? & MSE & MAE & R2 & EVS\\
+      \hline
+      \multirow{2}*{Linéaire} & oui & 1.862 & 1.097 & 0.642 & 0.643\\
+      \cline{2-6}
+      & non & 2.061 & 1.158 & 0.602 & 0.606\\
+      \hline
+      \multirow{2}*{Polynomiale} & oui & 0.900 & 0.666 & 0.824 & 0.825\\
+      \cline{2-6}
+      & non & 1.299 & 0.773 & 0.717 & 0.720\\
+      \hline
+      \multirow{2}*{Elastic-Net} & oui & 1.864 & 1.098 & 0.642 & 0.642 \\
+      \cline{2-6}
+      & non & 2.064 & 1.160 & 0.601 & 0.604\\
+      \hline
+    \end{tabular}
+  \end{center}
+\end{frame}
+
+\begin{frame}{Comparaison entre classification et régression}
+  \begin{itemize}
+    \item Efficacité de la régression :
+    \begin{itemize}
+      \item Au sens des métriques de régression
+      \item Différentes des métriques de classification
+    \end{itemize}
+    \item[]
+    \item Passage régression $\to$ classification
+    \begin{itemize}
+      \item Pour la régression polynomiale
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Passage de la régression à la classification}
+  \begin{center}
+    %\includegraphics[scale=0.57]{annexe/assoc_reg_class.pdf}
+  \end{center}
+\end{frame}
+
+\begin{frame}{Résultats de la régression polynomiale pour la classification}
+  \begin{itemize}
+    \item Résultats :
+    \begin{itemize}
+      \item Précision : 54\%
+      \item Termes extra-diagonaux de la matrice de confusion
+    \end{itemize}
+    \item[]
+    \item Résultats peu précis
+    \begin{itemize}
+      \item Zones trop grandes
+      \item Nécessité d'un nouveau jeu de données
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Graphique de densité}
+  \begin{center}
+    %\includegraphics[scale=0.57]{annexe/comp_densite.pdf}
+  \end{center}
+\end{frame}
+
+\section*{Conclusion}
+
+\begin{frame}{Résumé du travail réalisé}
+  \begin{itemize}
+    \item Méthodes de régression implémentées
+    \begin{itemize}
+      \item Méthodes linéaires
+      \item Méthodes probabilistes ? Régressions à noyau ?
+    \end{itemize}
+    \item[]
+    \item Résultats obtenus
+    \begin{itemize}
+      \item Non concluants
+      \item Méthodes employées réutilisables
+    \end{itemize}
+    \item[]
+    \item Ce qu'il reste à faire
+    \begin{itemize}
+      \item Mise en place de nouvelles régressions
+      \item \'Etude d'un nouveau jeu de données
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\section*{}
+
+\begin{frame}{Remerciements}
+  \begin{beamercolorbox}[ht=2.5ex,dp=1.5ex,center]{frametitle}
+    Nous vous remercions pour votre attention
+  \end{beamercolorbox}
+\end{frame}
+
+\appendix
+
+\section*{Annexe}
+
+% \begin{frame}{Triangulation}
+%   \begin{center}
+%     %\includegraphics[scale=0.57]{annexe/satellites.jpg}
+%   \end{center}
+% \end{frame}
+%
+% \begin{frame}{Exemple de Classification}
+%   \begin{center}
+%     %\includegraphics[scale=0.5]{annexe/ex_classif.pdf}
+%   \end{center}
+% \end{frame}
+%
+% \begin{frame}{Exemple de Régression}
+%   \begin{center}
+%     %\includegraphics[scale=0.5]{annexe/ex_regression.pdf}
+%   \end{center}
+% \end{frame}
+%
+% \begin{frame}{Plan de la pharmacie}
+%   \begin{center}
+%     %\includegraphics[scale=0.5]{annexe/plan_pharmacie.png}
+%   \end{center}
+% \subsection*{}
+%
+% \end{frame}
+%
+% \begin{frame}{Underfitting et Overfitting}
+%   \begin{center}
+%     %\includegraphics[scale=0.57]{annexe/underoverfitting.pdf}
+%   \end{center}
+% \end{frame}
+
+\end{document}
