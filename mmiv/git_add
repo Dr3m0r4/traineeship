@@ -10,4 +10,10 @@ do
 		git add $name
 	fi
 done
-git commit -m "commit du $var"
+
+if [ $# -ge 1 ]
+then
+	git commit -m $1
+else
+	git commit -m "commit du $var"
+fi
