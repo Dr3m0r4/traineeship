@@ -1,11 +1,11 @@
 #! /bin/bash
 
-if [ -d FS_ouput ]
+if [ -d FS_outputs ]
 then
   echo 'it is ok'
 else
   echo 'extract'
-  unzip labels.zip
+  unzip ~/Documents/labels.zip
 fi
 
 echo 'purge'
