@@ -26,6 +26,7 @@ class DecayLearningRateApplication(SegmentationApplication):
                                       "in this demo.")
         self.prec_loss = 10.0
         self.curent_loss = None
+        self.count = 0
 
     def connect_data_and_network(self,
                                  outputs_collector=None,
@@ -84,7 +85,11 @@ class DecayLearningRateApplication(SegmentationApplication):
         """
         current_iter = iteration_message.current_iter
         if iteration_message.is_training:
-            self.current_lr = (np.cos(current_iter*np.pi/1500.0)+1)/(current_iter/5000.0+1)
+            max = 1e-2
+            f = lambda x,y : max*(np.cos(x/500.0*np.pi+y*np.pi)+1/(x/1500.0+1)
+            if f(current_iter-1, self.count)<1e-7:
+                self.count+=1
+            self.current_lr = f(current_iter, self.count)
             # if self.prec_loss > self.current_loss.eval() :
             #     self.current_lr = self.current_lr * 0.9
             #     self.prec_loss = self.current_loss.eval()

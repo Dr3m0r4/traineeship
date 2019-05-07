@@ -2,6 +2,7 @@
 
 liste=`ls`
 
+var=`date`
 for name in $liste
 do
 	if [ -f $name ]
@@ -9,4 +10,4 @@ do
 		git add $name
 	fi
 done
-git commit -m "mise a jour"
+git commit -m "commit du $var"

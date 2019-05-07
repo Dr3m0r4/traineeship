@@ -7,5 +7,5 @@ then
   	cat model/training_niftynet_log | grep CRITICAL
 elif [ $1 = inference ]
 then
-	net_segment inference -c infer.ini
+	net_segment inference -c infer_$2.ini
 fi
