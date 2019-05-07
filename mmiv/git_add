@@ -1,0 +1,13 @@
+#!/bin/bash
+
+liste=`ls`
+
+var=`date`
+for name in $liste
+do
+	if [ -f $name ]
+	then
+		git add $name
+	fi
+done
+git commit -m "commit du $var"
