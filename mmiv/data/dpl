@@ -1,0 +1,11 @@
+#! /bin/bash
+
+dir='FS_outputs'
+
+liste=`ls $dir`
+
+for name in $liste
+do
+	cp $dir/$name/mri/orig.mgz images/$name-orig.mgz
+	cp $dir/$name/mri/ribbon.mgz labels/$name-ribbon.mgz
+done

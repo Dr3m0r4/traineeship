@@ -1,0 +1,19 @@
+#! /bin/bash
+
+if [ -d FS_outputs ]
+then
+  echo 'it is ok'
+else
+  echo 'extract'
+  unzip ~/Documents/labels.zip
+fi
+
+echo 'purge'
+rm -r images labels
+mkdir images labels
+
+echo 'deplacement'
+bash .dpl
+
+echo 'convert'
+bash .convert
