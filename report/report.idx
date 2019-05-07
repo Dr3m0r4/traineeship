@@ -1,6 +1,6 @@
 \indexentry{algorithme|hyperpage}{4}
 \indexentry{Machine Learning!learning rate|hyperpage}{4}
-\indexentry{Machine Learning!neural networks|hyperpage}{4}
+\indexentry{Machine Learning!Deep Learning!neural networks|hyperpage}{4}
 \indexentry{NiftyNet|hyperpage}{4}
 \indexentry{Python|hyperpage}{4}
 \indexentry{Machine Learning|hyperpage}{4}
@@ -14,7 +14,7 @@
 \indexentry{NiftyNet|hyperpage}{4}
 \indexentry{algorithme|hyperpage}{4}
 \indexentry{Machine Learning!learning rate|hyperpage}{4}
-\indexentry{Machine Learning!neural networks|hyperpage}{4}
+\indexentry{Machine Learning!Deep Learning!neural networks|hyperpage}{4}
 \indexentry{NiftyNet|hyperpage}{4}
 \indexentry{Python|hyperpage}{4}
 \indexentry{Machine Learning|hyperpage}{4}
@@ -27,6 +27,12 @@
 \indexentry{NiftyNet|hyperpage}{4}
 \indexentry{Machine Learning|hyperpage}{7}
 \indexentry{Machine Learning!Deep Learning|hyperpage}{7}
-\indexentry{Machine Learning!neural networks|hyperpage}{7}
-\indexentry{Machine Learning!neural networks|hyperpage}{7}
-\indexentry{Machine Learning!sur-apprentissage|hyperpage}{7}
+\indexentry{Machine Learning!Deep Learning!neural networks|hyperpage}{7}
+\indexentry{Machine Learning!Deep Learning!neural networks|hyperpage}{7}
+\indexentry{Machine Learning!Deep Learning!neural networks|hyperpage}{7}
+\indexentry{Machine Learning|hyperpage}{7}
+\indexentry{Machine Learning!Deep Learning|hyperpage}{7}
+\indexentry{IRM|hyperpage}{7}
+\indexentry{Machine Learning!Deep Learning!segmentation|hyperpage}{7}
+\indexentry{Machine Learning!Deep Learning!segmentation|hyperpage}{7}
+\indexentry{Machine Learning!classification|hyperpage}{7}
