@@ -4,15 +4,15 @@
 
   \indexspace
 
-  \item IRM, \hyperpage{7}
+  \item IRM, \hyperpage{8}
 
   \indexspace
 
-  \item Machine Learning, \hyperpage{4}, \hyperpage{7}
+  \item Machine Learning, \hyperpage{4}, \hyperpage{7, 8}
     \subitem classification, \hyperpage{7}
-    \subitem Deep Learning, \hyperpage{7}
+    \subitem Deep Learning, \hyperpage{7, 8}
       \subsubitem neural networks, \hyperpage{4}, \hyperpage{7}
-      \subsubitem segmentation, \hyperpage{7}
+      \subsubitem segmentation, \hyperpage{7, 8}
     \subitem learning rate, \hyperpage{4}
 
   \indexspace
