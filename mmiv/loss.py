@@ -7,17 +7,17 @@ import matplotlib.pyplot as plt
 lr = 1e-3
 arret = 2
 
-prediction = tf.placeholder(tf.float64, shape=[2*10**6])
+prediction = tf.Variable(initial_value=[], dtype=tf.float64)
 labels = np.linspace(0, 150, 2*10**6)%3
 weight = np.logspace(0, 150, 2*10**6)
 
 adam = Adam(learning_rate=lr)
 loss = cross(prediction, labels, weight)
 sess = tf.Session()
-print(loss.eval(session=sess))
+#print(loss.eval(session=sess))
 
 lr = 1e-6
 while arret:
 	adam = Adam(learning_rate=lr)
-	print(adam.compute_gradients(loss, var_list=[prediction]))
+	print(adam.compute_gradients(loss, var_list=[prediction])[0][0].eval(session=sess))
 	arret = False

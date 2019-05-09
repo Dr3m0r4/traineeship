@@ -5,12 +5,12 @@ calc()
 	awk "BEGIN{print $*}";
 }
 
-if [ $1 = train ]
+if [ $1 = training ]
 then
 	cp ./decay_lr_application_$2.py ~/.conda/envs/niftynet/lib/python3.7/site-packages/niftynet/contrib/learning_rate_schedule/decay_lr_application.py
   	net_run train -a niftynet.contrib.learning_rate_schedule.decay_lr_application.DecayLearningRateApplication -c config.ini
   	cat model/training_niftynet_log | grep CRITICAL
-elif [ $1 = training ]
+elif [ $1 = train ]
 then
 	net_segment train -c config.ini
 elif [ $1 = inference ]
@@ -34,7 +34,7 @@ then
 		infer=`calc $infer+1`
 	done
 	echo "the first argument should be training, inference, evaluation or train"
-	echo "if the first argument isn't training, the command should have a second argument"
-	echo "for train, the second argument is between 1 and $train"
+	echo "if the first argument isn't train, the command should have a second argument"
+	echo "for training, the second argument is between 1 and $train"
 	echo "for inference and evaluation it is between 1 and $infer"
 fi
