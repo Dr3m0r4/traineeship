@@ -3,9 +3,12 @@
 dir='FS_outputs'
 
 liste=`ls $dir`
+declare -A file=(["labels"]="brain" ["images"]="orig")
 
 for name in $liste
 do
-	cp $dir/$name/mri/orig.mgz images/$name-orig.mgz
-	cp $dir/$name/mri/ribbon.mgz labels/$name-ribbon.mgz
+	for type in labels images
+	do
+		cp $dir/$name/mri/${file[$type]}.mgz $type/$name-${file[$type]}.mgz
+	done
 done

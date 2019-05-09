@@ -1,19 +1,27 @@
 #! /bin/bash
 
+echo ''
 if [ -d FS_outputs ]
 then
-  echo 'it is ok'
+  echo '>>>>>>>>>> it is ok'
 else
-  echo 'extract'
+  echo '>>>>>>>>>> extract'
   unzip ~/Documents/labels.zip
 fi
 
-echo 'purge'
-rm -r images labels
-mkdir images labels
+echo ''
+echo '>>>>>>>>>> purge'
+rm -r images labels labels_bin
+mkdir images labels labels_bin
 
-echo 'deplacement'
-bash .dpl
+echo ''
+echo '>>>>>>>>>> deplacement'
+bash dpl
 
-echo 'convert'
-bash .convert
+echo ''
+echo '>>>>>>>>>> convert'
+bash convert
+
+echo ''
+echo '>>>>>>>>>> binarisation'
+python binarisation.py

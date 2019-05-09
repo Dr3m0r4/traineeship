@@ -1,22 +1,15 @@
 #!/bin/bash
 
-img='images'
-lbl='labels'
+declare -A file=([labels]=`ls labels` [images]=`ls images`)
 
-lista=`ls $img`
-listb=`ls $lbl`
-
-for name in $lista
+for type in labels images
 do
-	file=`basename $name .mgz`
-	mri_convert $img/$file.mgz $img/$file.nii.gz
+	echo ">>>>>> $type"
+	for name in ${file[$type]}
+	do
+		file=`basename $name .mgz`
+		mri_convert $type/$file.mgz $type/$file.nii.gz
+	done
+	rm $type/fs*
+	rm $type/*mgz
 done
-
-for name in $listb
-do
-	file=`basename $name .mgz`
-	mri_convert $lbl/$file.mgz $lbl/$file.nii.gz
-done
-
-rm $img/fs* $lbl/fs*
-rm $img/*.mgz $lbl/*.mgz
