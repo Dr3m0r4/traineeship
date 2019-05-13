@@ -126,7 +126,7 @@
   \end{itemize}
 \end{frame}
 
-\begin{frame}{Cadre du Projet}
+\begin{frame}{Cadre du Stage}
   \begin{itemize}
     \item Nos Objectifs
     \begin{itemize}
@@ -158,10 +158,75 @@
   \tableofcontents
 \end{frame}
 
+\section{Mise en place de Niftynet}
+\subsection*{}
+
+\begin{frame}[fragile]{Fichier de Configuration}
+  \tiny
+  \begin{columns}
+    \begin{column}{0.01\textwidth}
+
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \begin{verbatim}
+        [image]
+        path_to_search=data/images
+        filename_contains=IXI, orig
+        interp_order=3
+        axcodes=L,P,S
+        spatial_window_size=80, 80, 80
+
+        [label]
+        path_to_search=data/labels
+        filename_contains=IXI, brain
+        interp_order=0
+        axcodes=L,P,S
+        spatial_window_size=80, 80, 80
+
+        [SYSTEM]
+        cuda_devices=0
+        num_threads=10
+        num_gpus=1
+
+        [NETWORK]
+        name=highres3dnet
+        activation_function=prelu
+        batch_size=1
+        reg_type=L2
+        decay=1e-5
+        queue_length=20
+      \end{verbatim}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \begin{verbatim}
+        [TRAINING]
+        optimiser=adam
+        sample_per_volume=80
+        lr=1e-3
+        loss_type=Dice
+        starting_iter=0
+        save_every_n=2500
+        max_iter=20000
+        max_checkpoints=1000
+
+        [INFERENCE]
+
+        [EVALUATION]
+
+        [SEGMENTATION]
+        image=image
+        label=label
+        output_prob=False
+        num_classes=2
+        label_normalisation=True
+      \end{verbatim}
+    \end{column}
+  \end{columns}
+\end{frame}
+
 \section[Travaux précédents -- Déroulement]{Travaux précédents et Déroulement du Projet}
 
 \subsection*{}
-
 
 \begin{frame}{Acquisition des données}
   \begin{itemize}

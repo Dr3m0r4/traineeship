@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2019.4.25)  13 MAY 2019 14:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2019.4.25)  13 MAY 2019 19:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1152,12 +1152,12 @@ LaTeX Info: Redefining \degres on input line 56.
 LaTeX Info: Redefining \dots on input line 56.
 LaTeX Info: Redefining \up on input line 56.
 \c@lstlisting=\count180
- (/home/dr3m/travaux/traineeship/presentation/pres.nav) <annex/logo_UCA.png, id=59, 276.03125pt x 268.00125pt>
+ (/home/dr3m/travaux/traineeship/presentation/pres.nav) <annex/logo_UCA.png, id=65, 276.03125pt x 268.00125pt>
 File: annex/logo_UCA.png Graphic file (type png)
  <use annex/logo_UCA.png>
 Package pdftex.def Info: annex/logo_UCA.png used on input line 65.
 (pdftex.def)             Requested size: 61.45703pt x 59.66791pt.
- <annex/isima.jpeg, id=61, 276.03125pt x 183.68625pt>
+ <annex/isima.jpeg, id=67, 276.03125pt x 183.68625pt>
 File: annex/isima.jpeg Graphic file (type jpg)
  <use annex/isima.jpeg>
 Package pdftex.def Info: annex/isima.jpeg used on input line 65.
@@ -1186,109 +1186,112 @@ Overfull \vbox (1.7818pt too high) detected at line 65
 ] (/home/dr3m/travaux/traineeship/presentation/pres.toc) [7
 
 ]
-LaTeX Font Info:    Try loading font information for T1+aett on input line 179.
- (/usr/share/texlive/texmf-dist/tex/latex/ae/t1aett.fd
-File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
-) [8
+\openout4 = `pres.vrb'.
 
-] [9
-
-]
-LaTeX Font Info:    Font shape `T1/aess/m/it' in size <10> not available
-(Font)              Font shape `T1/aess/m/sl' tried instead on input line 203.
- [10
-
-]
-LaTeX Font Info:    Try loading font information for OT1+aess on input line 229.
+ (/home/dr3m/travaux/traineeship/presentation/pres.vrb
+LaTeX Font Info:    Try loading font information for OT1+aess on input line 6.
  (/usr/share/texlive/texmf-dist/tex/latex/ae/ot1aess.fd
 File: ot1aess.fd 1997/11/16 Font definitions for OT1/aess.
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 229.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 6.
  (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 229.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 6.
  (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 229.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 6.
  (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 229.
+(Font)              <6> on input line 6.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 229.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 229.
-LaTeX Font Info:    Try loading font information for U+msa on input line 229.
+(Font)              <5> on input line 6.
+LaTeX Font Info:    Try loading font information for U+msa on input line 6.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 229.
+LaTeX Font Info:    Try loading font information for U+msb on input line 6.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 229.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 6.
  (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Try loading font information for U+stmry on input line 229.
+LaTeX Font Info:    Try loading font information for U+stmry on input line 6.
  (/usr/share/texlive/texmf-dist/tex/latex/stmaryrd/Ustmry.fd)
-LaTeX Font Info:    Font shape `T1/aess/m/it' in size <7> not available
-(Font)              Font shape `T1/aess/m/sl' tried instead on input line 229.
+LaTeX Font Info:    Font shape `T1/aess/m/it' in size <6> not available
+(Font)              Font shape `T1/aess/m/sl' tried instead on input line 6.
 LaTeX Font Info:    Font shape `T1/aess/m/it' in size <5> not available
-(Font)              Font shape `T1/aess/m/sl' tried instead on input line 229.
- [11
+(Font)              Font shape `T1/aess/m/sl' tried instead on input line 6.
+LaTeX Font Info:    Try loading font information for T1+aett on input line 8.
+ (/usr/share/texlive/texmf-dist/tex/latex/ae/t1aett.fd
+File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
+)) [8
 
-] [12
+] (/home/dr3m/travaux/traineeship/presentation/pres.toc) [9
 
-] [13
+] [10
 
-] (/home/dr3m/travaux/traineeship/presentation/pres.toc) [14
+] [11
 
-] [15
-
-] [16
+]
+LaTeX Font Info:    Font shape `T1/aess/m/it' in size <10> not available
+(Font)              Font shape `T1/aess/m/sl' tried instead on input line 268.
+ [12
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 291.
+(Font)              <10> on input line 294.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 291.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 291.
-LaTeX Font Info:    Font shape `T1/aess/m/it' in size <10.95> not available
-(Font)              Font shape `T1/aess/m/sl' tried instead on input line 291.
-LaTeX Font Info:    Font shape `T1/aess/m/it' in size <8> not available
-(Font)              Font shape `T1/aess/m/sl' tried instead on input line 291.
-LaTeX Font Info:    Font shape `T1/aess/m/it' in size <6> not available
-(Font)              Font shape `T1/aess/m/sl' tried instead on input line 291.
- [17
+(Font)              <7> on input line 294.
+LaTeX Font Info:    Font shape `T1/aess/m/it' in size <7> not available
+(Font)              Font shape `T1/aess/m/sl' tried instead on input line 294.
+ [13
+
+] [14
+
+] [15
+
+] (/home/dr3m/travaux/traineeship/presentation/pres.toc)
+[16
+
+] [17
 
 ] [18
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 337.
-LaTeX Font Info:    Font shape `T1/aess/m/it' in size <9> not available
-(Font)              Font shape `T1/aess/m/sl' tried instead on input line 337.
+(Font)              <10.95> on input line 356.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 356.
+LaTeX Font Info:    Font shape `T1/aess/m/it' in size <10.95> not available
+(Font)              Font shape `T1/aess/m/sl' tried instead on input line 356.
+LaTeX Font Info:    Font shape `T1/aess/m/it' in size <8> not available
+(Font)              Font shape `T1/aess/m/sl' tried instead on input line 356.
  [19
 
 ] [20
 
-] [21
+]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 402.
+LaTeX Font Info:    Font shape `T1/aess/m/it' in size <9> not available
+(Font)              Font shape `T1/aess/m/sl' tried instead on input line 402.
+ [21
 
-] (/home/dr3m/travaux/traineeship/presentation/pres.toc) [22
+] [22
 
 ] [23
 
-] [24
+] (/home/dr3m/travaux/traineeship/presentation/pres.toc) [24
 
 ] [25
 
-]
-[26
+] [26
 
 ] [27
 
@@ -1308,6 +1311,10 @@ LaTeX Font Info:    Font shape `T1/aess/m/it' in size <9> not available
 
 ] [35
 
+] [36
+
+] [37
+
 ]
 \tf@nav=\write6
 \openout6 = `pres.nav'.
@@ -1318,32 +1325,32 @@ LaTeX Font Info:    Font shape `T1/aess/m/it' in size <9> not available
 \tf@snm=\write8
 \openout8 = `pres.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 579.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 579.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 644.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 644.
  (/home/dr3m/travaux/traineeship/presentation/pres.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 579.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 579.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 644.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 644.
 Package rerunfilecheck Info: File `pres.out' has not changed.
-(rerunfilecheck)             Checksum: A6A98CFC9CF904E8831FA176CFF64240;220.
+(rerunfilecheck)             Checksum: 906405A2035841EE86EA1B43D90AB15D;280.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 21151 strings out of 493013
- 383431 string characters out of 6135682
- 488770 words of memory out of 5000000
- 24023 multiletter control sequences out of 15000+600000
- 53533 words of font info for 122 fonts, out of 8000000 for 9000
+ 21176 strings out of 493013
+ 383829 string characters out of 6135682
+ 496096 words of memory out of 5000000
+ 24034 multiletter control sequences out of 15000+600000
+ 54381 words of font info for 125 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,19n,64p,770b,783s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi5.pfb></usr/share/texmf/fonts/type1/publi
-c/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi9.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy9.pfb>
-Output written on /home/dr3m/travaux/traineeship/presentation/pres.pdf (35 pages, 270790 bytes).
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/t
+exmf/fonts/type1/public/lm/lmmi5.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi9.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy9.pfb>
+Output written on /home/dr3m/travaux/traineeship/presentation/pres.pdf (37 pages, 294064 bytes).
 PDF statistics:
- 2309 PDF objects out of 2487 (max. 8388607)
- 2185 compressed objects within 22 object streams
- 82 named destinations out of 1000 (max. 500000)
- 101 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2527 PDF objects out of 2984 (max. 8388607)
+ 2396 compressed objects within 24 object streams
+ 88 named destinations out of 1000 (max. 500000)
+ 109 words of extra memory for PDF output out of 10000 (max. 10000000)
 
