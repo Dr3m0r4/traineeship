@@ -1,0 +1,9 @@
+#!/bin/bash
+
+./exec training $1
+
+for i in 1 2
+do
+	./exec inference $i
+	./exec evaluation $i
+done
