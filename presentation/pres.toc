@@ -1,5 +1,5 @@
 \select@language {french}
 \beamer@sectionintoc {3}{Mise en place de Niftynet}{7}{0}{1}
-\beamer@sectionintoc {4}{Travaux pr\IeC {\'e}c\IeC {\'e}dents et D\IeC {\'e}roulement du Projet}{9}{0}{2}
-\beamer@sectionintoc {5}{Pr\IeC {\'e}sentation des m\IeC {\'e}thodes \IeC {\`a} impl\IeC {\'e}menter}{16}{0}{3}
-\beamer@sectionintoc {6}{R\IeC {\'e}sultats}{24}{0}{4}
+\beamer@sectionintoc {4}{Travaux pr\IeC {\'e}c\IeC {\'e}dents et D\IeC {\'e}roulement du Projet}{10}{0}{2}
+\beamer@sectionintoc {5}{Pr\IeC {\'e}sentation des m\IeC {\'e}thodes \IeC {\`a} impl\IeC {\'e}menter}{17}{0}{3}
+\beamer@sectionintoc {6}{R\IeC {\'e}sultats}{25}{0}{4}
