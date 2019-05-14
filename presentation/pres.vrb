@@ -46,6 +46,8 @@
         max_iter=20000
         max_checkpoints=1000
 
+        -> validation
+
         [INFERENCE]
 
         [EVALUATION]

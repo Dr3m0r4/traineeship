@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2019.4.25)  14 MAY 2019 15:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2019.4.25)  14 MAY 2019 17:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -994,21 +994,21 @@ Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
 ) (/usr/share/texlive/texmf-dist/tex/latex/beamer/themes/theme/beamerthemeIlmenau.sty (/usr/share/texlive/texmf-dist/tex/latex/beamer/themes/outer/beamerouterthememiniframes.sty) (/usr/share/texlive/texmf-dist/tex/latex/beamer/themes/color/beamercolorthemewhale.sty) (/usr/share/texlive/texmf-dist/tex/latex/beamer/themes/color/beamercolorthemeorchid.sty) (/usr/share/texlive/texmf-dist/tex/latex/beamer/themes/inner/beamerinnerthemerounded.sty)) (/home/dr3m/travaux/traineeship/presentation/pres.aux)
 \openout1 = `pres.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Try loading font information for T1+aess on input line 56.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Try loading font information for T1+aess on input line 59.
  (/usr/share/texlive/texmf-dist/tex/latex/ae/t1aess.fd
 File: t1aess.fd 1997/11/16 Font definitions for T1/aess.
 )
@@ -1072,7 +1072,7 @@ Package grfext Info: Graphics extension search list:
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 )) ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box61
-Package hyperref Info: Link coloring OFF on input line 56.
+Package hyperref Info: Link coloring OFF on input line 59.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -1080,59 +1080,59 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count179
 )
-LaTeX Info: Redefining \ref on input line 56.
-LaTeX Info: Redefining \pageref on input line 56.
-LaTeX Info: Redefining \nameref on input line 56.
+LaTeX Info: Redefining \ref on input line 59.
+LaTeX Info: Redefining \pageref on input line 59.
+LaTeX Info: Redefining \nameref on input line 59.
  (/home/dr3m/travaux/traineeship/presentation/pres.out) (/home/dr3m/travaux/traineeship/presentation/pres.out)
 \@outlinefile=\write5
 \openout5 = `pres.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/lmr/m/n --> OT1/cmss/m/n on input line 56.
+(Font)                  OT1/lmr/m/n --> OT1/cmss/m/n on input line 59.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/lmr/bx/n --> OT1/cmss/bx/n on input line 56.
+(Font)                  OT1/lmr/bx/n --> OT1/cmss/bx/n on input line 59.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/aess/m/n on input line 56.
+(Font)                  OT1/cmss/m/n --> OT1/aess/m/n on input line 59.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/aess/bx/n on input line 56.
+(Font)                  OT1/cmss/bx/n --> OT1/aess/bx/n on input line 59.
 \symnumbers=\mathgroup8
 \sympureletters=\mathgroup9
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/aess/m/n --> T1/aer/m/n on input line 56.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 56.
+(Font)                  OT1/aess/m/n --> T1/aer/m/n on input line 59.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 59.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/lmr/bx/n --> T1/aess/bx/n on input line 56.
+(Font)                  OT1/lmr/bx/n --> T1/aess/bx/n on input line 59.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/lmr/bx/n --> T1/aess/bx/n on input line 56.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 56.
+(Font)                  OT1/lmr/bx/n --> T1/aess/bx/n on input line 59.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 59.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/lmss/m/n --> T1/aess/m/n on input line 56.
+(Font)                  OT1/lmss/m/n --> T1/aess/m/n on input line 59.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/lmss/bx/n --> T1/aess/m/n on input line 56.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 56.
+(Font)                  OT1/lmss/bx/n --> T1/aess/m/n on input line 59.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 59.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/lmr/m/it --> T1/aess/m/it on input line 56.
+(Font)                  OT1/lmr/m/it --> T1/aess/m/it on input line 59.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/lmr/bx/it --> T1/aess/m/it on input line 56.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 56.
+(Font)                  OT1/lmr/bx/it --> T1/aess/m/it on input line 59.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 59.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/lmtt/m/n --> T1/aett/m/n on input line 56.
+(Font)                  OT1/lmtt/m/n --> T1/aett/m/n on input line 59.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/lmtt/m/n --> T1/aett/m/n on input line 56.
+(Font)                  OT1/lmtt/m/n --> T1/aett/m/n on input line 59.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  T1/aess/m/n --> T1/aess/bx/n on input line 56.
+(Font)                  T1/aess/m/n --> T1/aess/bx/n on input line 59.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/aess/m/it --> T1/aess/bx/it on input line 56.
+(Font)                  T1/aess/m/it --> T1/aess/bx/it on input line 59.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/aess/bx/n --> T1/aer/bx/n on input line 56.
+(Font)                  OT1/aess/bx/n --> T1/aer/bx/n on input line 59.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  T1/aess/bx/n --> T1/aess/bx/n on input line 56.
+(Font)                  T1/aess/bx/n --> T1/aess/bx/n on input line 59.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T1/aess/m/n --> T1/aess/bx/n on input line 56.
+(Font)                  T1/aess/m/n --> T1/aess/bx/n on input line 59.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T1/aess/m/it --> T1/aess/bx/it on input line 56.
+(Font)                  T1/aess/m/it --> T1/aess/bx/it on input line 59.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T1/aett/m/n --> T1/aett/bx/n on input line 56.
+(Font)                  T1/aett/m/n --> T1/aett/bx/n on input line 59.
  (/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/dicts/translator-basic-dictionary/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
 ) (/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/dicts/translator-bibliography-dictionary/translator-bibliography-dictionary-English.dict
@@ -1147,28 +1147,28 @@ Dictionary: translator-numbers-dictionary, Language: English
 ) (/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/dicts/translator-theorem-dictionary/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \includegraphics on input line 56.
-LaTeX Info: Redefining \degres on input line 56.
-LaTeX Info: Redefining \dots on input line 56.
-LaTeX Info: Redefining \up on input line 56.
+LaTeX Info: Redefining \includegraphics on input line 59.
+LaTeX Info: Redefining \degres on input line 59.
+LaTeX Info: Redefining \dots on input line 59.
+LaTeX Info: Redefining \up on input line 59.
 \c@lstlisting=\count180
  (/home/dr3m/travaux/traineeship/presentation/pres.nav) <annex/logo_UCA.png, id=37, 276.03125pt x 268.00125pt>
 File: annex/logo_UCA.png Graphic file (type png)
  <use annex/logo_UCA.png>
-Package pdftex.def Info: annex/logo_UCA.png used on input line 65.
+Package pdftex.def Info: annex/logo_UCA.png used on input line 68.
 (pdftex.def)             Requested size: 61.45703pt x 59.66791pt.
  <annex/isima.jpeg, id=39, 276.03125pt x 183.68625pt>
 File: annex/isima.jpeg Graphic file (type jpg)
  <use annex/isima.jpeg>
-Package pdftex.def Info: annex/isima.jpeg used on input line 65.
+Package pdftex.def Info: annex/isima.jpeg used on input line 68.
 (pdftex.def)             Requested size: 122.91406pt x 81.79475pt.
 
 
 LaTeX Font Warning: Font shape `T1/aess/m/sc' undefined
-(Font)              using `T1/aess/m/n' instead on input line 65.
+(Font)              using `T1/aess/m/n' instead on input line 68.
 
 
-Overfull \vbox (1.7818pt too high) detected at line 65
+Overfull \vbox (1.7818pt too high) detected at line 68
  []
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
@@ -1242,7 +1242,7 @@ Package epstopdf Info: Source file: <annex/entrainement.eps>
 (epstopdf)                    date: 2019-05-14 13:17:54
 (epstopdf)                    size: 293984 bytes
 (epstopdf)             Command: <repstopdf --outfile=annex/entrainement-eps-converted-to.pdf annex/entrainement.eps>
-(epstopdf)             \includegraphics on input line 252.
+(epstopdf)             \includegraphics on input line 257.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -1250,10 +1250,10 @@ pdfTeX warning: pdflatex (file /home/dr3m/travaux/traineeship/presentation/annex
 <annex/entrainement-eps-converted-to.pdf, id=450, 1030.85126pt x 793.96625pt>
 File: annex/entrainement-eps-converted-to.pdf Graphic file (type pdf)
  <use annex/entrainement-eps-converted-to.pdf>
-Package pdftex.def Info: annex/entrainement-eps-converted-to.pdf used on input line 252.
+Package pdftex.def Info: annex/entrainement-eps-converted-to.pdf used on input line 257.
 (pdftex.def)             Requested size: 206.1666pt x 158.79044pt.
 
-Overfull \vbox (1.8655pt too high) detected at line 252
+Overfull \vbox (1.8655pt too high) detected at line 257
  []
 
 [10
@@ -1266,7 +1266,7 @@ Package epstopdf Info: Source file: <annex/loss_not_smoothed.eps>
 (epstopdf)                    date: 2019-05-14 14:00:19
 (epstopdf)                    size: 482308 bytes
 (epstopdf)             Command: <repstopdf --outfile=annex/loss_not_smoothed-eps-converted-to.pdf annex/loss_not_smoothed.eps>
-(epstopdf)             \includegraphics on input line 284.
+(epstopdf)             \includegraphics on input line 301.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -1274,13 +1274,8 @@ pdfTeX warning: pdflatex (file /home/dr3m/travaux/traineeship/presentation/annex
 <annex/loss_not_smoothed-eps-converted-to.pdf, id=497, 3019.28pt x 472.76625pt>
 File: annex/loss_not_smoothed-eps-converted-to.pdf Graphic file (type pdf)
  <use annex/loss_not_smoothed-eps-converted-to.pdf>
-Package pdftex.def Info: annex/loss_not_smoothed-eps-converted-to.pdf used on input line 284.
-(pdftex.def)             Requested size: 603.8453pt x 94.55157pt.
-
-Overfull \hbox (296.55544pt too wide) in paragraph at lines 284--284
- [] 
- []
-
+Package pdftex.def Info: annex/loss_not_smoothed-eps-converted-to.pdf used on input line 301.
+(pdftex.def)             Requested size: 284.48499pt x 142.2638pt.
 Package epstopdf Info: Source file: <annex/loss_smoothed_09.eps>
 (epstopdf)                    date: 2019-05-13 18:33:42
 (epstopdf)                    size: 1445729 bytes
@@ -1288,7 +1283,7 @@ Package epstopdf Info: Source file: <annex/loss_smoothed_09.eps>
 (epstopdf)                    date: 2019-05-14 14:00:21
 (epstopdf)                    size: 239849 bytes
 (epstopdf)             Command: <repstopdf --outfile=annex/loss_smoothed_09-eps-converted-to.pdf annex/loss_smoothed_09.eps>
-(epstopdf)             \includegraphics on input line 284.
+(epstopdf)             \includegraphics on input line 301.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -1296,13 +1291,8 @@ pdfTeX warning: pdflatex (file /home/dr3m/travaux/traineeship/presentation/annex
 <annex/loss_smoothed_09-eps-converted-to.pdf, id=498, 2139.995pt x 383.4325pt>
 File: annex/loss_smoothed_09-eps-converted-to.pdf Graphic file (type pdf)
  <use annex/loss_smoothed_09-eps-converted-to.pdf>
-Package pdftex.def Info: annex/loss_smoothed_09-eps-converted-to.pdf used on input line 284.
-(pdftex.def)             Requested size: 513.6093pt x 92.02568pt.
-
-Overfull \hbox (206.31943pt too wide) in paragraph at lines 284--284
- [] 
- []
-
+Package pdftex.def Info: annex/loss_smoothed_09-eps-converted-to.pdf used on input line 301.
+(pdftex.def)             Requested size: 284.51128pt x 142.26564pt.
 Package epstopdf Info: Source file: <annex/loss_smoothed_099.eps>
 (epstopdf)                    date: 2019-05-13 18:33:42
 (epstopdf)                    size: 2268011 bytes
@@ -1310,7 +1300,7 @@ Package epstopdf Info: Source file: <annex/loss_smoothed_099.eps>
 (epstopdf)                    date: 2019-05-14 14:00:22
 (epstopdf)                    size: 433831 bytes
 (epstopdf)             Command: <repstopdf --outfile=annex/loss_smoothed_099-eps-converted-to.pdf annex/loss_smoothed_099.eps>
-(epstopdf)             \includegraphics on input line 284.
+(epstopdf)             \includegraphics on input line 301.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -1318,13 +1308,8 @@ pdfTeX warning: pdflatex (file /home/dr3m/travaux/traineeship/presentation/annex
 <annex/loss_smoothed_099-eps-converted-to.pdf, id=499, 2999.205pt x 460.72125pt>
 File: annex/loss_smoothed_099-eps-converted-to.pdf Graphic file (type pdf)
  <use annex/loss_smoothed_099-eps-converted-to.pdf>
-Package pdftex.def Info: annex/loss_smoothed_099-eps-converted-to.pdf used on input line 284.
-(pdftex.def)             Requested size: 599.83038pt x 92.14261pt.
-
-Overfull \hbox (292.54051pt too wide) in paragraph at lines 284--284
- [] 
- []
-
+Package pdftex.def Info: annex/loss_smoothed_099-eps-converted-to.pdf used on input line 301.
+(pdftex.def)             Requested size: 284.51556pt x 142.2597pt.
 Package epstopdf Info: Source file: <annex/loss_smoothed_0999.eps>
 (epstopdf)                    date: 2019-05-13 18:33:42
 (epstopdf)                    size: 2188072 bytes
@@ -1332,7 +1317,7 @@ Package epstopdf Info: Source file: <annex/loss_smoothed_0999.eps>
 (epstopdf)                    date: 2019-05-14 14:00:24
 (epstopdf)                    size: 378983 bytes
 (epstopdf)             Command: <repstopdf --outfile=annex/loss_smoothed_0999-eps-converted-to.pdf annex/loss_smoothed_0999.eps>
-(epstopdf)             \includegraphics on input line 284.
+(epstopdf)             \includegraphics on input line 301.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -1340,11 +1325,10 @@ pdfTeX warning: pdflatex (file /home/dr3m/travaux/traineeship/presentation/annex
 <annex/loss_smoothed_0999-eps-converted-to.pdf, id=500, 3019.28pt x 464.73625pt>
 File: annex/loss_smoothed_0999-eps-converted-to.pdf Graphic file (type pdf)
  <use annex/loss_smoothed_0999-eps-converted-to.pdf>
-Package pdftex.def Info: annex/loss_smoothed_0999-eps-converted-to.pdf used on input line 284.
-(pdftex.def)             Requested size: 603.8453pt x 92.9456pt.
+Package pdftex.def Info: annex/loss_smoothed_0999-eps-converted-to.pdf used on input line 301.
+(pdftex.def)             Requested size: 284.48499pt x 142.25845pt.
 
-Overfull \hbox (296.55544pt too wide) in paragraph at lines 284--284
- [] 
+Overfull \vbox (3.70203pt too high) detected at line 301
  []
 
 [11
@@ -1357,17 +1341,12 @@ Package epstopdf Info: Source file: <annex/loss_not_smoothed.eps>
 (epstopdf)                    date: 2019-05-14 14:00:19
 (epstopdf)                    size: 482308 bytes
 (epstopdf)             Command: <repstopdf --outfile=annex/loss_not_smoothed-eps-converted-to.pdf annex/loss_not_smoothed.eps>
-(epstopdf)             \includegraphics on input line 284.
+(epstopdf)             \includegraphics on input line 301.
 Package epstopdf Info: Output file is already uptodate.
 File: annex/loss_not_smoothed-eps-converted-to.pdf Graphic file (type pdf)
  <use annex/loss_not_smoothed-eps-converted-to.pdf>
-Package pdftex.def Info: annex/loss_not_smoothed-eps-converted-to.pdf used on input line 284.
-(pdftex.def)             Requested size: 603.8453pt x 94.55157pt.
-
-Overfull \hbox (296.55544pt too wide) in paragraph at lines 284--284
- [] 
- []
-
+Package pdftex.def Info: annex/loss_not_smoothed-eps-converted-to.pdf used on input line 301.
+(pdftex.def)             Requested size: 284.48499pt x 142.2638pt.
 Package epstopdf Info: Source file: <annex/loss_smoothed_09.eps>
 (epstopdf)                    date: 2019-05-13 18:33:42
 (epstopdf)                    size: 1445729 bytes
@@ -1375,17 +1354,12 @@ Package epstopdf Info: Source file: <annex/loss_smoothed_09.eps>
 (epstopdf)                    date: 2019-05-14 14:00:21
 (epstopdf)                    size: 239849 bytes
 (epstopdf)             Command: <repstopdf --outfile=annex/loss_smoothed_09-eps-converted-to.pdf annex/loss_smoothed_09.eps>
-(epstopdf)             \includegraphics on input line 284.
+(epstopdf)             \includegraphics on input line 301.
 Package epstopdf Info: Output file is already uptodate.
 File: annex/loss_smoothed_09-eps-converted-to.pdf Graphic file (type pdf)
-<use annex/loss_smoothed_09-eps-converted-to.pdf>
-Package pdftex.def Info: annex/loss_smoothed_09-eps-converted-to.pdf used on input line 284.
-(pdftex.def)             Requested size: 513.6093pt x 92.02568pt.
-
-Overfull \hbox (206.31943pt too wide) in paragraph at lines 284--284
- [] 
- []
-
+ <use annex/loss_smoothed_09-eps-converted-to.pdf>
+Package pdftex.def Info: annex/loss_smoothed_09-eps-converted-to.pdf used on input line 301.
+(pdftex.def)             Requested size: 284.51128pt x 142.26564pt.
 Package epstopdf Info: Source file: <annex/loss_smoothed_099.eps>
 (epstopdf)                    date: 2019-05-13 18:33:42
 (epstopdf)                    size: 2268011 bytes
@@ -1393,17 +1367,12 @@ Package epstopdf Info: Source file: <annex/loss_smoothed_099.eps>
 (epstopdf)                    date: 2019-05-14 14:00:22
 (epstopdf)                    size: 433831 bytes
 (epstopdf)             Command: <repstopdf --outfile=annex/loss_smoothed_099-eps-converted-to.pdf annex/loss_smoothed_099.eps>
-(epstopdf)             \includegraphics on input line 284.
+(epstopdf)             \includegraphics on input line 301.
 Package epstopdf Info: Output file is already uptodate.
 File: annex/loss_smoothed_099-eps-converted-to.pdf Graphic file (type pdf)
-<use annex/loss_smoothed_099-eps-converted-to.pdf>
-Package pdftex.def Info: annex/loss_smoothed_099-eps-converted-to.pdf used on input line 284.
-(pdftex.def)             Requested size: 599.83038pt x 92.14261pt.
-
-Overfull \hbox (292.54051pt too wide) in paragraph at lines 284--284
- [] 
- []
-
+ <use annex/loss_smoothed_099-eps-converted-to.pdf>
+Package pdftex.def Info: annex/loss_smoothed_099-eps-converted-to.pdf used on input line 301.
+(pdftex.def)             Requested size: 284.51556pt x 142.2597pt.
 Package epstopdf Info: Source file: <annex/loss_smoothed_0999.eps>
 (epstopdf)                    date: 2019-05-13 18:33:42
 (epstopdf)                    size: 2188072 bytes
@@ -1411,15 +1380,14 @@ Package epstopdf Info: Source file: <annex/loss_smoothed_0999.eps>
 (epstopdf)                    date: 2019-05-14 14:00:24
 (epstopdf)                    size: 378983 bytes
 (epstopdf)             Command: <repstopdf --outfile=annex/loss_smoothed_0999-eps-converted-to.pdf annex/loss_smoothed_0999.eps>
-(epstopdf)             \includegraphics on input line 284.
+(epstopdf)             \includegraphics on input line 301.
 Package epstopdf Info: Output file is already uptodate.
 File: annex/loss_smoothed_0999-eps-converted-to.pdf Graphic file (type pdf)
-<use annex/loss_smoothed_0999-eps-converted-to.pdf>
-Package pdftex.def Info: annex/loss_smoothed_0999-eps-converted-to.pdf used on input line 284.
-(pdftex.def)             Requested size: 603.8453pt x 92.9456pt.
+ <use annex/loss_smoothed_0999-eps-converted-to.pdf>
+Package pdftex.def Info: annex/loss_smoothed_0999-eps-converted-to.pdf used on input line 301.
+(pdftex.def)             Requested size: 284.48499pt x 142.25845pt.
 
-Overfull \hbox (296.55544pt too wide) in paragraph at lines 284--284
- [] 
+Overfull \vbox (3.70387pt too high) detected at line 301
  []
 
 [12
@@ -1432,17 +1400,12 @@ Package epstopdf Info: Source file: <annex/loss_not_smoothed.eps>
 (epstopdf)                    date: 2019-05-14 14:00:19
 (epstopdf)                    size: 482308 bytes
 (epstopdf)             Command: <repstopdf --outfile=annex/loss_not_smoothed-eps-converted-to.pdf annex/loss_not_smoothed.eps>
-(epstopdf)             \includegraphics on input line 284.
+(epstopdf)             \includegraphics on input line 301.
 Package epstopdf Info: Output file is already uptodate.
 File: annex/loss_not_smoothed-eps-converted-to.pdf Graphic file (type pdf)
  <use annex/loss_not_smoothed-eps-converted-to.pdf>
-Package pdftex.def Info: annex/loss_not_smoothed-eps-converted-to.pdf used on input line 284.
-(pdftex.def)             Requested size: 603.8453pt x 94.55157pt.
-
-Overfull \hbox (296.55544pt too wide) in paragraph at lines 284--284
- [] 
- []
-
+Package pdftex.def Info: annex/loss_not_smoothed-eps-converted-to.pdf used on input line 301.
+(pdftex.def)             Requested size: 284.48499pt x 142.2638pt.
 Package epstopdf Info: Source file: <annex/loss_smoothed_09.eps>
 (epstopdf)                    date: 2019-05-13 18:33:42
 (epstopdf)                    size: 1445729 bytes
@@ -1450,17 +1413,12 @@ Package epstopdf Info: Source file: <annex/loss_smoothed_09.eps>
 (epstopdf)                    date: 2019-05-14 14:00:21
 (epstopdf)                    size: 239849 bytes
 (epstopdf)             Command: <repstopdf --outfile=annex/loss_smoothed_09-eps-converted-to.pdf annex/loss_smoothed_09.eps>
-(epstopdf)             \includegraphics on input line 284.
+(epstopdf)             \includegraphics on input line 301.
 Package epstopdf Info: Output file is already uptodate.
 File: annex/loss_smoothed_09-eps-converted-to.pdf Graphic file (type pdf)
-<use annex/loss_smoothed_09-eps-converted-to.pdf>
-Package pdftex.def Info: annex/loss_smoothed_09-eps-converted-to.pdf used on input line 284.
-(pdftex.def)             Requested size: 513.6093pt x 92.02568pt.
-
-Overfull \hbox (206.31943pt too wide) in paragraph at lines 284--284
- [] 
- []
-
+ <use annex/loss_smoothed_09-eps-converted-to.pdf>
+Package pdftex.def Info: annex/loss_smoothed_09-eps-converted-to.pdf used on input line 301.
+(pdftex.def)             Requested size: 284.51128pt x 142.26564pt.
 Package epstopdf Info: Source file: <annex/loss_smoothed_099.eps>
 (epstopdf)                    date: 2019-05-13 18:33:42
 (epstopdf)                    size: 2268011 bytes
@@ -1468,17 +1426,12 @@ Package epstopdf Info: Source file: <annex/loss_smoothed_099.eps>
 (epstopdf)                    date: 2019-05-14 14:00:22
 (epstopdf)                    size: 433831 bytes
 (epstopdf)             Command: <repstopdf --outfile=annex/loss_smoothed_099-eps-converted-to.pdf annex/loss_smoothed_099.eps>
-(epstopdf)             \includegraphics on input line 284.
+(epstopdf)             \includegraphics on input line 301.
 Package epstopdf Info: Output file is already uptodate.
 File: annex/loss_smoothed_099-eps-converted-to.pdf Graphic file (type pdf)
-<use annex/loss_smoothed_099-eps-converted-to.pdf>
-Package pdftex.def Info: annex/loss_smoothed_099-eps-converted-to.pdf used on input line 284.
-(pdftex.def)             Requested size: 599.83038pt x 92.14261pt.
-
-Overfull \hbox (292.54051pt too wide) in paragraph at lines 284--284
- [] 
- []
-
+ <use annex/loss_smoothed_099-eps-converted-to.pdf>
+Package pdftex.def Info: annex/loss_smoothed_099-eps-converted-to.pdf used on input line 301.
+(pdftex.def)             Requested size: 284.51556pt x 142.2597pt.
 Package epstopdf Info: Source file: <annex/loss_smoothed_0999.eps>
 (epstopdf)                    date: 2019-05-13 18:33:42
 (epstopdf)                    size: 2188072 bytes
@@ -1486,15 +1439,14 @@ Package epstopdf Info: Source file: <annex/loss_smoothed_0999.eps>
 (epstopdf)                    date: 2019-05-14 14:00:24
 (epstopdf)                    size: 378983 bytes
 (epstopdf)             Command: <repstopdf --outfile=annex/loss_smoothed_0999-eps-converted-to.pdf annex/loss_smoothed_0999.eps>
-(epstopdf)             \includegraphics on input line 284.
+(epstopdf)             \includegraphics on input line 301.
 Package epstopdf Info: Output file is already uptodate.
 File: annex/loss_smoothed_0999-eps-converted-to.pdf Graphic file (type pdf)
-<use annex/loss_smoothed_0999-eps-converted-to.pdf>
-Package pdftex.def Info: annex/loss_smoothed_0999-eps-converted-to.pdf used on input line 284.
-(pdftex.def)             Requested size: 603.8453pt x 92.9456pt.
+ <use annex/loss_smoothed_0999-eps-converted-to.pdf>
+Package pdftex.def Info: annex/loss_smoothed_0999-eps-converted-to.pdf used on input line 301.
+(pdftex.def)             Requested size: 284.48499pt x 142.25845pt.
 
-Overfull \hbox (296.55544pt too wide) in paragraph at lines 284--284
- [] 
+Overfull \vbox (3.69794pt too high) detected at line 301
  []
 
 [13
@@ -1507,17 +1459,12 @@ Package epstopdf Info: Source file: <annex/loss_not_smoothed.eps>
 (epstopdf)                    date: 2019-05-14 14:00:19
 (epstopdf)                    size: 482308 bytes
 (epstopdf)             Command: <repstopdf --outfile=annex/loss_not_smoothed-eps-converted-to.pdf annex/loss_not_smoothed.eps>
-(epstopdf)             \includegraphics on input line 284.
+(epstopdf)             \includegraphics on input line 301.
 Package epstopdf Info: Output file is already uptodate.
 File: annex/loss_not_smoothed-eps-converted-to.pdf Graphic file (type pdf)
  <use annex/loss_not_smoothed-eps-converted-to.pdf>
-Package pdftex.def Info: annex/loss_not_smoothed-eps-converted-to.pdf used on input line 284.
-(pdftex.def)             Requested size: 603.8453pt x 94.55157pt.
-
-Overfull \hbox (296.55544pt too wide) in paragraph at lines 284--284
- [] 
- []
-
+Package pdftex.def Info: annex/loss_not_smoothed-eps-converted-to.pdf used on input line 301.
+(pdftex.def)             Requested size: 284.48499pt x 142.2638pt.
 Package epstopdf Info: Source file: <annex/loss_smoothed_09.eps>
 (epstopdf)                    date: 2019-05-13 18:33:42
 (epstopdf)                    size: 1445729 bytes
@@ -1525,17 +1472,12 @@ Package epstopdf Info: Source file: <annex/loss_smoothed_09.eps>
 (epstopdf)                    date: 2019-05-14 14:00:21
 (epstopdf)                    size: 239849 bytes
 (epstopdf)             Command: <repstopdf --outfile=annex/loss_smoothed_09-eps-converted-to.pdf annex/loss_smoothed_09.eps>
-(epstopdf)             \includegraphics on input line 284.
+(epstopdf)             \includegraphics on input line 301.
 Package epstopdf Info: Output file is already uptodate.
 File: annex/loss_smoothed_09-eps-converted-to.pdf Graphic file (type pdf)
-<use annex/loss_smoothed_09-eps-converted-to.pdf>
-Package pdftex.def Info: annex/loss_smoothed_09-eps-converted-to.pdf used on input line 284.
-(pdftex.def)             Requested size: 513.6093pt x 92.02568pt.
-
-Overfull \hbox (206.31943pt too wide) in paragraph at lines 284--284
- [] 
- []
-
+ <use annex/loss_smoothed_09-eps-converted-to.pdf>
+Package pdftex.def Info: annex/loss_smoothed_09-eps-converted-to.pdf used on input line 301.
+(pdftex.def)             Requested size: 284.51128pt x 142.26564pt.
 Package epstopdf Info: Source file: <annex/loss_smoothed_099.eps>
 (epstopdf)                    date: 2019-05-13 18:33:42
 (epstopdf)                    size: 2268011 bytes
@@ -1543,17 +1485,12 @@ Package epstopdf Info: Source file: <annex/loss_smoothed_099.eps>
 (epstopdf)                    date: 2019-05-14 14:00:22
 (epstopdf)                    size: 433831 bytes
 (epstopdf)             Command: <repstopdf --outfile=annex/loss_smoothed_099-eps-converted-to.pdf annex/loss_smoothed_099.eps>
-(epstopdf)             \includegraphics on input line 284.
+(epstopdf)             \includegraphics on input line 301.
 Package epstopdf Info: Output file is already uptodate.
 File: annex/loss_smoothed_099-eps-converted-to.pdf Graphic file (type pdf)
-<use annex/loss_smoothed_099-eps-converted-to.pdf>
-Package pdftex.def Info: annex/loss_smoothed_099-eps-converted-to.pdf used on input line 284.
-(pdftex.def)             Requested size: 599.83038pt x 92.14261pt.
-
-Overfull \hbox (292.54051pt too wide) in paragraph at lines 284--284
- [] 
- []
-
+ <use annex/loss_smoothed_099-eps-converted-to.pdf>
+Package pdftex.def Info: annex/loss_smoothed_099-eps-converted-to.pdf used on input line 301.
+(pdftex.def)             Requested size: 284.51556pt x 142.2597pt.
 Package epstopdf Info: Source file: <annex/loss_smoothed_0999.eps>
 (epstopdf)                    date: 2019-05-13 18:33:42
 (epstopdf)                    size: 2188072 bytes
@@ -1561,15 +1498,14 @@ Package epstopdf Info: Source file: <annex/loss_smoothed_0999.eps>
 (epstopdf)                    date: 2019-05-14 14:00:24
 (epstopdf)                    size: 378983 bytes
 (epstopdf)             Command: <repstopdf --outfile=annex/loss_smoothed_0999-eps-converted-to.pdf annex/loss_smoothed_0999.eps>
-(epstopdf)             \includegraphics on input line 284.
+(epstopdf)             \includegraphics on input line 301.
 Package epstopdf Info: Output file is already uptodate.
 File: annex/loss_smoothed_0999-eps-converted-to.pdf Graphic file (type pdf)
-<use annex/loss_smoothed_0999-eps-converted-to.pdf>
-Package pdftex.def Info: annex/loss_smoothed_0999-eps-converted-to.pdf used on input line 284.
-(pdftex.def)             Requested size: 603.8453pt x 92.9456pt.
+ <use annex/loss_smoothed_0999-eps-converted-to.pdf>
+Package pdftex.def Info: annex/loss_smoothed_0999-eps-converted-to.pdf used on input line 301.
+(pdftex.def)             Requested size: 284.48499pt x 142.25845pt.
 
-Overfull \hbox (296.55544pt too wide) in paragraph at lines 284--284
- [] 
+Overfull \vbox (3.69669pt too high) detected at line 301
  []
 
 [14
@@ -1582,7 +1518,7 @@ Package epstopdf Info: Source file: <annex/segmentation.eps>
 (epstopdf)                    date: 2019-05-14 14:51:56
 (epstopdf)                    size: 78216 bytes
 (epstopdf)             Command: <repstopdf --outfile=annex/segmentation-eps-converted-to.pdf annex/segmentation.eps>
-(epstopdf)             \includegraphics on input line 293.
+(epstopdf)             \includegraphics on input line 310.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -1590,13 +1526,67 @@ pdfTeX warning: pdflatex (file /home/dr3m/travaux/traineeship/presentation/annex
 <annex/segmentation-eps-converted-to.pdf, id=684, 548.0475pt x 475.7775pt>
 File: annex/segmentation-eps-converted-to.pdf Graphic file (type pdf)
  <use annex/segmentation-eps-converted-to.pdf>
-Package pdftex.def Info: annex/segmentation-eps-converted-to.pdf used on input line 293.
+Package pdftex.def Info: annex/segmentation-eps-converted-to.pdf used on input line 310.
 (pdftex.def)             Requested size: 164.41551pt x 142.73434pt.
  [15
 
  </home/dr3m/travaux/traineeship/presentation/annex/segmentation-eps-converted-to.pdf>] (/home/dr3m/travaux/traineeship/presentation/pres.toc) [16
 
-] [17
+]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 345.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 345.
+LaTeX Font Info:    Font shape `T1/aess/m/it' in size <10> not available
+(Font)              Font shape `T1/aess/m/sl' tried instead on input line 345.
+LaTeX Font Info:    Font shape `T1/aess/m/it' in size <7> not available
+(Font)              Font shape `T1/aess/m/sl' tried instead on input line 345.
+Package epstopdf Info: Source file: <annex/loss_smoothed_099.eps>
+(epstopdf)                    date: 2019-05-13 18:33:42
+(epstopdf)                    size: 2268011 bytes
+(epstopdf)             Output file: <annex/loss_smoothed_099-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-05-14 14:00:22
+(epstopdf)                    size: 433831 bytes
+(epstopdf)             Command: <repstopdf --outfile=annex/loss_smoothed_099-eps-converted-to.pdf annex/loss_smoothed_099.eps>
+(epstopdf)             \includegraphics on input line 345.
+Package epstopdf Info: Output file is already uptodate.
+File: annex/loss_smoothed_099-eps-converted-to.pdf Graphic file (type pdf)
+ <use annex/loss_smoothed_099-eps-converted-to.pdf>
+Package pdftex.def Info: annex/loss_smoothed_099-eps-converted-to.pdf used on input line 345.
+(pdftex.def)             Requested size: 284.51556pt x 142.2597pt.
+ [17
+
+]
+Package epstopdf Info: Source file: <annex/loss_smoothed_099.eps>
+(epstopdf)                    date: 2019-05-13 18:33:42
+(epstopdf)                    size: 2268011 bytes
+(epstopdf)             Output file: <annex/loss_smoothed_099-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-05-14 14:00:22
+(epstopdf)                    size: 433831 bytes
+(epstopdf)             Command: <repstopdf --outfile=annex/loss_smoothed_099-eps-converted-to.pdf annex/loss_smoothed_099.eps>
+(epstopdf)             \includegraphics on input line 345.
+Package epstopdf Info: Output file is already uptodate.
+File: annex/loss_smoothed_099-eps-converted-to.pdf Graphic file (type pdf)
+ <use annex/loss_smoothed_099-eps-converted-to.pdf>
+Package pdftex.def Info: annex/loss_smoothed_099-eps-converted-to.pdf used on input line 345.
+(pdftex.def)             Requested size: 284.51556pt x 142.2597pt.
+ [18
+
+]
+Package epstopdf Info: Source file: <annex/loss_smoothed_099.eps>
+(epstopdf)                    date: 2019-05-13 18:33:42
+(epstopdf)                    size: 2268011 bytes
+(epstopdf)             Output file: <annex/loss_smoothed_099-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-05-14 14:00:22
+(epstopdf)                    size: 433831 bytes
+(epstopdf)             Command: <repstopdf --outfile=annex/loss_smoothed_099-eps-converted-to.pdf annex/loss_smoothed_099.eps>
+(epstopdf)             \includegraphics on input line 345.
+Package epstopdf Info: Output file is already uptodate.
+File: annex/loss_smoothed_099-eps-converted-to.pdf Graphic file (type pdf)
+ <use annex/loss_smoothed_099-eps-converted-to.pdf>
+Package pdftex.def Info: annex/loss_smoothed_099-eps-converted-to.pdf used on input line 345.
+(pdftex.def)             Requested size: 284.51556pt x 142.2597pt.
+ [19
 
 ]
 Package epstopdf Info: Source file: <annex/lr_modification.eps>
@@ -1606,21 +1596,37 @@ Package epstopdf Info: Source file: <annex/lr_modification.eps>
 (epstopdf)                    date: 2019-05-14 13:35:37
 (epstopdf)                    size: 154772 bytes
 (epstopdf)             Command: <repstopdf --outfile=annex/lr_modification-eps-converted-to.pdf annex/lr_modification.eps>
-(epstopdf)             \includegraphics on input line 313.
+(epstopdf)             \includegraphics on input line 361.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/dr3m/travaux/traineeship/presentation/annex/lr_modification-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<annex/lr_modification-eps-converted-to.pdf, id=815, 1675.25874pt x 907.39pt>
+<annex/lr_modification-eps-converted-to.pdf, id=903, 1675.25874pt x 907.39pt>
 File: annex/lr_modification-eps-converted-to.pdf Graphic file (type pdf)
  <use annex/lr_modification-eps-converted-to.pdf>
-Package pdftex.def Info: annex/lr_modification-eps-converted-to.pdf used on input line 313.
+Package pdftex.def Info: annex/lr_modification-eps-converted-to.pdf used on input line 361.
 (pdftex.def)             Requested size: 284.79022pt x 154.25426pt.
- [18
+ [20
 
- </home/dr3m/travaux/traineeship/presentation/annex/lr_modification-eps-converted-to.pdf>] [19
+ </home/dr3m/travaux/traineeship/presentation/annex/lr_modification-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <annex/lr_modification.eps>
+(epstopdf)                    date: 2019-05-14 13:32:21
+(epstopdf)                    size: 411222 bytes
+(epstopdf)             Output file: <annex/lr_modification-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-05-14 13:35:37
+(epstopdf)                    size: 154772 bytes
+(epstopdf)             Command: <repstopdf --outfile=annex/lr_modification-eps-converted-to.pdf annex/lr_modification.eps>
+(epstopdf)             \includegraphics on input line 361.
+Package epstopdf Info: Output file is already uptodate.
+File: annex/lr_modification-eps-converted-to.pdf Graphic file (type pdf)
+ <use annex/lr_modification-eps-converted-to.pdf>
+Package pdftex.def Info: annex/lr_modification-eps-converted-to.pdf used on input line 361.
+(pdftex.def)             Requested size: 284.79022pt x 154.25426pt.
+ [21
 
-] [20
+] [22
+
+] [23
 
 ]
 \tf@nav=\write6
@@ -1632,11 +1638,11 @@ Package pdftex.def Info: annex/lr_modification-eps-converted-to.pdf used on inpu
 \tf@snm=\write8
 \openout8 = `pres.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 372.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 372.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 388.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 388.
  (/home/dr3m/travaux/traineeship/presentation/pres.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 372.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 372.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 388.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 388.
 Package rerunfilecheck Info: File `pres.out' has not changed.
 (rerunfilecheck)             Checksum: DB42D57265F085CB08083874E5D05D45;121.
 
@@ -1645,18 +1651,18 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 21049 strings out of 493013
- 383443 string characters out of 6135682
- 474079 words of memory out of 5000000
- 23965 multiletter control sequences out of 15000+600000
- 30846 words of font info for 67 fonts, out of 8000000 for 9000
+ 21113 strings out of 493013
+ 384493 string characters out of 6135682
+ 477488 words of memory out of 5000000
+ 24009 multiletter control sequences out of 15000+600000
+ 39166 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,19n,64p,770b,783s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on /home/dr3m/travaux/traineeship/presentation/pres.pdf (20 pages, 2191241 bytes).
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy7.pfb>
+Output written on /home/dr3m/travaux/traineeship/presentation/pres.pdf (23 pages, 2202446 bytes).
 PDF statistics:
- 977 PDF objects out of 1000 (max. 8388607)
- 898 compressed objects within 9 object streams
- 54 named destinations out of 1000 (max. 500000)
+ 1111 PDF objects out of 1200 (max. 8388607)
+ 1026 compressed objects within 11 object streams
+ 60 named destinations out of 1000 (max. 500000)
  128 words of extra memory for PDF output out of 10000 (max. 10000000)
 

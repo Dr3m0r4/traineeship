@@ -24,6 +24,9 @@
 \usepackage{verbatim}
 \usepackage{hyperref}
 
+\newcommand{\rouge}{\textcolor{red}}
+\newcommand{\bleu}{\textcolor{blue}}
+
 \usetheme{Ilmenau}
 \setbeamertemplate{footline}
 {
@@ -178,7 +181,7 @@
 \end{frame}
 %--- Next Frame ---%
 
-\begin{frame}[fragile]{Fichier de Configuration}
+\begin{frame}[t, fragile]{Fichier de Configuration}
   \tiny
   \begin{columns}
     \begin{column}{0.01\textwidth}
@@ -226,6 +229,8 @@
         max_iter=20000
         max_checkpoints=1000
 
+        -> validation
+
         [INFERENCE]
 
         [EVALUATION]
@@ -253,30 +258,42 @@
 %--- Next Frame ---%
 
 \begin{frame}[t]{Loss Function}
+  \begin{columns}
+  \begin{column}[T]{0.01\textwidth}
+  \end{column}
+  \hfill
+  \begin{column}[T]{0.5\textwidth}
+    \rouge{-- training}
+  \end{column}
+  \begin{column}[T]{0.5\textwidth}
+    \textcolor{cyan}{-- validation}
+  \end{column}
+  \end{columns}
+
   \begin{onlyenv}<1>
     \begin{figure}
-      \includegraphics[scale=0.2]{annex/loss_not_smoothed}
+      \includegraphics[width=10cm, height=5cm]{annex/loss_not_smoothed}
       \caption{Courbe réelle}
       \label{courbe}
     \end{figure}
   \end{onlyenv}
   \begin{onlyenv}<2>
     \begin{figure}
-      \includegraphics[scale=0.24]{annex/loss_smoothed_09}
+      \includegraphics[width=10cm, height=5cm]{annex/loss_smoothed_09}
       \caption{Courbe amortie avec un coefficient 0.9}
       \label{courbe}
     \end{figure}
   \end{onlyenv}
   \begin{onlyenv}<3>
     \begin{figure}
-      \includegraphics[scale=0.2]{annex/loss_smoothed_099}
+      \includegraphics[width=10cm, height=5cm]{annex/loss_smoothed_099}
       \caption{Courbe amortie avec un coefficient 0.99}
       \label{courbe99}
     \end{figure}
   \end{onlyenv}
   \begin{onlyenv}<4>
     \begin{figure}
-      \includegraphics[scale=0.2]{annex/loss_smoothed_0999}
+      \includegraphics[width=10cm, height=5cm]{annex/loss_smoothed_0999}
       \caption{Courbe amortie avec un coefficient 0.999}
       \label{courbe999}
     \end{figure}
@@ -297,19 +314,50 @@
 
 \subsection*{}
 
-\begin{frame}[t]{\'Etude de l'imact du paramètre}
-
+\begin{frame}[t]{\'Etude de l'impact du paramètre lr}
+  \begin{onlyenv}<1>
+    \begin{itemize}
+      \item[] \'Etude réalisée avec 2 ``learning rate'' différents :
+      \begin{enumerate}
+        \item lr = $10^{-3}$
+        \item lr = $10^{-6}$
+      \end{enumerate}
+    \end{itemize}
+  \end{onlyenv}
+  \begin{onlyenv}<2>
+    \begin{figure}
+      \begin{center}
+        \includegraphics[width=10cm, height=5cm]{annex/loss_smoothed_099}
+        \caption{loss function with a learning rate of $10^{-3}$}
+        \label{1e3}
+      \end{center}
+    \end{figure}
+  \end{onlyenv}
+  \begin{onlyenv}<3>
+    \begin{figure}
+      \begin{center}
+        % \includegraphics[width=10cm, height=5cm]{annex/loss_1e6}
+        \caption{loss function with a learning rate of $10^{-6}$}
+        \label{1e6}
+      \end{center}
+    \end{figure}
+  \end{onlyenv}
 \end{frame}
 %--- Next Frame ---%
 
-\begin{frame}[t]{Première modification de lr}
-  \begin{figure}
-    \begin{center}
-      \includegraphics[scale=0.17]{annex/lr_modification}
-      \caption{Modification du ``taux d'apprentissage'' à chaque itération}
-      \label{ModLR}
-    \end{center}
-  \end{figure}
+\begin{frame}[t]{Première modification du lr}
+  \begin{onlyenv}<1>
+    \begin{figure}
+      \begin{center}
+        \includegraphics[scale=0.17]{annex/lr_modification}
+        \caption{Modification du ``taux d'apprentissage'' à chaque itération}
+        \label{ModLR}
+      \end{center}
+    \end{figure}
+  \end{onlyenv}
+  \begin{onlyenv}<2>
+
+  \end{onlyenv}
 \end{frame}
 %--- Next Frame ---%
 
@@ -336,37 +384,5 @@
 \appendix
 
 \section*{Annexe}
-
-% \begin{frame}{Triangulation}
-%   \begin{center}
-%     %\includegraphics[scale=0.57]{annexe/satellites.jpg}
-%   \end{center}
-% \end{frame}
-%
-% \begin{frame}{Exemple de Classification}
-%   \begin{center}
-%     %\includegraphics[scale=0.5]{annexe/ex_classif.pdf}
-%   \end{center}
-% \end{frame}
-%
-% \begin{frame}{Exemple de Régression}
-%   \begin{center}
-%     %\includegraphics[scale=0.5]{annexe/ex_regression.pdf}
-%   \end{center}
-% \end{frame}
-%
-% \begin{frame}{Plan de la pharmacie}
-%   \begin{center}
-%     %\includegraphics[scale=0.5]{annexe/plan_pharmacie.png}
-%   \end{center}
-% \subsection*{}
-%
-% \end{frame}
-%
-% \begin{frame}{Underfitting et Overfitting}
-%   \begin{center}
-%     %\includegraphics[scale=0.57]{annexe/underoverfitting.pdf}
-%   \end{center}
-% \end{frame}
 
 \end{document}
