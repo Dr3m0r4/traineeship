@@ -1,4 +1,4 @@
-Input params at 2019-05-14 11:33:32.
+Input params at 2019-05-14 14:06:37.
 [CUSTOM]
 -- num_classes: 2
 -- output_prob: False
@@ -10,11 +10,11 @@ Input params at 2019-05-14 11:33:32.
 -- min_numb_labels: 1
 -- proba_connect: True
 -- evaluation_units: foreground
+-- weight: ()
+-- inferred: ()
+-- label: ('label',)
 -- sampler: ()
 -- image: ('image',)
--- inferred: ()
--- weight: ()
--- label: ('label',)
 -- name: net_segment
 [CONFIG_FILE]
 -- path: /home/julien/traineeship/mmiv/config/infer_2.ini
@@ -50,7 +50,7 @@ Input params at 2019-05-14 11:33:32.
 -- iteration_generator: iteration_generator
 -- action: evaluation
 [NETWORK]
--- name: vnet
+-- name: highres3dnet
 -- activation_function: prelu
 -- batch_size: 2
 -- smaller_final_batch_mode: pad

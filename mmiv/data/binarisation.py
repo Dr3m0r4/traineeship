@@ -19,6 +19,6 @@ for name in liste:
 	data_bin[ind]=1
 	print(name," | iter : ", cpt)
 	img_bin = nib.Nifti1Image(data_bin, img.affine)
-	img_bin.header.set_data_dtype(np.int16)
+	img_bin.header.set_data_dtype(np.float64)
 	img_bin.header.set_xyzt_units('mm')
 	nib.save(img_bin,file_bin)
