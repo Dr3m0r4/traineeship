@@ -158,7 +158,7 @@
   \tableofcontents
 \end{frame}
 
-\section{Mise en place de Niftynet}
+\section{Présentation de Niftynet}
 \subsection*{}
 
 \begin{frame}{Installation}
@@ -242,21 +242,69 @@
 \end{frame}
 
 \begin{frame}[t]{Entraînement du modèle}
-  \begin{columns}
-  \begin{column}[T]{0.5\textwidth}
-    \begin{itemize}
-      \item
-    \end{itemize}
-  \end{column}
-  \hfill
-  \begin{column}[T]{0.5\textwidth}
-    \begin{figure}
-      \includegraphics{annex/}
+  \begin{figure}
+    \begin{center}
+      \includegraphics[scale=0.2]{annex/entrainement}
       \caption{Entraînement du système}
       \label{entrainement}
+    \end{center}
+  \end{figure}
+\end{frame}
+%--- Next Frame ---%
+
+\begin{frame}[t]{Loss Function}
+  \begin{onlyenv}<1>
+    \begin{figure}
+      \includegraphics[scale=0.2]{annex/loss_not_smoothed}
+      \caption{Courbe réelle}
+      \label{courbe}
     \end{figure}
-  \end{column}
-  \end{columns}
+  \end{onlyenv}
+  \begin{onlyenv}<2>
+    \begin{figure}
+      \includegraphics[scale=0.24]{annex/loss_smoothed_09}
+      \caption{Courbe amortie avec un coefficient 0.9}
+      \label{courbe}
+    \end{figure}
+  \end{onlyenv}
+  \begin{onlyenv}<3>
+    \begin{figure}
+      \includegraphics[scale=0.2]{annex/loss_smoothed_099}
+      \caption{Courbe amortie avec un coefficient 0.99}
+      \label{courbe99}
+    \end{figure}
+  \end{onlyenv}
+  \begin{onlyenv}<4>
+    \begin{figure}
+      \includegraphics[scale=0.2]{annex/loss_smoothed_0999}
+      \caption{Courbe amortie avec un coefficient 0.999}
+      \label{courbe999}
+    \end{figure}
+  \end{onlyenv}
+\end{frame}
+%--- Next Frame ---%
+
+\begin{frame}[t]{Résultats}
+  \begin{figure}
+    \includegraphics{annex/segmentation}
+    \caption{Segmentation}
+    \label{seg}
+  \end{figure}
+\end{frame}
+%--- Next Frame ---%
+
+\section{Travail à réaliser}
+
+\subsection*{}
+
+\begin{frame}[t]{Première modification de lr}
+  \begin{figure}
+    \begin{center}
+      \includegraphics[scale=0.17]{annex/lr_modification}
+      \caption{Modification du ``taux d'apprentissage'' à chaque itration}
+      \label{ModLR}
+    \end{center}
+  \end{figure}
 \end{frame}
 %--- Next Frame ---%
 

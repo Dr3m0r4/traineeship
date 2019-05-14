@@ -1,5 +1,6 @@
 \select@language {french}
-\beamer@sectionintoc {3}{Mise en place de Niftynet}{7}{0}{1}
-\beamer@sectionintoc {4}{Travaux pr\IeC {\'e}c\IeC {\'e}dents et D\IeC {\'e}roulement du Projet}{10}{0}{2}
-\beamer@sectionintoc {5}{Pr\IeC {\'e}sentation des m\IeC {\'e}thodes \IeC {\`a} impl\IeC {\'e}menter}{17}{0}{3}
-\beamer@sectionintoc {6}{R\IeC {\'e}sultats}{25}{0}{4}
+\beamer@sectionintoc {3}{Pr\IeC {\'e}sentation de Niftynet}{7}{0}{1}
+\beamer@sectionintoc {4}{Travail \IeC {\`a} r\IeC {\'e}aliser}{16}{0}{2}
+\beamer@sectionintoc {5}{Travaux pr\IeC {\'e}c\IeC {\'e}dents et D\IeC {\'e}roulement du Projet}{18}{0}{3}
+\beamer@sectionintoc {6}{Pr\IeC {\'e}sentation des m\IeC {\'e}thodes \IeC {\`a} impl\IeC {\'e}menter}{25}{0}{4}
+\beamer@sectionintoc {7}{R\IeC {\'e}sultats}{33}{0}{5}
