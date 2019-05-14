@@ -1,7 +1,12 @@
 #!/bin/bash
 
 liste=`ls`
-num=20000
+if [ $# -ge 1 ]
+then
+	num=$1
+else
+	read num
+fi
 
 for name in $liste
 do
