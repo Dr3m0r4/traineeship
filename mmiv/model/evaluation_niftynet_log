@@ -572,3 +572,48 @@ INFO:niftynet:2019-05-14 11:33:32,790: label mapping ready for label:('label',),
 INFO:niftynet:2019-05-14 11:33:32,790: label mapping ready for inferred:('inferred',), 2 classes
 INFO:niftynet:2019-05-14 11:33:34,283: Cleaning up...
 INFO:niftynet:2019-05-14 11:33:34,283: SegmentationApplication stopped (time in second 1.49).
+INFO:niftynet:2019-05-14 14:06:03,453: starting segmentation application
+INFO:niftynet:2019-05-14 14:06:03,453: `csv_file = ` not found, writing to "/home/julien/traineeship/mmiv/model/image.csv" instead.
+INFO:niftynet:2019-05-14 14:06:03,453: Overwriting existing: "/home/julien/traineeship/mmiv/model/image.csv".
+INFO:niftynet:2019-05-14 14:06:03,453: [image] search file folders, writing csv file /home/julien/traineeship/mmiv/model/image.csv
+INFO:niftynet:2019-05-14 14:06:03,488: `csv_file = ` not found, writing to "/home/julien/traineeship/mmiv/model/label.csv" instead.
+INFO:niftynet:2019-05-14 14:06:03,488: Overwriting existing: "/home/julien/traineeship/mmiv/model/label.csv".
+INFO:niftynet:2019-05-14 14:06:03,488: [label] search file folders, writing csv file /home/julien/traineeship/mmiv/model/label.csv
+INFO:niftynet:2019-05-14 14:06:03,523: [inferred] search file folders, writing csv file /home/julien/traineeship/mmiv/model/output/out_1/inferred.csv
+WARNING:niftynet:2019-05-14 14:06:03,557: Loading from existing partitioning file /home/julien/traineeship/mmiv/model/split.csv, ignoring partitioning ratios.
+INFO:niftynet:2019-05-14 14:06:03,560: 
+
+Number of subjects 581, input section names: ['subject_id', 'image', 'label', 'inferred']
+Dataset partitioning:
+-- training 563 cases (96.90%),
+-- validation 12 cases (2.07%),
+-- inference 6 cases (1.03%).
+
+INFO:niftynet:2019-05-14 14:06:03,620: Image reader: loading 6 subjects from sections ('image',) as input [image]
+INFO:niftynet:2019-05-14 14:06:03,620: Image reader: loading 6 subjects from sections ('label',) as input [label]
+INFO:niftynet:2019-05-14 14:06:03,620: Image reader: loading 6 subjects from sections ('inferred',) as input [inferred]
+INFO:niftynet:2019-05-14 14:06:03,621: label mapping ready for label:('label',), 2 classes
+INFO:niftynet:2019-05-14 14:06:03,621: label mapping ready for inferred:('inferred',), 2 classes
+INFO:niftynet:2019-05-14 14:06:13,333: Cleaning up...
+INFO:niftynet:2019-05-14 14:06:13,333: SegmentationApplication stopped (time in second 9.71).
+INFO:niftynet:2019-05-14 14:06:37,045: starting segmentation application
+INFO:niftynet:2019-05-14 14:06:37,045: `csv_file = ` not found, writing to "/home/julien/traineeship/mmiv/model/image.csv" instead.
+INFO:niftynet:2019-05-14 14:06:37,045: Overwriting existing: "/home/julien/traineeship/mmiv/model/image.csv".
+INFO:niftynet:2019-05-14 14:06:37,045: [image] search file folders, writing csv file /home/julien/traineeship/mmiv/model/image.csv
+INFO:niftynet:2019-05-14 14:06:37,049: `csv_file = ` not found, writing to "/home/julien/traineeship/mmiv/model/label.csv" instead.
+INFO:niftynet:2019-05-14 14:06:37,049: Overwriting existing: "/home/julien/traineeship/mmiv/model/label.csv".
+INFO:niftynet:2019-05-14 14:06:37,049: [label] search file folders, writing csv file /home/julien/traineeship/mmiv/model/label.csv
+INFO:niftynet:2019-05-14 14:06:37,054: [inferred] search file folders, writing csv file /home/julien/traineeship/mmiv/model/output/out_2/inferred.csv
+INFO:niftynet:2019-05-14 14:06:37,058: 
+
+Number of subjects 1, input section names: ['subject_id', 'image', 'label', 'inferred']
+-- using all subjects (without data partitioning).
+
+INFO:niftynet:2019-05-14 14:06:37,072: Image reader: loading 1 subjects from sections ('image',) as input [image]
+INFO:niftynet:2019-05-14 14:06:37,072: Image reader: loading 1 subjects from sections ('label',) as input [label]
+INFO:niftynet:2019-05-14 14:06:37,072: Image reader: loading 1 subjects from sections ('inferred',) as input [inferred]
+INFO:niftynet:2019-05-14 14:06:37,073: label mapping ready for label:('label',), 2 classes
+INFO:niftynet:2019-05-14 14:06:37,073: label mapping ready for inferred:('inferred',), 2 classes
+WARNING:niftynet:2019-05-14 14:06:37,306: User cancelled application
+INFO:niftynet:2019-05-14 14:06:37,308: Cleaning up...
+INFO:niftynet:2019-05-14 14:06:37,308: SegmentationApplication stopped (time in second 0.23).

@@ -1,4 +1,4 @@
-Input params at 2019-05-14 11:33:13.
+Input params at 2019-05-14 14:06:15.
 [CUSTOM]
 -- num_classes: 2
 -- output_prob: False
@@ -10,8 +10,8 @@ Input params at 2019-05-14 11:33:13.
 -- min_numb_labels: 1
 -- proba_connect: True
 -- evaluation_units: foreground
--- weight: ()
 -- inferred: ()
+-- weight: ()
 -- label: ('label',)
 -- sampler: ()
 -- image: ('image',)
@@ -50,9 +50,9 @@ Input params at 2019-05-14 11:33:13.
 -- iteration_generator: iteration_generator
 -- action: inference
 [NETWORK]
--- name: vnet
+-- name: highres3dnet
 -- activation_function: prelu
--- batch_size: 25
+-- batch_size: 2
 -- smaller_final_batch_mode: pad
 -- decay: 1e-05
 -- reg_type: L2
