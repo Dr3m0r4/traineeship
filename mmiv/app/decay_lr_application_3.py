@@ -21,9 +21,6 @@ class DecayLearningRateApplication(SegmentationApplication):
         tf.logging.info('starting decay learning segmentation application')
         self.learning_rate = None
         self.current_lr = action_param.lr
-        if self.action_param.validation_every_n > 0:
-            raise NotImplementedError("validation process is not implemented "
-                                      "in this demo.")
         self.prec_loss = 10.0
         self.curent_loss = None
         self.count = 0
@@ -31,11 +28,22 @@ class DecayLearningRateApplication(SegmentationApplication):
     def connect_data_and_network(self,
                                  outputs_collector=None,
                                  gradients_collector=None):
-        data_dict = self.get_sampler()[0][0].pop_batch_op()
-        image = tf.cast(data_dict['image'], tf.float32)
-        net_out = self.net(image, self.is_training)
+        def switch_sampler(for_training):
+            with tf.name_scope('train' if for_training else 'validation'):
+                sampler = self.get_sampler()[0][0 if for_training else -1]
+                return sampler.pop_batch_op()
 
         if self.is_training:
+            if self.action_param.validation_every_n > 0:
+                data_dict = tf.cond(tf.logical_not(self.is_validation),
+                                    lambda: switch_sampler(True),
+                                    lambda: switch_sampler(False))
+            else:
+                data_dict = switch_sampler(True)
+
+            image = tf.cast(data_dict['image'], tf.float32)
+            net_out = self.net(image, self.is_training)
+
             with tf.name_scope('Optimiser'):
                 self.learning_rate = tf.placeholder(tf.float64, shape=[])
                 optimiser_class = OptimiserFactory.create(
