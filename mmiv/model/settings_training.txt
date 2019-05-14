@@ -1,4 +1,4 @@
-Input params at 2019-05-13 12:10:09.
+Input params at 2019-05-14 11:33:42.
 [CUSTOM]
 -- num_classes: 2
 -- output_prob: False
@@ -10,11 +10,11 @@ Input params at 2019-05-13 12:10:09.
 -- min_numb_labels: 1
 -- proba_connect: True
 -- evaluation_units: foreground
--- label: ('label',)
--- sampler: ()
 -- inferred: ()
--- image: ('image',)
+-- label: ('label',)
 -- weight: ()
+-- sampler: ()
+-- image: ('image',)
 -- name: net_segment
 [CONFIG_FILE]
 -- path: /home/julien/traineeship/mmiv/config/config.ini
@@ -50,9 +50,9 @@ Input params at 2019-05-13 12:10:09.
 -- iteration_generator: iteration_generator
 -- action: training
 [NETWORK]
--- name: highres3dnet
+-- name: vnet
 -- activation_function: prelu
--- batch_size: 1
+-- batch_size: 2
 -- smaller_final_batch_mode: pad
 -- decay: 1e-05
 -- reg_type: L2
