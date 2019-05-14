@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2019.4.25)  14 MAY 2019 14:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2019.4.25)  14 MAY 2019 15:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1152,17 +1152,12 @@ LaTeX Info: Redefining \degres on input line 56.
 LaTeX Info: Redefining \dots on input line 56.
 LaTeX Info: Redefining \up on input line 56.
 \c@lstlisting=\count180
- (/home/dr3m/travaux/traineeship/presentation/pres.nav)
-Overfull \hbox (30.41049pt too wide) detected at line 56
-  [] [][][][][] [] [][][][][][] [][] [][][][][][][] [][][][][][][][] [][][][][][][][][][][][] []  
- []
-
-<annex/logo_UCA.png, id=75, 276.03125pt x 268.00125pt>
+ (/home/dr3m/travaux/traineeship/presentation/pres.nav) <annex/logo_UCA.png, id=37, 276.03125pt x 268.00125pt>
 File: annex/logo_UCA.png Graphic file (type png)
  <use annex/logo_UCA.png>
 Package pdftex.def Info: annex/logo_UCA.png used on input line 65.
 (pdftex.def)             Requested size: 61.45703pt x 59.66791pt.
- <annex/isima.jpeg, id=77, 276.03125pt x 183.68625pt>
+ <annex/isima.jpeg, id=39, 276.03125pt x 183.68625pt>
 File: annex/isima.jpeg Graphic file (type jpg)
  <use annex/isima.jpeg>
 Package pdftex.def Info: annex/isima.jpeg used on input line 65.
@@ -1176,61 +1171,21 @@ LaTeX Font Warning: Font shape `T1/aess/m/sc' undefined
 Overfull \vbox (1.7818pt too high) detected at line 65
  []
 
-
-Overfull \hbox (30.41049pt too wide) has occurred while \output is active
-  [] [][][][][] [] [][][][][][] [][] [][][][][][][] [][][][][][][][] [][][][][][][][][][][][] []  
- []
-
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
- </home/dr3m/travaux/traineeship/presentation/annex/logo_UCA.png> </home/dr3m/travaux/traineeship/presentation/annex/isima.jpeg>]
-Overfull \hbox (30.41049pt too wide) has occurred while \output is active
-  [] [][][][][] [] [][][][][][] [][] [][][][][][][] [][][][][][][][] [][][][][][][][][][][][] []  
- []
+ </home/dr3m/travaux/traineeship/presentation/annex/logo_UCA.png> </home/dr3m/travaux/traineeship/presentation/annex/isima.jpeg>] [2
 
-[2
+] [3
 
-]
-Overfull \hbox (30.41049pt too wide) has occurred while \output is active
-  [] [][][][][] [] [][][][][][] [][] [][][][][][][] [][][][][][][][] [][][][][][][][][][][][] []  
- []
+] [4
 
-[3
+] [5
 
-]
-Overfull \hbox (30.41049pt too wide) has occurred while \output is active
-  [] [][][][][] [] [][][][][][] [][] [][][][][][][] [][][][][][][][] [][][][][][][][][][][][] []  
- []
+] (/home/dr3m/travaux/traineeship/presentation/pres.toc) [6
 
-[4
+] (/home/dr3m/travaux/traineeship/presentation/pres.toc) [7
 
-]
-Overfull \hbox (30.41049pt too wide) has occurred while \output is active
-  [] [][][][][] [] [][][][][][] [][] [][][][][][][] [][][][][][][][] [][][][][][][][][][][][] []  
- []
-
-[5
-
-] (/home/dr3m/travaux/traineeship/presentation/pres.toc)
-Overfull \hbox (30.41049pt too wide) has occurred while \output is active
-  [] [][][][][] [] [][][][][][] [][] [][][][][][][] [][][][][][][][] [][][][][][][][][][][][] []  
- []
-
-[6
-
-] (/home/dr3m/travaux/traineeship/presentation/pres.toc)
-Overfull \hbox (30.41049pt too wide) has occurred while \output is active
-  [] [][][][][] [] [][][][][][] [][] [][][][][][][] [][][][][][][][] [][][][][][][][][][][][] []  
- []
-
-[7
-
-]
-Overfull \hbox (30.41049pt too wide) has occurred while \output is active
-  [] [][][][][] [] [][][][][][] [][] [][][][][][][] [][][][][][][][] [][][][][][][][][][][][] []  
- []
-
-[8
+] [8
 
 ]
 \openout4 = `pres.vrb'.
@@ -1277,12 +1232,7 @@ LaTeX Font Info:    Font shape `T1/aess/m/it' in size <5> not available
 LaTeX Font Info:    Try loading font information for T1+aett on input line 8.
  (/usr/share/texlive/texmf-dist/tex/latex/ae/t1aett.fd
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
-))
-Overfull \hbox (30.41049pt too wide) has occurred while \output is active
-  [] [][][][][] [] [][][][][][] [][] [][][][][][][] [][][][][][][][] [][][][][][][][][][][][] []  
- []
-
-[9
+)) [9
 
 ]
 Package epstopdf Info: Source file: <annex/entrainement.eps>
@@ -1297,18 +1247,13 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/dr3m/travaux/traineeship/presentation/annex/entrainement-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<annex/entrainement-eps-converted-to.pdf, id=757, 1030.85126pt x 793.96625pt>
+<annex/entrainement-eps-converted-to.pdf, id=450, 1030.85126pt x 793.96625pt>
 File: annex/entrainement-eps-converted-to.pdf Graphic file (type pdf)
  <use annex/entrainement-eps-converted-to.pdf>
 Package pdftex.def Info: annex/entrainement-eps-converted-to.pdf used on input line 252.
 (pdftex.def)             Requested size: 206.1666pt x 158.79044pt.
 
 Overfull \vbox (1.8655pt too high) detected at line 252
- []
-
-
-Overfull \hbox (30.41049pt too wide) has occurred while \output is active
-  [] [][][][][] [] [][][][][][] [][] [][][][][][][] [][][][][][][][] [][][][][][][][][][][][] []  
  []
 
 [10
@@ -1326,7 +1271,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/dr3m/travaux/traineeship/presentation/annex/loss_not_smoothed-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<annex/loss_not_smoothed-eps-converted-to.pdf, id=830, 3019.28pt x 472.76625pt>
+<annex/loss_not_smoothed-eps-converted-to.pdf, id=497, 3019.28pt x 472.76625pt>
 File: annex/loss_not_smoothed-eps-converted-to.pdf Graphic file (type pdf)
  <use annex/loss_not_smoothed-eps-converted-to.pdf>
 Package pdftex.def Info: annex/loss_not_smoothed-eps-converted-to.pdf used on input line 284.
@@ -1348,7 +1293,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/dr3m/travaux/traineeship/presentation/annex/loss_smoothed_09-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<annex/loss_smoothed_09-eps-converted-to.pdf, id=831, 2139.995pt x 383.4325pt>
+<annex/loss_smoothed_09-eps-converted-to.pdf, id=498, 2139.995pt x 383.4325pt>
 File: annex/loss_smoothed_09-eps-converted-to.pdf Graphic file (type pdf)
  <use annex/loss_smoothed_09-eps-converted-to.pdf>
 Package pdftex.def Info: annex/loss_smoothed_09-eps-converted-to.pdf used on input line 284.
@@ -1370,7 +1315,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/dr3m/travaux/traineeship/presentation/annex/loss_smoothed_099-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<annex/loss_smoothed_099-eps-converted-to.pdf, id=832, 2999.205pt x 460.72125pt>
+<annex/loss_smoothed_099-eps-converted-to.pdf, id=499, 2999.205pt x 460.72125pt>
 File: annex/loss_smoothed_099-eps-converted-to.pdf Graphic file (type pdf)
  <use annex/loss_smoothed_099-eps-converted-to.pdf>
 Package pdftex.def Info: annex/loss_smoothed_099-eps-converted-to.pdf used on input line 284.
@@ -1392,7 +1337,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/dr3m/travaux/traineeship/presentation/annex/loss_smoothed_0999-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<annex/loss_smoothed_0999-eps-converted-to.pdf, id=833, 3019.28pt x 464.73625pt>
+<annex/loss_smoothed_0999-eps-converted-to.pdf, id=500, 3019.28pt x 464.73625pt>
 File: annex/loss_smoothed_0999-eps-converted-to.pdf Graphic file (type pdf)
  <use annex/loss_smoothed_0999-eps-converted-to.pdf>
 Package pdftex.def Info: annex/loss_smoothed_0999-eps-converted-to.pdf used on input line 284.
@@ -1400,11 +1345,6 @@ Package pdftex.def Info: annex/loss_smoothed_0999-eps-converted-to.pdf used on i
 
 Overfull \hbox (296.55544pt too wide) in paragraph at lines 284--284
  [] 
- []
-
-
-Overfull \hbox (30.41049pt too wide) has occurred while \output is active
-  [] [][][][][] [] [][][][][][] [][] [][][][][][][] [][][][][][][][] [][][][][][][][][][][][] []  
  []
 
 [11
@@ -1482,11 +1422,6 @@ Overfull \hbox (296.55544pt too wide) in paragraph at lines 284--284
  [] 
  []
 
-
-Overfull \hbox (30.41049pt too wide) has occurred while \output is active
-  [] [][][][][] [] [][][][][][] [][] [][][][][][][] [][][][][][][][] [][][][][][][][][][][][] []  
- []
-
 [12
 
  </home/dr3m/travaux/traineeship/presentation/annex/loss_smoothed_09-eps-converted-to.pdf>]
@@ -1560,11 +1495,6 @@ Package pdftex.def Info: annex/loss_smoothed_0999-eps-converted-to.pdf used on i
 
 Overfull \hbox (296.55544pt too wide) in paragraph at lines 284--284
  [] 
- []
-
-
-Overfull \hbox (30.41049pt too wide) has occurred while \output is active
-  [] [][][][][] [] [][][][][][] [][] [][][][][][][] [][][][][][][][] [][][][][][][][][][][][] []  
  []
 
 [13
@@ -1642,11 +1572,6 @@ Overfull \hbox (296.55544pt too wide) in paragraph at lines 284--284
  [] 
  []
 
-
-Overfull \hbox (30.41049pt too wide) has occurred while \output is active
-  [] [][][][][] [] [][][][][][] [][] [][][][][][][] [][][][][][][][] [][][][][][][][][][][][] []  
- []
-
 [14
 
  </home/dr3m/travaux/traineeship/presentation/annex/loss_smoothed_0999-eps-converted-to.pdf>]
@@ -1662,33 +1587,16 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/dr3m/travaux/traineeship/presentation/annex/segmentation-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<annex/segmentation-eps-converted-to.pdf, id=1121, 548.0475pt x 475.7775pt>
+<annex/segmentation-eps-converted-to.pdf, id=684, 548.0475pt x 475.7775pt>
 File: annex/segmentation-eps-converted-to.pdf Graphic file (type pdf)
  <use annex/segmentation-eps-converted-to.pdf>
 Package pdftex.def Info: annex/segmentation-eps-converted-to.pdf used on input line 293.
-(pdftex.def)             Requested size: 548.04616pt x 475.77632pt.
+(pdftex.def)             Requested size: 164.41551pt x 142.73434pt.
+ [15
 
-Overfull \hbox (240.75629pt too wide) in paragraph at lines 293--293
- [] 
- []
+ </home/dr3m/travaux/traineeship/presentation/annex/segmentation-eps-converted-to.pdf>] (/home/dr3m/travaux/traineeship/presentation/pres.toc) [16
 
-
-Overfull \vbox (332.45139pt too high) detected at line 293
- []
-
-
-Overfull \hbox (30.41049pt too wide) has occurred while \output is active
-  [] [][][][][] [] [][][][][][] [][] [][][][][][][] [][][][][][][][] [][][][][][][][][][][][] []  
- []
-
-[15
-
- </home/dr3m/travaux/traineeship/presentation/annex/segmentation-eps-converted-to.pdf>] (/home/dr3m/travaux/traineeship/presentation/pres.toc)
-Overfull \hbox (30.41049pt too wide) has occurred while \output is active
-  [] [][][][][] [] [][][][][][] [][] [][][][][][][] [][][][][][][][] [][][][][][][][][][][][] []  
- []
-
-[16
+] [17
 
 ]
 Package epstopdf Info: Source file: <annex/lr_modification.eps>
@@ -1698,249 +1606,21 @@ Package epstopdf Info: Source file: <annex/lr_modification.eps>
 (epstopdf)                    date: 2019-05-14 13:35:37
 (epstopdf)                    size: 154772 bytes
 (epstopdf)             Command: <repstopdf --outfile=annex/lr_modification-eps-converted-to.pdf annex/lr_modification.eps>
-(epstopdf)             \includegraphics on input line 308.
+(epstopdf)             \includegraphics on input line 313.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file /home/dr3m/travaux/traineeship/presentation/annex/lr_modification-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<annex/lr_modification-eps-converted-to.pdf, id=1266, 1675.25874pt x 907.39pt>
+<annex/lr_modification-eps-converted-to.pdf, id=815, 1675.25874pt x 907.39pt>
 File: annex/lr_modification-eps-converted-to.pdf Graphic file (type pdf)
  <use annex/lr_modification-eps-converted-to.pdf>
-Package pdftex.def Info: annex/lr_modification-eps-converted-to.pdf used on input line 308.
+Package pdftex.def Info: annex/lr_modification-eps-converted-to.pdf used on input line 313.
 (pdftex.def)             Requested size: 284.79022pt x 154.25426pt.
+ [18
 
-Overfull \hbox (30.41049pt too wide) has occurred while \output is active
-  [] [][][][][] [] [][][][][][] [][] [][][][][][][] [][][][][][][][] [][][][][][][][][][][][] []  
- []
+ </home/dr3m/travaux/traineeship/presentation/annex/lr_modification-eps-converted-to.pdf>] [19
 
-[17
-
- </home/dr3m/travaux/traineeship/presentation/annex/lr_modification-eps-converted-to.pdf>] (/home/dr3m/travaux/traineeship/presentation/pres.toc)
-Overfull \hbox (30.41049pt too wide) has occurred while \output is active
-  [] [][][][][] [] [][][][][][] [][] [][][][][][][] [][][][][][][][] [][][][][][][][][][][][] []  
- []
-
-[18
-
-]
-Overfull \hbox (30.41049pt too wide) has occurred while \output is active
-  [] [][][][][] [] [][][][][][] [][] [][][][][][][] [][][][][][][][] [][][][][][][][][][][][] []  
- []
-
-[19
-
-]
-Overfull \hbox (30.41049pt too wide) has occurred while \output is active
-  [] [][][][][] [] [][][][][][] [][] [][][][][][][] [][][][][][][][] [][][][][][][][][][][][] []  
- []
-
-[20
-
-]
-LaTeX Font Info:    Font shape `T1/aess/m/it' in size <10> not available
-(Font)              Font shape `T1/aess/m/sl' tried instead on input line 352.
-
-Overfull \hbox (30.41049pt too wide) has occurred while \output is active
-  [] [][][][][] [] [][][][][][] [][] [][][][][][][] [][][][][][][][] [][][][][][][][][][][][] []  
- []
-
-[21
-
-]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 378.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 378.
-LaTeX Font Info:    Font shape `T1/aess/m/it' in size <7> not available
-(Font)              Font shape `T1/aess/m/sl' tried instead on input line 378.
-
-Overfull \hbox (30.41049pt too wide) has occurred while \output is active
-  [] [][][][][] [] [][][][][][] [][] [][][][][][][] [][][][][][][][] [][][][][][][][][][][][] []  
- []
-
-[22
-
-]
-Overfull \hbox (30.41049pt too wide) has occurred while \output is active
-  [] [][][][][] [] [][][][][][] [][] [][][][][][][] [][][][][][][][] [][][][][][][][][][][][] []  
- []
-
-[23
-
-]
-Overfull \hbox (30.41049pt too wide) has occurred while \output is active
-  [] [][][][][] [] [][][][][][] [][] [][][][][][][] [][][][][][][][] [][][][][][][][][][][][] []  
- []
-
-[24
-
-] (/home/dr3m/travaux/traineeship/presentation/pres.toc)
-Overfull \hbox (30.41049pt too wide) has occurred while \output is active
-  [] [][][][][] [] [][][][][][] [][] [][][][][][][] [][][][][][][][] [][][][][][][][][][][][] []  
- []
-
-[25
-
-]
-Overfull \hbox (30.41049pt too wide) has occurred while \output is active
-  [] [][][][][] [] [][][][][][] [][] [][][][][][][] [][][][][][][][] [][][][][][][][][][][][] []  
- []
-
-[26
-
-]
-Overfull \hbox (30.41049pt too wide) has occurred while \output is active
-  [] [][][][][] [] [][][][][][] [][] [][][][][][][] [][][][][][][][] [][][][][][][][][][][][] []  
- []
-
-[27
-
-]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 440.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 440.
-LaTeX Font Info:    Font shape `T1/aess/m/it' in size <10.95> not available
-(Font)              Font shape `T1/aess/m/sl' tried instead on input line 440.
-LaTeX Font Info:    Font shape `T1/aess/m/it' in size <8> not available
-(Font)              Font shape `T1/aess/m/sl' tried instead on input line 440.
-
-Overfull \hbox (30.41049pt too wide) has occurred while \output is active
-  [] [][][][][] [] [][][][][][] [][] [][][][][][][] [][][][][][][][] [][][][][][][][][][][][] []  
- []
-
-[28
-
-]
-Overfull \hbox (30.41049pt too wide) has occurred while \output is active
-  [] [][][][][] [] [][][][][][] [][] [][][][][][][] [][][][][][][][] [][][][][][][][][][][][] []  
- []
-
-[29
-
-]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 486.
-LaTeX Font Info:    Font shape `T1/aess/m/it' in size <9> not available
-(Font)              Font shape `T1/aess/m/sl' tried instead on input line 486.
-
-Overfull \hbox (30.41049pt too wide) has occurred while \output is active
-  [] [][][][][] [] [][][][][][] [][] [][][][][][][] [][][][][][][][] [][][][][][][][][][][][] []  
- []
-
-[30
-
-]
-Overfull \hbox (30.41049pt too wide) has occurred while \output is active
-  [] [][][][][] [] [][][][][][] [][] [][][][][][][] [][][][][][][][] [][][][][][][][][][][][] []  
- []
-
-[31
-
-]
-Overfull \hbox (30.41049pt too wide) has occurred while \output is active
-  [] [][][][][] [] [][][][][][] [][] [][][][][][][] [][][][][][][][] [][][][][][][][][][][][] []  
- []
-
-[32
-
-] (/home/dr3m/travaux/traineeship/presentation/pres.toc)
-Overfull \hbox (30.41049pt too wide) has occurred while \output is active
-  [] [][][][][] [] [][][][][][] [][] [][][][][][][] [][][][][][][][] [][][][][][][][][][][][] []  
- []
-
-[33
-
-]
-Overfull \hbox (30.41049pt too wide) has occurred while \output is active
-  [] [][][][][] [] [][][][][][] [][] [][][][][][][] [][][][][][][][] [][][][][][][][][][][][] []  
- []
-
-[34
-
-]
-Overfull \hbox (30.41049pt too wide) has occurred while \output is active
-  [] [][][][][] [] [][][][][][] [][] [][][][][][][] [][][][][][][][] [][][][][][][][][][][][] []  
- []
-
-[35
-
-]
-Overfull \hbox (30.41049pt too wide) has occurred while \output is active
-  [] [][][][][] [] [][][][][][] [][] [][][][][][][] [][][][][][][][] [][][][][][][][][][][][] []  
- []
-
-[36
-
-]
-Overfull \hbox (30.41049pt too wide) has occurred while \output is active
-  [] [][][][][] [] [][][][][][] [][] [][][][][][][] [][][][][][][][] [][][][][][][][][][][][] []  
- []
-
-[37
-
-]
-Overfull \hbox (30.41049pt too wide) has occurred while \output is active
-  [] [][][][][] [] [][][][][][] [][] [][][][][][][] [][][][][][][][] [][][][][][][][][][][][] []  
- []
-
-[38
-
-]
-Overfull \hbox (30.41049pt too wide) has occurred while \output is active
-  [] [][][][][] [] [][][][][][] [][] [][][][][][][] [][][][][][][][] [][][][][][][][][][][][] []  
- []
-
-[39
-
-]
-Overfull \hbox (30.41049pt too wide) has occurred while \output is active
-  [] [][][][][] [] [][][][][][] [][] [][][][][][][] [][][][][][][][] [][][][][][][][][][][][] []  
- []
-
-[40
-
-]
-Overfull \hbox (30.41049pt too wide) has occurred while \output is active
-  [] [][][][][] [] [][][][][][] [][] [][][][][][][] [][][][][][][][] [][][][][][][][][][][][] []  
- []
-
-[41
-
-]
-Overfull \hbox (30.41049pt too wide) has occurred while \output is active
-  [] [][][][][] [] [][][][][][] [][] [][][][][][][] [][][][][][][][] [][][][][][][][][][][][] []  
- []
-
-[42
-
-]
-Overfull \hbox (30.41049pt too wide) has occurred while \output is active
-  [] [][][][][] [] [][][][][][] [][] [][][][][][][] [][][][][][][][] [][][][][][][][][][][][] []  
- []
-
-[43
-
-]
-Overfull \hbox (30.41049pt too wide) has occurred while \output is active
-  [] [][][][][] [] [][][][][][] [][] [][][][][][][] [][][][][][][][] [][][][][][][][][][][][] []  
- []
-
-[44
-
-]
-Overfull \hbox (30.41049pt too wide) has occurred while \output is active
-  [] [][][][][] [] [][][][][][] [][] [][][][][][][] [][][][][][][][] [][][][][][][][][][][][] []  
- []
-
-[45
-
-]
-Overfull \hbox (30.41049pt too wide) has occurred while \output is active
-  [] [][][][][] [] [][][][][][] [][] [][][][][][][] [][][][][][][][] [][][][][][][][][][][][] []  
- []
-
-[46
+] [20
 
 ]
 \tf@nav=\write6
@@ -1952,32 +1632,31 @@ Overfull \hbox (30.41049pt too wide) has occurred while \output is active
 \tf@snm=\write8
 \openout8 = `pres.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 728.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 728.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 372.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 372.
  (/home/dr3m/travaux/traineeship/presentation/pres.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 728.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 728.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 372.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 372.
 Package rerunfilecheck Info: File `pres.out' has not changed.
-(rerunfilecheck)             Checksum: 27D74056A45B040D17D35AF479330F1B;341.
+(rerunfilecheck)             Checksum: DB42D57265F085CB08083874E5D05D45;121.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 21291 strings out of 493013
- 386344 string characters out of 6135682
- 503820 words of memory out of 5000000
- 24105 multiletter control sequences out of 15000+600000
- 54381 words of font info for 125 fonts, out of 8000000 for 9000
+ 21049 strings out of 493013
+ 383443 string characters out of 6135682
+ 474079 words of memory out of 5000000
+ 23965 multiletter control sequences out of 15000+600000
+ 30846 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,19n,64p,770b,783s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/t
-exmf/fonts/type1/public/lm/lmmi5.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi9.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy9.pfb>
-Output written on /home/dr3m/travaux/traineeship/presentation/pres.pdf (46 pages, 2384489 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
+Output written on /home/dr3m/travaux/traineeship/presentation/pres.pdf (20 pages, 2191241 bytes).
 PDF statistics:
- 3428 PDF objects out of 3580 (max. 8388607)
- 3259 compressed objects within 33 object streams
- 112 named destinations out of 1000 (max. 500000)
- 152 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 977 PDF objects out of 1000 (max. 8388607)
+ 898 compressed objects within 9 object streams
+ 54 named destinations out of 1000 (max. 500000)
+ 128 words of extra memory for PDF output out of 10000 (max. 10000000)
 
