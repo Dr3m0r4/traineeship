@@ -273,3 +273,302 @@ INFO:niftynet:2019-05-13 12:10:03,128: label mapping ready for inferred:('inferr
 WARNING:niftynet:2019-05-13 12:10:04,251: User cancelled application
 INFO:niftynet:2019-05-13 12:10:04,261: Cleaning up...
 INFO:niftynet:2019-05-13 12:10:04,261: SegmentationApplication stopped (time in second 1.13).
+INFO:niftynet:2019-05-13 17:36:34,915: starting segmentation application
+INFO:niftynet:2019-05-13 17:36:34,915: `csv_file = ` not found, writing to "/home/julien/traineeship/mmiv/model/image.csv" instead.
+INFO:niftynet:2019-05-13 17:36:34,915: Overwriting existing: "/home/julien/traineeship/mmiv/model/image.csv".
+INFO:niftynet:2019-05-13 17:36:34,915: [image] search file folders, writing csv file /home/julien/traineeship/mmiv/model/image.csv
+INFO:niftynet:2019-05-13 17:36:34,950: `csv_file = ` not found, writing to "/home/julien/traineeship/mmiv/model/label.csv" instead.
+INFO:niftynet:2019-05-13 17:36:34,950: Overwriting existing: "/home/julien/traineeship/mmiv/model/label.csv".
+INFO:niftynet:2019-05-13 17:36:34,950: [label] search file folders, writing csv file /home/julien/traineeship/mmiv/model/label.csv
+INFO:niftynet:2019-05-13 17:36:34,985: [inferred] search file folders, writing csv file /home/julien/traineeship/mmiv/model/output/out_1/inferred.csv
+WARNING:niftynet:2019-05-13 17:36:35,019: Loading from existing partitioning file /home/julien/traineeship/mmiv/model/split.csv, ignoring partitioning ratios.
+INFO:niftynet:2019-05-13 17:36:35,021: 
+
+Number of subjects 581, input section names: ['subject_id', 'image', 'label', 'inferred']
+Dataset partitioning:
+-- training 563 cases (96.90%),
+-- validation 12 cases (2.07%),
+-- inference 6 cases (1.03%).
+
+INFO:niftynet:2019-05-13 17:36:35,080: Image reader: loading 6 subjects from sections ('image',) as input [image]
+INFO:niftynet:2019-05-13 17:36:35,080: Image reader: loading 6 subjects from sections ('label',) as input [label]
+INFO:niftynet:2019-05-13 17:36:35,080: Image reader: loading 6 subjects from sections ('inferred',) as input [inferred]
+INFO:niftynet:2019-05-13 17:36:35,081: label mapping ready for label:('label',), 2 classes
+INFO:niftynet:2019-05-13 17:36:35,081: label mapping ready for inferred:('inferred',), 2 classes
+INFO:niftynet:2019-05-13 17:36:44,596: Cleaning up...
+INFO:niftynet:2019-05-13 17:36:44,596: SegmentationApplication stopped (time in second 9.51).
+INFO:niftynet:2019-05-13 17:37:08,617: starting segmentation application
+INFO:niftynet:2019-05-13 17:37:08,617: `csv_file = ` not found, writing to "/home/julien/traineeship/mmiv/model/image.csv" instead.
+INFO:niftynet:2019-05-13 17:37:08,617: Overwriting existing: "/home/julien/traineeship/mmiv/model/image.csv".
+INFO:niftynet:2019-05-13 17:37:08,617: [image] search file folders, writing csv file /home/julien/traineeship/mmiv/model/image.csv
+INFO:niftynet:2019-05-13 17:37:08,621: `csv_file = ` not found, writing to "/home/julien/traineeship/mmiv/model/label.csv" instead.
+INFO:niftynet:2019-05-13 17:37:08,621: Overwriting existing: "/home/julien/traineeship/mmiv/model/label.csv".
+INFO:niftynet:2019-05-13 17:37:08,621: [label] search file folders, writing csv file /home/julien/traineeship/mmiv/model/label.csv
+INFO:niftynet:2019-05-13 17:37:08,625: [inferred] search file folders, writing csv file /home/julien/traineeship/mmiv/model/output/out_2/inferred.csv
+INFO:niftynet:2019-05-13 17:37:08,629: 
+
+Number of subjects 1, input section names: ['subject_id', 'image', 'label', 'inferred']
+-- using all subjects (without data partitioning).
+
+INFO:niftynet:2019-05-13 17:37:08,644: Image reader: loading 1 subjects from sections ('image',) as input [image]
+INFO:niftynet:2019-05-13 17:37:08,644: Image reader: loading 1 subjects from sections ('label',) as input [label]
+INFO:niftynet:2019-05-13 17:37:08,644: Image reader: loading 1 subjects from sections ('inferred',) as input [inferred]
+INFO:niftynet:2019-05-13 17:37:08,645: label mapping ready for label:('label',), 2 classes
+INFO:niftynet:2019-05-13 17:37:08,645: label mapping ready for inferred:('inferred',), 2 classes
+INFO:niftynet:2019-05-13 17:37:10,118: Cleaning up...
+INFO:niftynet:2019-05-13 17:37:10,118: SegmentationApplication stopped (time in second 1.47).
+INFO:niftynet:2019-05-13 18:03:00,748: starting segmentation application
+INFO:niftynet:2019-05-13 18:03:00,748: `csv_file = ` not found, writing to "/home/julien/traineeship/mmiv/model/image.csv" instead.
+INFO:niftynet:2019-05-13 18:03:00,748: Overwriting existing: "/home/julien/traineeship/mmiv/model/image.csv".
+INFO:niftynet:2019-05-13 18:03:00,748: [image] search file folders, writing csv file /home/julien/traineeship/mmiv/model/image.csv
+INFO:niftynet:2019-05-13 18:03:00,782: `csv_file = ` not found, writing to "/home/julien/traineeship/mmiv/model/label.csv" instead.
+INFO:niftynet:2019-05-13 18:03:00,782: Overwriting existing: "/home/julien/traineeship/mmiv/model/label.csv".
+INFO:niftynet:2019-05-13 18:03:00,782: [label] search file folders, writing csv file /home/julien/traineeship/mmiv/model/label.csv
+INFO:niftynet:2019-05-13 18:03:00,816: [inferred] search file folders, writing csv file /home/julien/traineeship/mmiv/model/output/out_1/inferred.csv
+WARNING:niftynet:2019-05-13 18:03:00,851: Loading from existing partitioning file /home/julien/traineeship/mmiv/model/split.csv, ignoring partitioning ratios.
+INFO:niftynet:2019-05-13 18:03:00,854: 
+
+Number of subjects 581, input section names: ['subject_id', 'image', 'label', 'inferred']
+Dataset partitioning:
+-- training 563 cases (96.90%),
+-- validation 12 cases (2.07%),
+-- inference 6 cases (1.03%).
+
+INFO:niftynet:2019-05-13 18:03:00,914: Image reader: loading 6 subjects from sections ('image',) as input [image]
+INFO:niftynet:2019-05-13 18:03:00,914: Image reader: loading 6 subjects from sections ('label',) as input [label]
+INFO:niftynet:2019-05-13 18:03:00,914: Image reader: loading 6 subjects from sections ('inferred',) as input [inferred]
+INFO:niftynet:2019-05-13 18:03:00,915: label mapping ready for label:('label',), 2 classes
+INFO:niftynet:2019-05-13 18:03:00,915: label mapping ready for inferred:('inferred',), 2 classes
+INFO:niftynet:2019-05-13 18:03:10,702: Cleaning up...
+INFO:niftynet:2019-05-13 18:03:10,703: SegmentationApplication stopped (time in second 9.79).
+INFO:niftynet:2019-05-13 18:03:33,589: starting segmentation application
+INFO:niftynet:2019-05-13 18:03:33,590: `csv_file = ` not found, writing to "/home/julien/traineeship/mmiv/model/image.csv" instead.
+INFO:niftynet:2019-05-13 18:03:33,590: Overwriting existing: "/home/julien/traineeship/mmiv/model/image.csv".
+INFO:niftynet:2019-05-13 18:03:33,590: [image] search file folders, writing csv file /home/julien/traineeship/mmiv/model/image.csv
+INFO:niftynet:2019-05-13 18:03:33,593: `csv_file = ` not found, writing to "/home/julien/traineeship/mmiv/model/label.csv" instead.
+INFO:niftynet:2019-05-13 18:03:33,593: Overwriting existing: "/home/julien/traineeship/mmiv/model/label.csv".
+INFO:niftynet:2019-05-13 18:03:33,593: [label] search file folders, writing csv file /home/julien/traineeship/mmiv/model/label.csv
+INFO:niftynet:2019-05-13 18:03:33,598: [inferred] search file folders, writing csv file /home/julien/traineeship/mmiv/model/output/out_2/inferred.csv
+INFO:niftynet:2019-05-13 18:03:33,602: 
+
+Number of subjects 1, input section names: ['subject_id', 'image', 'label', 'inferred']
+-- using all subjects (without data partitioning).
+
+INFO:niftynet:2019-05-13 18:03:33,616: Image reader: loading 1 subjects from sections ('image',) as input [image]
+INFO:niftynet:2019-05-13 18:03:33,616: Image reader: loading 1 subjects from sections ('label',) as input [label]
+INFO:niftynet:2019-05-13 18:03:33,616: Image reader: loading 1 subjects from sections ('inferred',) as input [inferred]
+INFO:niftynet:2019-05-13 18:03:33,617: label mapping ready for label:('label',), 2 classes
+INFO:niftynet:2019-05-13 18:03:33,617: label mapping ready for inferred:('inferred',), 2 classes
+INFO:niftynet:2019-05-13 18:03:35,062: Cleaning up...
+INFO:niftynet:2019-05-13 18:03:35,062: SegmentationApplication stopped (time in second 1.44).
+INFO:niftynet:2019-05-13 18:06:02,663: starting segmentation application
+INFO:niftynet:2019-05-13 18:06:02,664: `csv_file = ` not found, writing to "/home/julien/traineeship/mmiv/model/image.csv" instead.
+INFO:niftynet:2019-05-13 18:06:02,664: Overwriting existing: "/home/julien/traineeship/mmiv/model/image.csv".
+INFO:niftynet:2019-05-13 18:06:02,664: [image] search file folders, writing csv file /home/julien/traineeship/mmiv/model/image.csv
+INFO:niftynet:2019-05-13 18:06:02,699: `csv_file = ` not found, writing to "/home/julien/traineeship/mmiv/model/label.csv" instead.
+INFO:niftynet:2019-05-13 18:06:02,699: Overwriting existing: "/home/julien/traineeship/mmiv/model/label.csv".
+INFO:niftynet:2019-05-13 18:06:02,699: [label] search file folders, writing csv file /home/julien/traineeship/mmiv/model/label.csv
+INFO:niftynet:2019-05-13 18:06:02,734: [inferred] search file folders, writing csv file /home/julien/traineeship/mmiv/model/output/out_1/inferred.csv
+WARNING:niftynet:2019-05-13 18:06:02,769: Loading from existing partitioning file /home/julien/traineeship/mmiv/model/split.csv, ignoring partitioning ratios.
+INFO:niftynet:2019-05-13 18:06:02,772: 
+
+Number of subjects 581, input section names: ['subject_id', 'image', 'label', 'inferred']
+Dataset partitioning:
+-- training 563 cases (96.90%),
+-- validation 12 cases (2.07%),
+-- inference 6 cases (1.03%).
+
+INFO:niftynet:2019-05-13 18:06:02,831: Image reader: loading 6 subjects from sections ('image',) as input [image]
+INFO:niftynet:2019-05-13 18:06:02,831: Image reader: loading 6 subjects from sections ('label',) as input [label]
+INFO:niftynet:2019-05-13 18:06:02,831: Image reader: loading 6 subjects from sections ('inferred',) as input [inferred]
+INFO:niftynet:2019-05-13 18:06:02,832: label mapping ready for label:('label',), 2 classes
+INFO:niftynet:2019-05-13 18:06:02,832: label mapping ready for inferred:('inferred',), 2 classes
+WARNING:niftynet:2019-05-13 18:06:02,844: User cancelled application
+INFO:niftynet:2019-05-13 18:06:02,844: Cleaning up...
+INFO:niftynet:2019-05-13 18:06:02,844: SegmentationApplication stopped (time in second 0.01).
+INFO:niftynet:2019-05-13 18:06:25,720: starting segmentation application
+INFO:niftynet:2019-05-13 18:06:25,720: `csv_file = ` not found, writing to "/home/julien/traineeship/mmiv/model/image.csv" instead.
+INFO:niftynet:2019-05-13 18:06:25,720: Overwriting existing: "/home/julien/traineeship/mmiv/model/image.csv".
+INFO:niftynet:2019-05-13 18:06:25,720: [image] search file folders, writing csv file /home/julien/traineeship/mmiv/model/image.csv
+INFO:niftynet:2019-05-13 18:06:25,724: `csv_file = ` not found, writing to "/home/julien/traineeship/mmiv/model/label.csv" instead.
+INFO:niftynet:2019-05-13 18:06:25,724: Overwriting existing: "/home/julien/traineeship/mmiv/model/label.csv".
+INFO:niftynet:2019-05-13 18:06:25,724: [label] search file folders, writing csv file /home/julien/traineeship/mmiv/model/label.csv
+INFO:niftynet:2019-05-13 18:06:25,729: [inferred] search file folders, writing csv file /home/julien/traineeship/mmiv/model/output/out_2/inferred.csv
+INFO:niftynet:2019-05-13 18:06:25,732: 
+
+Number of subjects 1, input section names: ['subject_id', 'image', 'label', 'inferred']
+-- using all subjects (without data partitioning).
+
+INFO:niftynet:2019-05-13 18:06:25,747: Image reader: loading 1 subjects from sections ('image',) as input [image]
+INFO:niftynet:2019-05-13 18:06:25,748: Image reader: loading 1 subjects from sections ('label',) as input [label]
+INFO:niftynet:2019-05-13 18:06:25,748: Image reader: loading 1 subjects from sections ('inferred',) as input [inferred]
+INFO:niftynet:2019-05-13 18:06:25,749: label mapping ready for label:('label',), 2 classes
+INFO:niftynet:2019-05-13 18:06:25,749: label mapping ready for inferred:('inferred',), 2 classes
+INFO:niftynet:2019-05-13 18:06:27,195: Cleaning up...
+INFO:niftynet:2019-05-13 18:06:27,196: SegmentationApplication stopped (time in second 1.44).
+INFO:niftynet:2019-05-13 23:31:52,597: starting segmentation application
+INFO:niftynet:2019-05-13 23:31:52,597: `csv_file = ` not found, writing to "/home/julien/traineeship/mmiv/model/image.csv" instead.
+INFO:niftynet:2019-05-13 23:31:52,597: Overwriting existing: "/home/julien/traineeship/mmiv/model/image.csv".
+INFO:niftynet:2019-05-13 23:31:52,597: [image] search file folders, writing csv file /home/julien/traineeship/mmiv/model/image.csv
+INFO:niftynet:2019-05-13 23:31:52,631: `csv_file = ` not found, writing to "/home/julien/traineeship/mmiv/model/label.csv" instead.
+INFO:niftynet:2019-05-13 23:31:52,631: Overwriting existing: "/home/julien/traineeship/mmiv/model/label.csv".
+INFO:niftynet:2019-05-13 23:31:52,631: [label] search file folders, writing csv file /home/julien/traineeship/mmiv/model/label.csv
+INFO:niftynet:2019-05-13 23:31:52,666: [inferred] search file folders, writing csv file /home/julien/traineeship/mmiv/model/output/out_1/inferred.csv
+WARNING:niftynet:2019-05-13 23:31:52,700: Loading from existing partitioning file /home/julien/traineeship/mmiv/model/split.csv, ignoring partitioning ratios.
+INFO:niftynet:2019-05-13 23:31:52,702: 
+
+Number of subjects 581, input section names: ['subject_id', 'image', 'label', 'inferred']
+Dataset partitioning:
+-- training 563 cases (96.90%),
+-- validation 12 cases (2.07%),
+-- inference 6 cases (1.03%).
+
+INFO:niftynet:2019-05-13 23:31:52,760: Image reader: loading 6 subjects from sections ('image',) as input [image]
+INFO:niftynet:2019-05-13 23:31:52,760: Image reader: loading 6 subjects from sections ('label',) as input [label]
+INFO:niftynet:2019-05-13 23:31:52,760: Image reader: loading 6 subjects from sections ('inferred',) as input [inferred]
+INFO:niftynet:2019-05-13 23:31:52,761: label mapping ready for label:('label',), 2 classes
+INFO:niftynet:2019-05-13 23:31:52,762: label mapping ready for inferred:('inferred',), 2 classes
+INFO:niftynet:2019-05-13 23:32:02,306: Cleaning up...
+INFO:niftynet:2019-05-13 23:32:02,306: SegmentationApplication stopped (time in second 9.54).
+INFO:niftynet:2019-05-13 23:32:25,676: starting segmentation application
+INFO:niftynet:2019-05-13 23:32:25,676: `csv_file = ` not found, writing to "/home/julien/traineeship/mmiv/model/image.csv" instead.
+INFO:niftynet:2019-05-13 23:32:25,676: Overwriting existing: "/home/julien/traineeship/mmiv/model/image.csv".
+INFO:niftynet:2019-05-13 23:32:25,676: [image] search file folders, writing csv file /home/julien/traineeship/mmiv/model/image.csv
+INFO:niftynet:2019-05-13 23:32:25,681: `csv_file = ` not found, writing to "/home/julien/traineeship/mmiv/model/label.csv" instead.
+INFO:niftynet:2019-05-13 23:32:25,681: Overwriting existing: "/home/julien/traineeship/mmiv/model/label.csv".
+INFO:niftynet:2019-05-13 23:32:25,681: [label] search file folders, writing csv file /home/julien/traineeship/mmiv/model/label.csv
+INFO:niftynet:2019-05-13 23:32:25,686: [inferred] search file folders, writing csv file /home/julien/traineeship/mmiv/model/output/out_2/inferred.csv
+INFO:niftynet:2019-05-13 23:32:25,689: 
+
+Number of subjects 1, input section names: ['subject_id', 'image', 'label', 'inferred']
+-- using all subjects (without data partitioning).
+
+INFO:niftynet:2019-05-13 23:32:25,704: Image reader: loading 1 subjects from sections ('image',) as input [image]
+INFO:niftynet:2019-05-13 23:32:25,704: Image reader: loading 1 subjects from sections ('label',) as input [label]
+INFO:niftynet:2019-05-13 23:32:25,704: Image reader: loading 1 subjects from sections ('inferred',) as input [inferred]
+INFO:niftynet:2019-05-13 23:32:25,705: label mapping ready for label:('label',), 2 classes
+INFO:niftynet:2019-05-13 23:32:25,705: label mapping ready for inferred:('inferred',), 2 classes
+INFO:niftynet:2019-05-13 23:32:27,151: Cleaning up...
+INFO:niftynet:2019-05-13 23:32:27,151: SegmentationApplication stopped (time in second 1.44).
+INFO:niftynet:2019-05-14 10:54:40,720: starting segmentation application
+INFO:niftynet:2019-05-14 10:54:40,720: `csv_file = ` not found, writing to "/home/julien/traineeship/mmiv/model/image.csv" instead.
+INFO:niftynet:2019-05-14 10:54:40,720: Overwriting existing: "/home/julien/traineeship/mmiv/model/image.csv".
+INFO:niftynet:2019-05-14 10:54:40,720: [image] search file folders, writing csv file /home/julien/traineeship/mmiv/model/image.csv
+INFO:niftynet:2019-05-14 10:54:40,754: `csv_file = ` not found, writing to "/home/julien/traineeship/mmiv/model/label.csv" instead.
+INFO:niftynet:2019-05-14 10:54:40,754: Overwriting existing: "/home/julien/traineeship/mmiv/model/label.csv".
+INFO:niftynet:2019-05-14 10:54:40,754: [label] search file folders, writing csv file /home/julien/traineeship/mmiv/model/label.csv
+INFO:niftynet:2019-05-14 10:54:40,788: `csv_file = /home/julien/traineeship/mmiv/model/output/out_1/inferred.csv` not found, writing to "/home/julien/traineeship/mmiv/model/inferred.csv" instead.
+INFO:niftynet:2019-05-14 10:54:40,788: Overwriting existing: "/home/julien/traineeship/mmiv/model/inferred.csv".
+INFO:niftynet:2019-05-14 10:54:40,788: [inferred] search file folders, writing csv file /home/julien/traineeship/mmiv/model/inferred.csv
+WARNING:niftynet:2019-05-14 10:54:40,823: Loading from existing partitioning file /home/julien/traineeship/mmiv/model/split.csv, ignoring partitioning ratios.
+INFO:niftynet:2019-05-14 10:54:40,826: 
+
+Number of subjects 581, input section names: ['subject_id', 'image', 'label', 'inferred']
+Dataset partitioning:
+-- training 563 cases (96.90%),
+-- validation 12 cases (2.07%),
+-- inference 6 cases (1.03%).
+
+INFO:niftynet:2019-05-14 10:54:40,882: Image reader: loading 6 subjects from sections ('image',) as input [image]
+INFO:niftynet:2019-05-14 10:54:40,883: Image reader: loading 6 subjects from sections ('label',) as input [label]
+INFO:niftynet:2019-05-14 10:54:40,883: Image reader: loading 6 subjects from sections ('inferred',) as input [inferred]
+INFO:niftynet:2019-05-14 10:54:40,883: label mapping ready for label:('label',), 2 classes
+INFO:niftynet:2019-05-14 10:54:40,883: label mapping ready for inferred:('inferred',), 2 classes
+INFO:niftynet:2019-05-14 10:54:50,430: Cleaning up...
+INFO:niftynet:2019-05-14 10:54:50,430: SegmentationApplication stopped (time in second 9.55).
+INFO:niftynet:2019-05-14 10:57:30,628: starting segmentation application
+INFO:niftynet:2019-05-14 10:57:30,628: `csv_file = ` not found, writing to "/home/julien/traineeship/mmiv/model/image.csv" instead.
+INFO:niftynet:2019-05-14 10:57:30,628: Overwriting existing: "/home/julien/traineeship/mmiv/model/image.csv".
+INFO:niftynet:2019-05-14 10:57:30,628: [image] search file folders, writing csv file /home/julien/traineeship/mmiv/model/image.csv
+INFO:niftynet:2019-05-14 10:57:30,662: `csv_file = ` not found, writing to "/home/julien/traineeship/mmiv/model/label.csv" instead.
+INFO:niftynet:2019-05-14 10:57:30,662: Overwriting existing: "/home/julien/traineeship/mmiv/model/label.csv".
+INFO:niftynet:2019-05-14 10:57:30,662: [label] search file folders, writing csv file /home/julien/traineeship/mmiv/model/label.csv
+INFO:niftynet:2019-05-14 10:57:30,697: `csv_file = /home/julien/traineeship/mmiv/model/output/out_1/inferred.csv` not found, writing to "/home/julien/traineeship/mmiv/model/inferred.csv" instead.
+INFO:niftynet:2019-05-14 10:57:30,697: Overwriting existing: "/home/julien/traineeship/mmiv/model/inferred.csv".
+INFO:niftynet:2019-05-14 10:57:30,697: [inferred] search file folders, writing csv file /home/julien/traineeship/mmiv/model/inferred.csv
+WARNING:niftynet:2019-05-14 10:57:30,731: Loading from existing partitioning file /home/julien/traineeship/mmiv/model/split.csv, ignoring partitioning ratios.
+INFO:niftynet:2019-05-14 10:57:30,733: 
+
+Number of subjects 581, input section names: ['subject_id', 'image', 'label', 'inferred']
+Dataset partitioning:
+-- training 563 cases (96.90%),
+-- validation 12 cases (2.07%),
+-- inference 6 cases (1.03%).
+
+INFO:niftynet:2019-05-14 10:57:30,792: Image reader: loading 6 subjects from sections ('image',) as input [image]
+INFO:niftynet:2019-05-14 10:57:30,792: Image reader: loading 6 subjects from sections ('label',) as input [label]
+INFO:niftynet:2019-05-14 10:57:30,792: Image reader: loading 6 subjects from sections ('inferred',) as input [inferred]
+INFO:niftynet:2019-05-14 10:57:30,793: label mapping ready for label:('label',), 2 classes
+INFO:niftynet:2019-05-14 10:57:30,793: label mapping ready for inferred:('inferred',), 2 classes
+INFO:niftynet:2019-05-14 10:57:40,294: Cleaning up...
+INFO:niftynet:2019-05-14 10:57:40,294: SegmentationApplication stopped (time in second 9.50).
+INFO:niftynet:2019-05-14 10:57:53,194: starting segmentation application
+INFO:niftynet:2019-05-14 10:57:53,194: `csv_file = ` not found, writing to "/home/julien/traineeship/mmiv/model/image.csv" instead.
+INFO:niftynet:2019-05-14 10:57:53,194: Overwriting existing: "/home/julien/traineeship/mmiv/model/image.csv".
+INFO:niftynet:2019-05-14 10:57:53,194: [image] search file folders, writing csv file /home/julien/traineeship/mmiv/model/image.csv
+INFO:niftynet:2019-05-14 10:57:53,198: `csv_file = ` not found, writing to "/home/julien/traineeship/mmiv/model/label.csv" instead.
+INFO:niftynet:2019-05-14 10:57:53,198: Overwriting existing: "/home/julien/traineeship/mmiv/model/label.csv".
+INFO:niftynet:2019-05-14 10:57:53,198: [label] search file folders, writing csv file /home/julien/traineeship/mmiv/model/label.csv
+INFO:niftynet:2019-05-14 10:57:53,202: `csv_file = /home/julien/traineeship/mmiv/model/output/out_2/inferred.csv` not found, writing to "/home/julien/traineeship/mmiv/model/inferred.csv" instead.
+INFO:niftynet:2019-05-14 10:57:53,202: Overwriting existing: "/home/julien/traineeship/mmiv/model/inferred.csv".
+INFO:niftynet:2019-05-14 10:57:53,202: [inferred] search file folders, writing csv file /home/julien/traineeship/mmiv/model/inferred.csv
+INFO:niftynet:2019-05-14 10:57:53,206: 
+
+Number of subjects 1, input section names: ['subject_id', 'image', 'label', 'inferred']
+-- using all subjects (without data partitioning).
+
+INFO:niftynet:2019-05-14 10:57:53,221: Image reader: loading 1 subjects from sections ('image',) as input [image]
+INFO:niftynet:2019-05-14 10:57:53,221: Image reader: loading 1 subjects from sections ('label',) as input [label]
+INFO:niftynet:2019-05-14 10:57:53,221: Image reader: loading 1 subjects from sections ('inferred',) as input [inferred]
+INFO:niftynet:2019-05-14 10:57:53,222: label mapping ready for label:('label',), 2 classes
+INFO:niftynet:2019-05-14 10:57:53,222: label mapping ready for inferred:('inferred',), 2 classes
+INFO:niftynet:2019-05-14 10:57:54,632: Cleaning up...
+INFO:niftynet:2019-05-14 10:57:54,632: SegmentationApplication stopped (time in second 1.41).
+INFO:niftynet:2019-05-14 11:33:01,638: starting segmentation application
+INFO:niftynet:2019-05-14 11:33:01,638: `csv_file = ` not found, writing to "/home/julien/traineeship/mmiv/model/image.csv" instead.
+INFO:niftynet:2019-05-14 11:33:01,638: Overwriting existing: "/home/julien/traineeship/mmiv/model/image.csv".
+INFO:niftynet:2019-05-14 11:33:01,638: [image] search file folders, writing csv file /home/julien/traineeship/mmiv/model/image.csv
+INFO:niftynet:2019-05-14 11:33:01,671: `csv_file = ` not found, writing to "/home/julien/traineeship/mmiv/model/label.csv" instead.
+INFO:niftynet:2019-05-14 11:33:01,671: Overwriting existing: "/home/julien/traineeship/mmiv/model/label.csv".
+INFO:niftynet:2019-05-14 11:33:01,672: [label] search file folders, writing csv file /home/julien/traineeship/mmiv/model/label.csv
+INFO:niftynet:2019-05-14 11:33:01,706: `csv_file = /home/julien/traineeship/mmiv/model/output/out_1/inferred.csv` not found, writing to "/home/julien/traineeship/mmiv/model/inferred.csv" instead.
+INFO:niftynet:2019-05-14 11:33:01,706: Overwriting existing: "/home/julien/traineeship/mmiv/model/inferred.csv".
+INFO:niftynet:2019-05-14 11:33:01,706: [inferred] search file folders, writing csv file /home/julien/traineeship/mmiv/model/inferred.csv
+WARNING:niftynet:2019-05-14 11:33:01,740: Loading from existing partitioning file /home/julien/traineeship/mmiv/model/split.csv, ignoring partitioning ratios.
+INFO:niftynet:2019-05-14 11:33:01,742: 
+
+Number of subjects 581, input section names: ['subject_id', 'image', 'label', 'inferred']
+Dataset partitioning:
+-- training 563 cases (96.90%),
+-- validation 12 cases (2.07%),
+-- inference 6 cases (1.03%).
+
+INFO:niftynet:2019-05-14 11:33:01,800: Image reader: loading 6 subjects from sections ('image',) as input [image]
+INFO:niftynet:2019-05-14 11:33:01,800: Image reader: loading 6 subjects from sections ('label',) as input [label]
+INFO:niftynet:2019-05-14 11:33:01,800: Image reader: loading 6 subjects from sections ('inferred',) as input [inferred]
+INFO:niftynet:2019-05-14 11:33:01,801: label mapping ready for label:('label',), 2 classes
+INFO:niftynet:2019-05-14 11:33:01,801: label mapping ready for inferred:('inferred',), 2 classes
+INFO:niftynet:2019-05-14 11:33:11,159: Cleaning up...
+INFO:niftynet:2019-05-14 11:33:11,159: SegmentationApplication stopped (time in second 9.36).
+INFO:niftynet:2019-05-14 11:33:32,763: starting segmentation application
+INFO:niftynet:2019-05-14 11:33:32,763: `csv_file = ` not found, writing to "/home/julien/traineeship/mmiv/model/image.csv" instead.
+INFO:niftynet:2019-05-14 11:33:32,763: Overwriting existing: "/home/julien/traineeship/mmiv/model/image.csv".
+INFO:niftynet:2019-05-14 11:33:32,763: [image] search file folders, writing csv file /home/julien/traineeship/mmiv/model/image.csv
+INFO:niftynet:2019-05-14 11:33:32,767: `csv_file = ` not found, writing to "/home/julien/traineeship/mmiv/model/label.csv" instead.
+INFO:niftynet:2019-05-14 11:33:32,767: Overwriting existing: "/home/julien/traineeship/mmiv/model/label.csv".
+INFO:niftynet:2019-05-14 11:33:32,767: [label] search file folders, writing csv file /home/julien/traineeship/mmiv/model/label.csv
+INFO:niftynet:2019-05-14 11:33:32,771: `csv_file = /home/julien/traineeship/mmiv/model/output/out_2/inferred.csv` not found, writing to "/home/julien/traineeship/mmiv/model/inferred.csv" instead.
+INFO:niftynet:2019-05-14 11:33:32,771: Overwriting existing: "/home/julien/traineeship/mmiv/model/inferred.csv".
+INFO:niftynet:2019-05-14 11:33:32,771: [inferred] search file folders, writing csv file /home/julien/traineeship/mmiv/model/inferred.csv
+INFO:niftynet:2019-05-14 11:33:32,775: 
+
+Number of subjects 1, input section names: ['subject_id', 'image', 'label', 'inferred']
+-- using all subjects (without data partitioning).
+
+INFO:niftynet:2019-05-14 11:33:32,788: Image reader: loading 1 subjects from sections ('image',) as input [image]
+INFO:niftynet:2019-05-14 11:33:32,788: Image reader: loading 1 subjects from sections ('label',) as input [label]
+INFO:niftynet:2019-05-14 11:33:32,789: Image reader: loading 1 subjects from sections ('inferred',) as input [inferred]
+INFO:niftynet:2019-05-14 11:33:32,790: label mapping ready for label:('label',), 2 classes
+INFO:niftynet:2019-05-14 11:33:32,790: label mapping ready for inferred:('inferred',), 2 classes
+INFO:niftynet:2019-05-14 11:33:34,283: Cleaning up...
+INFO:niftynet:2019-05-14 11:33:34,283: SegmentationApplication stopped (time in second 1.49).
