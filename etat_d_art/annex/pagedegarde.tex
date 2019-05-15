@@ -1,0 +1,124 @@
+\makeatletter
+\def\@ecole{école}
+\newcommand{\ecole}[1]{
+  \def\@ecole{#1}
+}
+
+\def\@specialite{Spécialité}
+\newcommand{\specialite}[1]{
+  \def\@specialite{#1}
+}
+
+\def\@ED{\'{E}cole Doctorale}
+\newcommand{\ED}[1]{
+  \def\@ED{#1}
+}
+
+\def\@doctorat{Doctorat}
+\newcommand{\doctorat}[1]{
+  \def\@doctorat{#1}
+}
+
+\def\@adresse{Adresse}
+\newcommand{\adresse}[1]{
+  \def\@adresse{#1}
+}
+
+\def\@directeur{directeur}
+\newcommand{\directeur}[1]{
+  \def\@directeur{#1}
+}
+
+\def\@encadrant{encadrant}
+\newcommand{\encadrant}[1]{
+  \def\@encadrant{#1}
+}
+\def\@jurya{}{}{}
+\newcommand{\jurya}[3]{
+  \def\@jurya{\textbf{#1},	& #2	& #3\\}
+}
+\def\@juryb{}{}{}
+\newcommand{\juryb}[3]{
+  \def\@juryb{\textbf{#1},	& #2	& #3\\}
+}
+\def\@juryc{}{}{}
+\newcommand{\juryc}[3]{
+  \def\@juryc{\textbf{#1},	& #2	& #3\\}
+}
+\def\@juryd{}{}{}
+\newcommand{\juryd}[3]{
+  \def\@juryd{\textbf{#1},	& #2	& #3\\}
+}
+\def\@jurye{}{}{}
+\newcommand{\jurye}[3]{
+  \def\@jurye{\textbf{#1},	& #2	& #3\\}
+}
+\def\@juryf{}{}{}
+\newcommand{\juryf}[3]{
+  \def\@juryf{\textbf{#1},	& #2	& #3\\}
+}
+\def\@juryg{}{}{}
+\newcommand{\juryg}[3]{
+  \def\@juryg{\textbf{#1},	& #2	& #3\\}
+}
+\def\@juryh{}{}{}
+\newcommand{\juryh}[3]{
+  \def\@juryh{\textbf{#1},	& #2	& #3\\}
+}
+\def\@juryi{}{}{}
+\newcommand{\juryi}[3]{
+  \def\@juryi{\textbf{#1},	& #2	& #3\\}
+}
+\makeatother
+
+\makeatletter
+\newcommand{\pagedegarde}{
+  \newgeometry{top=2.5cm, bottom=1cm, left=2cm, right=1cm}
+  \begin{titlepage}
+    \begin{center}
+      \includegraphics[width=0.2\textwidth]{annex/logo_UCA.eps}
+      \hfill
+      \includegraphics[width=0.4\textwidth]{annex/isima.eps}\\
+      \vspace{1cm}
+      % \vspace{1cm}
+      \vspace{1cm}
+        {\huge RAPPORT DE STAGE}\\
+      \vspace{0.3cm}
+        {\small Norvège\\}
+      \vspace{1cm}
+        {\large 2\up{ème} année F4}\\
+      \vspace{0.5cm}
+      	\textit{Projet réalisé par}\\
+      \vspace{0.5cm}
+        {\Large {\bfseries \@author}} \\
+      \vspace{0.5cm}
+      	le \@date \\
+      \vfill
+         {\huge \color[rgb]{0,0,1} \bfseries{\@title}} \\
+      \vfill
+          Tuteur de Stage : {\bfseries \@directeur}\\
+          Co-encadrant de Stage : {\bfseries \@encadrant}\\
+      \vfill
+    	\begin{tabular}{l l l}
+    		\large{\textbf{Jury}}\\
+    		\@jurya
+    		\@juryb
+    		\@juryc
+    		\@juryd
+    	% 	\@jurye
+    	% 	\@juryf
+    	% 	\@juryg
+    	% 	\@juryh
+    	% 	\@juryi
+    	\end{tabular}
+    	\vfill
+
+      \begin{flushright}
+        durée : 5 mois
+      \end{flushright}
+
+    	\@adresse
+    \end{center}
+  \end{titlepage}
+  \restoregeometry
+}

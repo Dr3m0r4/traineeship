@@ -4,12 +4,12 @@
 
   \indexspace
 
-  \item IRM, \hyperpage{8, 9}
+  \item IRM, \hyperpage{7}, \hyperpage{9}
 
   \indexspace
 
   \item Machine Learning, \hyperpage{4}, \hyperpage{7, 8}
-    \subitem classification, \hyperpage{7}
+    \subitem classification, \hyperpage{8}
     \subitem Deep Learning, \hyperpage{7, 8}
       \subsubitem neural networks, \hyperpage{4}, \hyperpage{7}, 
 		\hyperpage{9}
@@ -22,16 +22,12 @@
 
   \indexspace
 
-  \item open-source, \hyperpage{9}
+  \item open-source, \hyperpage{7}, \hyperpage{9}
 
   \indexspace
 
-  \item Python, \hyperpage{4}, \hyperpage{9}
+  \item Python, \hyperpage{4}, \hyperpage{7}
     \subitem Anaconda, \hyperpage{4}
-    \subitem TensorFlow, \hyperpage{4}, \hyperpage{9}
-
-  \indexspace
-
-  \item TensorFlow, \hyperpage{4}
+    \subitem TensorFlow, \hyperpage{4}, \hyperpage{7}, \hyperpage{9}
 
 \end{theindex}

@@ -1,0 +1,108 @@
+\documentclass{book}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[top=2.5cm, bottom=2.5cm, left=3cm, right=2cm]{geometry}
+\usepackage{lmodern}
+\usepackage{ae, aecompl}
+\usepackage{fancyhdr}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{mathrsfs}
+\usepackage{amsthm}
+\usepackage{url}
+\usepackage{listings}
+\usepackage{stmaryrd}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{verbatim}
+\usepackage{bookmark}
+
+\usepackage{soul}
+\usepackage{ulem}
+\usepackage{graphicx}
+\usepackage{eso-pic}
+\usepackage{float}
+
+\usepackage{makeidx}
+\usepackage{glossaries}
+
+\newcommand{\rouge}{\textcolor{red}}
+\newcommand{\bleu}{\textcolor{blue}}
+\newcommand{\p}{\vspace{0.2cm}}
+
+\addto\captionsfrench{\renewcommand{\chaptername}{Partie}}
+\floatplacement{figure}{!ht}
+\floatplacement{table}{!ht}
+
+\newtheorem{definition}{Définition}[chapter]
+
+\lstset{
+	language=Python,        				% choix du langage
+	basicstyle=\footnotesize,       % taille de la police du code
+	numbers=left,                   % placer le numéro de chaque ligne à gauche (left)
+	numberstyle=\normalsize,        % taille de la police des numéros
+	numbersep=7pt,                  % distance entre le code et sa numérotation
+	breaklines=true
+}
+
+\lstdefinelanguage{INI}
+{
+    basicstyle=\ttfamily\small,
+    columns=fullflexible,
+    tag=[s]{[]},
+    tagstyle=\color{Dandelion}\bfseries,
+    usekeywordsintag=true,
+    morecomment=[l]{;},
+    commentstyle=\color{gray}\ttfamily,
+    alsoletter={=},
+    ndkeywords={=},
+		numbersep=7pt,
+    ndkeywordstyle=\color{green}\bfseries
+}[html]
+
+\makeindex
+\makeglossaries
+
+\input{annex/pagedegarde}
+
+\title{\'Etat de l'art -- Stage Norvège\\2\up{ème} année F4}
+\author{Julien \textsc{Feuillas}}
+\directeur{Arvid \textsc{Lundervold}}
+\encadrant{Alexander \textsc{Lundervold}}
+\adresse{\bsc{Isima} 1 rue de la Chebarde, Aubière 63170}
+
+\begin{document}
+  \pagedegarde
+
+  \thispagestyle{empty}
+	\pagestyle{plain}
+
+	\cleardoublepage
+	\renewcommand{\cleardoublepage}{\clearpage}
+
+  \begin{chapter}{Deep Learning}
+
+    \begin{section}{\'Evolution}
+
+    \end{section}
+
+  \end{chapter}
+
+  \begin{chapter}{TensorFlow}
+
+  \end{chapter}
+
+  \begin{chapter}{NiftyNet}
+
+  \end{chapter}
+
+  \nocite{*}
+  \bibliographystyle{plain}
+  \bibliography{annex/biblio_stage}
+  \addcontentsline{toc}{chapter}{Bibliographie}
+
+\end{document}
