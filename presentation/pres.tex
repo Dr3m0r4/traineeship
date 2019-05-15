@@ -259,15 +259,15 @@
 
 \begin{frame}[t]{Loss Function}
   \begin{columns}
-  \begin{column}[T]{0.01\textwidth}
-  \end{column}
-  \hfill
-  \begin{column}[T]{0.5\textwidth}
-    \rouge{-- training}
-  \end{column}
-  \begin{column}[T]{0.5\textwidth}
-    \textcolor{cyan}{-- validation}
-  \end{column}
+    \begin{column}[T]{0.01\textwidth}
+    \end{column}
+    \hfill
+    \begin{column}[T]{0.2\textwidth}
+      \rouge{-- training}
+    \end{column}
+    \begin{column}[T]{0.5\textwidth}
+      \textcolor{cyan}{-- validation}
+    \end{column}
   \end{columns}
 
   \begin{onlyenv}<1>
@@ -301,7 +301,7 @@
 \end{frame}
 %--- Next Frame ---%
 
-\begin{frame}[t]{Résultats}
+\begin{frame}[t]{Résultats attendus}
   \begin{figure}
     \includegraphics[scale=0.3]{annex/segmentation}
     \caption{Segmentation}
@@ -356,7 +356,11 @@
     \end{figure}
   \end{onlyenv}
   \begin{onlyenv}<2>
-
+    \begin{figure}
+      % \includegraphics{annex/loss_lr}
+      \caption{Loss function when lr modification at each iteration}
+      \label{FigLR}
+    \end{figure}
   \end{onlyenv}
 \end{frame}
 %--- Next Frame ---%

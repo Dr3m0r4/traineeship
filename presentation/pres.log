@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2019.4.25)  14 MAY 2019 17:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2019.4.25)  15 MAY 2019 10:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1596,7 +1596,7 @@ Package epstopdf Info: Source file: <annex/lr_modification.eps>
 (epstopdf)                    date: 2019-05-14 13:35:37
 (epstopdf)                    size: 154772 bytes
 (epstopdf)             Command: <repstopdf --outfile=annex/lr_modification-eps-converted-to.pdf annex/lr_modification.eps>
-(epstopdf)             \includegraphics on input line 361.
+(epstopdf)             \includegraphics on input line 365.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -1604,7 +1604,7 @@ pdfTeX warning: pdflatex (file /home/dr3m/travaux/traineeship/presentation/annex
 <annex/lr_modification-eps-converted-to.pdf, id=903, 1675.25874pt x 907.39pt>
 File: annex/lr_modification-eps-converted-to.pdf Graphic file (type pdf)
  <use annex/lr_modification-eps-converted-to.pdf>
-Package pdftex.def Info: annex/lr_modification-eps-converted-to.pdf used on input line 361.
+Package pdftex.def Info: annex/lr_modification-eps-converted-to.pdf used on input line 365.
 (pdftex.def)             Requested size: 284.79022pt x 154.25426pt.
  [20
 
@@ -1616,11 +1616,11 @@ Package epstopdf Info: Source file: <annex/lr_modification.eps>
 (epstopdf)                    date: 2019-05-14 13:35:37
 (epstopdf)                    size: 154772 bytes
 (epstopdf)             Command: <repstopdf --outfile=annex/lr_modification-eps-converted-to.pdf annex/lr_modification.eps>
-(epstopdf)             \includegraphics on input line 361.
+(epstopdf)             \includegraphics on input line 365.
 Package epstopdf Info: Output file is already uptodate.
 File: annex/lr_modification-eps-converted-to.pdf Graphic file (type pdf)
  <use annex/lr_modification-eps-converted-to.pdf>
-Package pdftex.def Info: annex/lr_modification-eps-converted-to.pdf used on input line 361.
+Package pdftex.def Info: annex/lr_modification-eps-converted-to.pdf used on input line 365.
 (pdftex.def)             Requested size: 284.79022pt x 154.25426pt.
  [21
 
@@ -1638,11 +1638,11 @@ Package pdftex.def Info: annex/lr_modification-eps-converted-to.pdf used on inpu
 \tf@snm=\write8
 \openout8 = `pres.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 388.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 388.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 392.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 392.
  (/home/dr3m/travaux/traineeship/presentation/pres.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 388.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 388.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 392.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 392.
 Package rerunfilecheck Info: File `pres.out' has not changed.
 (rerunfilecheck)             Checksum: DB42D57265F085CB08083874E5D05D45;121.
 
@@ -1659,7 +1659,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  56i,19n,64p,770b,783s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy7.pfb>
-Output written on /home/dr3m/travaux/traineeship/presentation/pres.pdf (23 pages, 2202446 bytes).
+Output written on /home/dr3m/travaux/traineeship/presentation/pres.pdf (23 pages, 2202552 bytes).
 PDF statistics:
  1111 PDF objects out of 1200 (max. 8388607)
  1026 compressed objects within 11 object streams

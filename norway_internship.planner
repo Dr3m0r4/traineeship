@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<project name="Norway Internship" company="University of Bergen" manager="Arvid Lundervold" phase="&#xC9;tat de l'art" project-start="20190401T000000Z" mrproject-version="2" calendar="1">
+<project name="Norway Internship" company="University of Bergen" manager="Arvid Lundervold" phase="&#xC9;tat de l'art" project-start="20190401T000000Z" mrproject-version="2" calendar="3">
   <properties/>
   <phases>
     <phase name="&#xC9;tat de l'art"/>
@@ -12,13 +12,32 @@
       <day-type id="3" name="start" description=""/>
       <day-type id="4" name="Sp&#xE9;cial" description=""/>
     </day-types>
-    <calendar id="1" name="Stage">
+    <calendar id="1" name="Ordi">
+      <default-week/>
+      <overridden-day-types>
+        <overridden-day-type id="0">
+          <interval start="0000" end="2359"/>
+        </overridden-day-type>
+      </overridden-day-types>
+      <days>
+        <day date="20190508" type="day-type" id="0"/>
+      </days>
+    </calendar>
+    <calendar id="2" name="D&#xE9;faut">
       <default-week mon="0" tue="0" wed="0" thu="0" fri="0" sat="1" sun="1"/>
       <overridden-day-types>
-        <overridden-day-type id="4">
-          <interval start="1200" end="1700"/>
-          <interval start="2100" end="2300"/>
+        <overridden-day-type id="0">
+          <interval start="0800" end="1200"/>
+          <interval start="1300" end="1700"/>
         </overridden-day-type>
+      </overridden-day-types>
+      <days>
+        <day date="20190501" type="day-type" id="0"/>
+      </days>
+    </calendar>
+    <calendar id="3" name="Stage">
+      <default-week mon="0" tue="0" wed="0" thu="0" fri="0" sat="1" sun="1"/>
+      <overridden-day-types>
         <overridden-day-type id="0">
           <interval start="0900" end="1200"/>
           <interval start="1330" end="1830"/>
@@ -26,6 +45,10 @@
         <overridden-day-type id="3">
           <interval start="1000" end="1230"/>
           <interval start="1300" end="2100"/>
+        </overridden-day-type>
+        <overridden-day-type id="4">
+          <interval start="1200" end="1700"/>
+          <interval start="2100" end="2300"/>
         </overridden-day-type>
       </overridden-day-types>
       <days>
@@ -45,23 +68,12 @@
         <day date="20190408" type="day-type" id="0"/>
         <day date="20190418" type="day-type" id="1"/>
         <day date="20190417" type="day-type" id="3"/>
+        <day date="20190517" type="day-type" id="1"/>
         <day date="20190416" type="day-type" id="3"/>
         <day date="20190426" type="day-type" id="0"/>
         <day date="20190405" type="day-type" id="0"/>
         <day date="20190415" type="day-type" id="3"/>
         <day date="20190425" type="day-type" id="3"/>
-      </days>
-    </calendar>
-    <calendar id="2" name="D&#xE9;faut">
-      <default-week mon="0" tue="0" wed="0" thu="0" fri="0" sat="1" sun="1"/>
-      <overridden-day-types>
-        <overridden-day-type id="0">
-          <interval start="0800" end="1200"/>
-          <interval start="1300" end="1700"/>
-        </overridden-day-type>
-      </overridden-day-types>
-      <days>
-        <day date="20190501" type="day-type" id="0"/>
       </days>
     </calendar>
   </calendars>
@@ -122,11 +134,11 @@
         </task>
       </task>
     </task>
-    <task id="15" name="Assert good result before next" note="" work="374400" start="20190424T153000Z" end="20190513T183000Z" work-start="20190424T153000Z" percent-complete="60" priority="0" type="normal" scheduling="fixed-work">
+    <task id="15" name="Assert good result before next" note="" work="576000" start="20190424T153000Z" end="20190516T183140Z" work-start="20190424T153000Z" percent-complete="60" priority="0" type="normal" scheduling="fixed-work">
       <predecessors>
         <predecessor id="1" predecessor-id="12" type="FS"/>
       </predecessors>
-      <task id="16" name="Validation of the training method" note="" work="374400" start="20190424T153000Z" end="20190513T183000Z" work-start="20190424T153000Z" percent-complete="70" priority="0" type="normal" scheduling="fixed-work">
+      <task id="16" name="Validation of the training method" note="" work="396000" start="20190424T153000Z" end="20190514T163000Z" work-start="20190424T153000Z" percent-complete="70" priority="0" type="normal" scheduling="fixed-work">
         <task id="17" name="Wrtiting and verifying the configuration file" note="" work="144000" start="20190424T153000Z" end="20190430T183000Z" work-start="20190424T153000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work"/>
         <task id="18" name="Training and inference (with modification in the config file to match good results)" note="" work="115200" start="20190430T183000Z" end="20190507T183000Z" work-start="20190502T090000Z" percent-complete="90" priority="0" type="normal" scheduling="fixed-work">
           <predecessors>
@@ -138,30 +150,35 @@
             <predecessor id="1" predecessor-id="18" type="FS"/>
           </predecessors>
         </task>
-        <task id="20" name="Drawing the evolution of the loss function" note="" work="72000" start="20190509T143000Z" end="20190513T183000Z" work-start="20190509T143000Z" percent-complete="50" priority="0" type="normal" scheduling="fixed-work">
+        <task id="20" name="Drawing the evolution of the loss function" note="" work="93600" start="20190509T143000Z" end="20190514T163000Z" work-start="20190509T143000Z" percent-complete="77" priority="0" type="normal" scheduling="fixed-work">
           <predecessors>
             <predecessor id="1" predecessor-id="19" type="FS"/>
             <predecessor id="1" predecessor-id="18" type="FS"/>
           </predecessors>
         </task>
       </task>
+      <task id="21" name="Training with 200 000 iterations" note="" work="180000" start="20190514T163000Z" end="20190516T183140Z" work-start="20190514T163000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="20" type="FS"/>
+        </predecessors>
+      </task>
     </task>
-    <task id="21" name="Research of the impact of learning rate on the training" note="" work="46800" start="20190513T183000Z" end="20190515T153000Z" work-start="20190514T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+    <task id="22" name="Research of the impact of learning rate on the training" note="" work="46800" start="20190516T183140Z" end="20190521T153000Z" work-start="20190520T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
       <predecessors>
         <predecessor id="1" predecessor-id="15" type="FS"/>
       </predecessors>
-      <task id="22" name="Research of algorithms which change the lr during the training" note="" work="46800" start="20190513T183000Z" end="20190515T153000Z" work-start="20190514T090000Z" percent-complete="30" priority="0" type="normal" scheduling="fixed-work"/>
+      <task id="23" name="Research of algorithms which change the lr during the training" note="" work="46800" start="20190516T183140Z" end="20190521T153000Z" work-start="20190520T090000Z" percent-complete="30" priority="0" type="normal" scheduling="fixed-work"/>
     </task>
-    <task id="23" name="Report" note="" work="32400" start="20190425T000000Z" end="20190425T193000Z" work-start="20190425T100000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+    <task id="24" name="Report" note="" work="32400" start="20190425T000000Z" end="20190425T193000Z" work-start="20190425T100000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
       <predecessors>
         <predecessor id="1" predecessor-id="12" type="FS"/>
       </predecessors>
-      <task id="24" name="R&#xE9;installation de LaTeX" note="" work="10800" start="20190425T000000Z" end="20190425T133000Z" work-start="20190425T100000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+      <task id="25" name="R&#xE9;installation de LaTeX" note="" work="10800" start="20190425T000000Z" end="20190425T133000Z" work-start="20190425T100000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
         <constraint type="start-no-earlier-than" time="20190425T000000Z"/>
       </task>
-      <task id="25" name="Mise en forme du rapport" note="" work="21600" start="20190425T133000Z" end="20190425T193000Z" work-start="20190425T133000Z" percent-complete="60" priority="0" type="normal" scheduling="fixed-work">
+      <task id="26" name="Mise en forme du rapport" note="" work="21600" start="20190425T133000Z" end="20190425T193000Z" work-start="20190425T133000Z" percent-complete="60" priority="0" type="normal" scheduling="fixed-work">
         <predecessors>
-          <predecessor id="1" predecessor-id="24" type="FS"/>
+          <predecessor id="1" predecessor-id="25" type="FS"/>
         </predecessors>
       </task>
     </task>
@@ -169,6 +186,7 @@
   <resource-groups/>
   <resources>
     <resource id="1" name="Julien" short-name="" type="1" units="0" email="julien.feuillas@etu.uca.fr" note="" std-rate="1"/>
+    <resource id="2" name="Ubunutu Computer" short-name="PC" type="2" units="0" email="" note="" std-rate="0" calendar="1"/>
   </resources>
   <allocations>
     <allocation task-id="19" resource-id="1" units="100"/>
@@ -177,11 +195,11 @@
     <allocation task-id="17" resource-id="1" units="100"/>
     <allocation task-id="16" resource-id="1" units="100"/>
     <allocation task-id="15" resource-id="1" units="100"/>
+    <allocation task-id="26" resource-id="1" units="100"/>
     <allocation task-id="25" resource-id="1" units="100"/>
     <allocation task-id="24" resource-id="1" units="100"/>
     <allocation task-id="23" resource-id="1" units="100"/>
     <allocation task-id="22" resource-id="1" units="100"/>
-    <allocation task-id="21" resource-id="1" units="100"/>
     <allocation task-id="14" resource-id="1" units="100"/>
     <allocation task-id="13" resource-id="1" units="100"/>
     <allocation task-id="12" resource-id="1" units="100"/>
@@ -196,5 +214,8 @@
     <allocation task-id="4" resource-id="1" units="100"/>
     <allocation task-id="3" resource-id="1" units="100"/>
     <allocation task-id="2" resource-id="1" units="100"/>
+    <allocation task-id="15" resource-id="2" units="100"/>
+    <allocation task-id="5" resource-id="2" units="100"/>
+    <allocation task-id="21" resource-id="2" units="100"/>
   </allocations>
 </project>
