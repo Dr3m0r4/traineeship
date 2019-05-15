@@ -169,7 +169,7 @@
       </predecessors>
       <task id="23" name="Research of algorithms which change the lr during the training" note="" work="46800" start="20190516T183140Z" end="20190521T153000Z" work-start="20190520T090000Z" percent-complete="30" priority="0" type="normal" scheduling="fixed-work"/>
     </task>
-    <task id="24" name="Report" note="" work="32400" start="20190425T000000Z" end="20190425T193000Z" work-start="20190425T100000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+    <task id="24" name="Report" note="" work="68400" start="20190425T000000Z" end="20190515T183000Z" work-start="20190425T100000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
       <predecessors>
         <predecessor id="1" predecessor-id="12" type="FS"/>
       </predecessors>
@@ -181,6 +181,11 @@
           <predecessor id="1" predecessor-id="25" type="FS"/>
         </predecessors>
       </task>
+      <task id="27" name="1&#xE8;re phase d'&#xE9;criture" note="" work="36000" start="20190514T163000Z" end="20190515T183000Z" work-start="20190514T163000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="20" type="FS"/>
+        </predecessors>
+      </task>
     </task>
   </tasks>
   <resource-groups/>
@@ -189,6 +194,7 @@
     <resource id="2" name="Ubunutu Computer" short-name="PC" type="2" units="0" email="" note="" std-rate="0" calendar="1"/>
   </resources>
   <allocations>
+    <allocation task-id="27" resource-id="1" units="100"/>
     <allocation task-id="19" resource-id="1" units="100"/>
     <allocation task-id="20" resource-id="1" units="100"/>
     <allocation task-id="18" resource-id="1" units="100"/>
