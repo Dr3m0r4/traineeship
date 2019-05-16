@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2019.4.25)  15 MAY 2019 17:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2019.4.25)  16 MAY 2019 13:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -930,23 +930,23 @@ Package glossaries Info: Writing glossary file etat.glo on input line 68.
 (/home/dr3m/travaux/traineeship/etat_d_art/annex/pagedegarde.tex) (/home/dr3m/travaux/traineeship/etat_d_art/etat.aux)
 \openout1 = `etat.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Info: Redefining \degres on input line 78.
-LaTeX Info: Redefining \dots on input line 78.
-LaTeX Info: Redefining \up on input line 78.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Info: Redefining \degres on input line 82.
+LaTeX Info: Redefining \dots on input line 82.
+LaTeX Info: Redefining \up on input line 82.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count163
@@ -981,14 +981,14 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: twoside 
 * h-part:(L,W,R)=(85.35826pt, 472.03123pt, 56.9055pt)
-* v-part:(T,H,B)=(71.13188pt, 652.70622pt, 71.13188pt)
+* v-part:(T,H,B)=(42.67912pt, 681.15898pt, 71.13188pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
 * \textwidth=472.03123pt
-* \textheight=652.70622pt
+* \textheight=681.15898pt
 * \oddsidemargin=13.08827pt
 * \evensidemargin=-15.36449pt
-* \topmargin=-31.2056pt
+* \topmargin=-59.65836pt
 * \headheight=12.0pt
 * \headsep=18.06749pt
 * \topskip=10.0pt
@@ -1008,7 +1008,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 
 \c@lstlisting=\count169
 \AtBeginShipoutBox=\box41
-Package hyperref Info: Link coloring OFF on input line 78.
+Package hyperref Info: Link coloring OFF on input line 82.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -1016,9 +1016,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count170
 )
-LaTeX Info: Redefining \ref on input line 78.
-LaTeX Info: Redefining \pageref on input line 78.
-LaTeX Info: Redefining \nameref on input line 78.
+LaTeX Info: Redefining \ref on input line 82.
+LaTeX Info: Redefining \pageref on input line 82.
+LaTeX Info: Redefining \nameref on input line 82.
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: <default>
@@ -1058,7 +1058,7 @@ Package epstopdf Info: Source file: <annex/logo_UCA.eps>
 (epstopdf)                    date: 2019-05-15 16:07:55
 (epstopdf)                    size: 30897 bytes
 (epstopdf)             Command: <repstopdf --outfile=annex/logo_UCA-eps-converted-to.pdf annex/logo_UCA.eps>
-(epstopdf)             \includegraphics on input line 79.
+(epstopdf)             \includegraphics on input line 83.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -1066,7 +1066,7 @@ pdfTeX warning: pdflatex (file /home/dr3m/travaux/traineeship/etat_d_art/annex/l
 <annex/logo_UCA-eps-converted-to.pdf, id=4, 277.035pt x 269.005pt>
 File: annex/logo_UCA-eps-converted-to.pdf Graphic file (type pdf)
  <use annex/logo_UCA-eps-converted-to.pdf>
-Package pdftex.def Info: annex/logo_UCA-eps-converted-to.pdf used on input line 79.
+Package pdftex.def Info: annex/logo_UCA-eps-converted-to.pdf used on input line 83.
 (pdftex.def)             Requested size: 105.78574pt x 102.71962pt.
 Package epstopdf Info: Source file: <annex/isima.eps>
 (epstopdf)                    date: 2019-05-15 16:07:22
@@ -1075,7 +1075,7 @@ Package epstopdf Info: Source file: <annex/isima.eps>
 (epstopdf)                    date: 2019-05-15 16:07:56
 (epstopdf)                    size: 13326 bytes
 (epstopdf)             Command: <repstopdf --outfile=annex/isima-eps-converted-to.pdf annex/isima.eps>
-(epstopdf)             \includegraphics on input line 79.
+(epstopdf)             \includegraphics on input line 83.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -1083,48 +1083,48 @@ pdfTeX warning: pdflatex (file /home/dr3m/travaux/traineeship/etat_d_art/annex/i
 <annex/isima-eps-converted-to.pdf, id=5, 277.035pt x 184.69pt>
 File: annex/isima-eps-converted-to.pdf Graphic file (type pdf)
  <use annex/isima-eps-converted-to.pdf>
-Package pdftex.def Info: annex/isima-eps-converted-to.pdf used on input line 79.
+Package pdftex.def Info: annex/isima-eps-converted-to.pdf used on input line 83.
 (pdftex.def)             Requested size: 211.57147pt x 141.04782pt.
 
 
 LaTeX Font Warning: Font shape `T1/aer/bx/sc' undefined
-(Font)              using `T1/aer/bx/n' instead on input line 79.
+(Font)              using `T1/aer/bx/n' instead on input line 83.
 
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 79.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 83.
 (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 79.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 83.
  (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 79.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 83.
  (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 79.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 83.
  (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 79.
+(Font)              <10> on input line 83.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 79.
+(Font)              <7> on input line 83.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 79.
-LaTeX Font Info:    Try loading font information for U+msa on input line 79.
+(Font)              <5> on input line 83.
+LaTeX Font Info:    Try loading font information for U+msa on input line 83.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 79.
+LaTeX Font Info:    Try loading font information for U+msb on input line 83.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 79.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 83.
  (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Try loading font information for U+stmry on input line 79.
+LaTeX Font Info:    Try loading font information for U+stmry on input line 83.
  (/usr/share/texlive/texmf-dist/tex/latex/stmaryrd/Ustmry.fd) [1
 
 \openout4 = `etat.ist'.
@@ -1140,11 +1140,55 @@ Partie 1.
 
 ]
 Partie 2.
-[4
+Package epstopdf Info: Source file: <annex/exemp.eps>
+(epstopdf)                    date: 2019-05-16 11:59:44
+(epstopdf)                    size: 70271 bytes
+(epstopdf)             Output file: <annex/exemp-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-05-16 12:01:40
+(epstopdf)                    size: 32489 bytes
+(epstopdf)             Command: <repstopdf --outfile=annex/exemp-eps-converted-to.pdf annex/exemp.eps>
+(epstopdf)             \includegraphics on input line 157.
+Package epstopdf Info: Output file is already uptodate.
 
-]
+
+pdfTeX warning: pdflatex (file /home/dr3m/travaux/traineeship/etat_d_art/annex/exemp-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<annex/exemp-eps-converted-to.pdf, id=39, 604.2575pt x 433.62pt>
+File: annex/exemp-eps-converted-to.pdf Graphic file (type pdf)
+ <use annex/exemp-eps-converted-to.pdf>
+Package pdftex.def Info: annex/exemp-eps-converted-to.pdf used on input line 157.
+(pdftex.def)             Requested size: 422.97737pt x 303.53192pt.
+Package epstopdf Info: Source file: <annex/lr_modification.eps>
+(epstopdf)                    date: 2019-05-16 13:19:50
+(epstopdf)                    size: 411222 bytes
+(epstopdf)             Output file: <annex/lr_modification-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-05-16 13:21:06
+(epstopdf)                    size: 154772 bytes
+(epstopdf)             Command: <repstopdf --outfile=annex/lr_modification-eps-converted-to.pdf annex/lr_modification.eps>
+(epstopdf)             \includegraphics on input line 167.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file /home/dr3m/travaux/traineeship/etat_d_art/annex/lr_modification-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<annex/lr_modification-eps-converted-to.pdf, id=42, 1675.25874pt x 907.39pt>
+File: annex/lr_modification-eps-converted-to.pdf Graphic file (type pdf)
+ <use annex/lr_modification-eps-converted-to.pdf>
+Package pdftex.def Info: annex/lr_modification-eps-converted-to.pdf used on input line 167.
+(pdftex.def)             Requested size: 418.81366pt x 226.84694pt.
+ [4
+
+] [5pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.177   \begin{chapter}
+                       {NiftyNet}pdfTeX warning (ext4): destination with the same identifier (name{figure.2.2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.177   \begin{chapter}
+                       {NiftyNet} </home/dr3m/travaux/traineeship/etat_d_art/annex/exemp-eps-converted-to.pdf> </home/dr3m/travaux/traineeship/etat_d_art/annex/lr_modification-eps-converted-to.pdf>]
 Partie 3.
-(/home/dr3m/travaux/traineeship/etat_d_art/etat.bbl [5
+(/home/dr3m/travaux/traineeship/etat_d_art/etat.bbl [6
 
 ]
 LaTeX Font Info:    Try loading font information for T1+aett on input line 5.
@@ -1181,33 +1225,33 @@ Package glossaries Warning: No \printglossary or \printglossaries found.
 (Remove \makeglossaries if you don't want any glossaries.) 
 This document will not have a glossary.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 118.
-[6
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 192.
+[7
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 118.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 192.
  (/home/dr3m/travaux/traineeship/etat_d_art/etat.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 118.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 118.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 192.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 192.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 118.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 192.
  ) 
 Here is how much of TeX's memory you used:
- 17204 strings out of 493013
- 268250 string characters out of 6135682
+ 17240 strings out of 493013
+ 268801 string characters out of 6135682
  439192 words of memory out of 5000000
- 20293 multiletter control sequences out of 15000+600000
- 59702 words of font info for 112 fonts, out of 8000000 for 9000
+ 20311 multiletter control sequences out of 15000+600000
+ 56556 words of font info for 106 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 45i,7n,72p,1917b,464s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 45i,8n,72p,1917b,501s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on /home/dr3m/travaux/traineeship/etat_d_art/etat.pdf (6 pages, 165045 bytes).
+Output written on /home/dr3m/travaux/traineeship/etat_d_art/etat.pdf (7 pages, 357727 bytes).
 PDF statistics:
- 130 PDF objects out of 1000 (max. 8388607)
- 106 compressed objects within 2 object streams
- 23 named destinations out of 1000 (max. 500000)
- 59 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 175 PDF objects out of 1000 (max. 8388607)
+ 146 compressed objects within 2 object streams
+ 32 named destinations out of 1000 (max. 500000)
+ 117 words of extra memory for PDF output out of 10000 (max. 10000000)
 
