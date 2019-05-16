@@ -1,4 +1,0 @@
-- yesterday I launch a niftynet program in training with 200 000 iterations.
-- Now, at 10:39AM it is still running
-- It doesn't look like we will reach some overfitting
-- The evolution of the loss function is still chaotic

@@ -1,3 +1,0 @@
-#!/bin/bash
-
-aspell -t -d fr check report.tex

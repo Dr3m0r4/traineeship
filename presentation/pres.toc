@@ -1,3 +1,0 @@
-\select@language {french}
-\beamer@sectionintoc {3}{Pr\IeC {\'e}sentation de Niftynet}{7}{0}{1}
-\beamer@sectionintoc {4}{Travail \IeC {\`a} r\IeC {\'e}aliser}{16}{0}{2}
