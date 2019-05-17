@@ -1,4 +1,4 @@
-Input params at 2019-05-14 14:06:15.
+Input params at 2019-05-16 19:55:34.
 [CUSTOM]
 -- num_classes: 2
 -- output_prob: False
@@ -10,11 +10,11 @@ Input params at 2019-05-14 14:06:15.
 -- min_numb_labels: 1
 -- proba_connect: True
 -- evaluation_units: foreground
--- inferred: ()
 -- weight: ()
--- label: ('label',)
 -- sampler: ()
+-- label: ('label',)
 -- image: ('image',)
+-- inferred: ()
 -- name: net_segment
 [CONFIG_FILE]
 -- path: /home/julien/traineeship/mmiv/config/infer_2.ini

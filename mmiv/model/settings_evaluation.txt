@@ -1,4 +1,4 @@
-Input params at 2019-05-14 14:06:37.
+Input params at 2019-05-16 19:55:56.
 [CUSTOM]
 -- num_classes: 2
 -- output_prob: False
@@ -10,10 +10,10 @@ Input params at 2019-05-14 14:06:37.
 -- min_numb_labels: 1
 -- proba_connect: True
 -- evaluation_units: foreground
--- weight: ()
--- inferred: ()
--- label: ('label',)
 -- sampler: ()
+-- label: ('label',)
+-- inferred: ()
+-- weight: ()
 -- image: ('image',)
 -- name: net_segment
 [CONFIG_FILE]
