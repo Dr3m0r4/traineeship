@@ -20,7 +20,8 @@ class DecayLearningRateApplication(SegmentationApplication):
             self, net_param, action_param, is_training)
         tf.logging.info('starting decay learning segmentation application')
         self.learning_rate = None
-        self.current_lr = action_param.lr
+        self.current_lr = 0
+        self.base_lr = action_param.lr
         self.prec_loss = 10.0
         self.curent_loss = None
         self.count = 0
@@ -98,9 +99,6 @@ class DecayLearningRateApplication(SegmentationApplication):
             if current_iter>0 and f(current_iter-1, self.count)<1e-7:
                 self.count+=1
             self.current_lr = f(current_iter, self.count)
-            # if self.prec_loss > self.current_loss.eval() :
-            #     self.current_lr = self.current_lr * 0.9
-            #     self.prec_loss = self.current_loss.eval()
             iteration_message.data_feed_dict[self.is_validation] = False
         elif iteration_message.is_validation:
             iteration_message.data_feed_dict[self.is_validation] = True

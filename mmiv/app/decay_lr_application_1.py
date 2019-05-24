@@ -3,7 +3,7 @@ import tensorflow as tf
 from niftynet.application.segmentation_application import \
     SegmentationApplication
 from niftynet.engine.application_factory import OptimiserFactory
-from niftynet.engine.application_variables import CONSOLE, NETWORK_OUTPUT
+from niftynet.engine.application_variables import CONSOLE
 from niftynet.engine.application_variables import TF_SUMMARIES
 from niftynet.layer.loss_segmentation import LossFunction
 
@@ -18,13 +18,7 @@ class DecayLearningRateApplication(SegmentationApplication):
             self, net_param, action_param, is_training)
         tf.logging.info('starting decay learning segmentation application')
         self.learning_rate = None
-        # self.current_lr = action_param.lr
-        self.current_lr = 5e-3
-        self.count = 2
-        self.ini = 250
-        self.mod = self.ini
-        self.loss = None
-        self.data = None
+        self.current_lr = action_param.lr
         if self.action_param.validation_every_n > 0:
             raise NotImplementedError("validation process is not implemented "
                                       "in this demo.")
@@ -38,11 +32,11 @@ class DecayLearningRateApplication(SegmentationApplication):
 
         if self.is_training:
             with tf.name_scope('Optimiser'):
-                self.learning_rate = tf.placeholder(tf.float64, shape=[])
+                self.learning_rate = tf.placeholder(tf.float32, shape=[])
                 optimiser_class = OptimiserFactory.create(
                     name=self.action_param.optimiser)
                 self.optimiser = optimiser_class.get_instance(
-                   learning_rate=self.learning_rate)
+                    learning_rate=self.learning_rate)
             loss_func = LossFunction(
                 n_class=self.segmentation_param.num_classes,
                 loss_type=self.action_param.loss_type)
@@ -51,15 +45,14 @@ class DecayLearningRateApplication(SegmentationApplication):
                 ground_truth=data_dict.get('label', None),
                 weight_map=data_dict.get('weight', None))
 
-            self.loss = data_loss
-            self.data = data_loss
+            loss = data_loss
             reg_losses = tf.get_collection(tf.GraphKeys.REGULARIZATION_LOSSES)
 
             if self.net_param.decay > 0.0 and reg_losses:
                 reg_loss = tf.reduce_mean(
                     [tf.reduce_mean(reg_loss) for reg_loss in reg_losses])
-                self.loss = data_loss + reg_loss
-            grads = self.optimiser.compute_gradients(self.loss)
+                loss = data_loss + reg_loss
+            grads = self.optimiser.compute_gradients(loss)
             # collecting gradients variables
             gradients_collector.add_to_collection([grads])
             # collecting output variables
@@ -86,20 +79,8 @@ class DecayLearningRateApplication(SegmentationApplication):
         """
         current_iter = iteration_message.current_iter
         if iteration_message.is_training:
-            a = self.data.eval()
-            b = self.loss.eval()
-            print(a)
-            print(b)
-            if  b < a:
-                print('monte')
-            else:
-                print('descend')
-            print(self.data.eval())
-            print(self.loss.eval())
-            if current_iter > 0 and current_iter % self.mod == 0:
-                self.current_lr = self.current_lr / 2.0
-                self.mod = self.mod + self.ini*self.count
-                self.count = self.count+1
+            if current_iter > 0 and current_iter % 100 == 0:
+                self.current_lr = self.current_lr / 5.0
             iteration_message.data_feed_dict[self.is_validation] = False
         elif iteration_message.is_validation:
             iteration_message.data_feed_dict[self.is_validation] = True
