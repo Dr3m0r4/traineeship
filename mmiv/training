@@ -2,7 +2,7 @@
 
 ./exec training $1
 
-for i in 1 2
+for i in 1
 do
 	./exec inference $i
 	./exec evaluation $i
