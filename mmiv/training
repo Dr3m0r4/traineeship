@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if [ $1 = help ]
+then
+	echo "the first argument choose which application we want to use -> refer to help of exec"
+	echo "the second argument choose which configuration file we want to use -> refer to help of exec"
+else
+	./exec training $1 $2
+	./exec inference $2
+fi
