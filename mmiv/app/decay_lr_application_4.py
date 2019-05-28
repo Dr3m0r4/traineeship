@@ -94,7 +94,7 @@ class DecayLearningRateApplication(SegmentationApplication):
         """
         current_iter = iteration_message.current_iter
         if iteration_message.is_training:
-            f = lambda x,y : self.max_lr*(np.cos(x/250.0*np.pi+y*np.pi)+1)/(x/1500.0+1)
+            f = lambda x,y : self.max_lr*(np.cos(x/50.0*np.pi+y*np.pi)+1)/(x/1500.0+1)
             if current_iter>0 and f(current_iter-1, self.count)<1e-7:
                 self.count+=1
             self.current_lr = f(current_iter, self.count)
