@@ -1,7 +1,4 @@
 #!/bin/bash
 
-./exec train
-for i in 1
-do
-	./exec inference $i
-done
+./exec train $1
+./exec inference $1
