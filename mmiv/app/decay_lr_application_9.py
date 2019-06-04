@@ -11,6 +11,45 @@ import numpy as np
 
 SUPPORTED_INPUT = set(['image', 'label', 'weight'])
 
+def is_tuple(var):
+    return isinstance(var, tuple)
+
+def is_list(var):
+    return isinstance(var, list)
+
+def annealing_cos(start, end, pct:float):
+    cos_out = np.cos(np.pi*pct)+1
+    return end + (start-end)/2 * cos_out
+
+class Scheduler():
+    def __init__(self, vals, n_iter:int):
+        self.start, self.end = (vals[0], vals[1]) if is_tuple(vals) else (vals, 0)
+        self.n_iter = max(1, n_iter)
+        self.func = annealing_cos
+        self.n = 0
+
+    def restart(self):
+        self.n = 0
+
+    def step(self):
+        self.n += 1
+        return self.func(self.start, self.end, self.n/self.n_iter)
+
+    @property
+    def is_done(self)->bool:
+        return self.n >= self.n_iter
+
+def steps(dico):
+    return [Scheduler(step, n_iter) for (step, n_iter) in zip(dico['steps_cfg'], dico['phases'])]
+
+def rule(train, lr_scheds, idx_s):
+    if train :
+        if idx_s >= len(lr_scheds):
+            return {'stop' : True}
+        lr = lr_scheds[idx_s].step()
+        if lr_scheds[idx_s].is_done:
+            idx_s += 1
+        return {'lr' : lr, 'idx' : idx_s}
 
 class DecayLearningRateApplication(SegmentationApplication):
     REQUIRED_CONFIG_SECTION = "SEGMENTATION"
@@ -20,14 +59,23 @@ class DecayLearningRateApplication(SegmentationApplication):
             self, net_param, action_param, is_training)
         tf.logging.info('starting decay learning segmentation application')
         self.learning_rate = None
-        self.current_lr = action_param.lr
-        self.max_lr = action_param.lr
-        self.prec_loss = 10.0
-        self.curent_loss = None
-        self.count = 0
-        self.tx = 0.2
-        self.cpt = 0
-        # self.theta = action_param.max_iter
+        max_lr = action_param.lr
+        self.max = action_param.max_iter
+        pct = 1/max_lr if max_lr > 3 else 0.3 
+        a = int(self.max*pct)
+        b = self.max-a
+        phases = (a,b)
+
+        div_factor = 20
+        final_div = div_factor * 1e3
+        low_lr = max_lr/div_factor
+        min_lr = max_lr/final_div
+        step_cfg = ((low_lr, max_lr), (max_lr, min_lr))
+
+        self.lr_prop = steps({'steps_cfg':step_cfg, 'phases':phases})
+        self.current_lr = self.lr_prop[0].start
+        self.res = {}
+        print("\n\nThe maximum learning rate should be greater than 1e-3\n\n")
 
     def connect_data_and_network(self,
                                  outputs_collector=None,
@@ -75,7 +123,7 @@ class DecayLearningRateApplication(SegmentationApplication):
             gradients_collector.add_to_collection([grads])
             # collecting output variables
             outputs_collector.add_to_collection(
-                var=self.current_loss, name='loss',
+                var=self.current_loss, name='dice_loss',
                 average_over_devices=False, collection=CONSOLE)
             outputs_collector.add_to_collection(
                 var=self.learning_rate, name='lr',
@@ -97,21 +145,10 @@ class DecayLearningRateApplication(SegmentationApplication):
         """
         current_iter = iteration_message.current_iter
         if iteration_message.is_training:
-            f = lambda x,y : self.max_lr*(np.cos(x/90.0*np.pi+y*np.pi)+1)/(x/184.0+1)
-            if current_iter>0 and f(current_iter-1, self.count)<1e-7:
-                self.count+=1
-            self.current_lr = f(current_iter, self.count)
+            self.res = rule(iteration_message.is_training, self.lr_prop, self.res.get('idx', 0))
+            iteration_message.should_stop = self.res.get('stop', False)
+            self.current_lr = self.res.get('lr',0)
 
-            if current_iter % 10 == 0:
-                loss = self.current_loss.eval()
-                if loss < (1+self.tx)*self.prec_loss and loss>(1-self.tx)*self.prec_loss:
-                    self.cpt +=1
-                else:
-                    self.cpt = 0
-                self.prec_loss = loss
-
-                if self.cpt > 10:
-                    iteration_message.should_stop = True
             iteration_message.data_feed_dict[self.is_validation] = False
         elif iteration_message.is_validation:
             iteration_message.data_feed_dict[self.is_validation] = True

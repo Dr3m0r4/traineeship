@@ -21,13 +21,15 @@ class DecayLearningRateApplication(SegmentationApplication):
         tf.logging.info('starting decay learning segmentation application')
         self.learning_rate = None
         self.current_lr = action_param.lr
-        self.max_lr = action_param.lr
+        self.init_lr = action_param.lr
         self.prec_loss = 10.0
         self.curent_loss = None
         self.count = 0
         self.tx = 0.2
         self.cpt = 0
-        # self.theta = action_param.max_iter
+        self.theta = float(action_param.max_iter)
+        self.beta = float(self.theta*3)
+        self.avg = 0
 
     def connect_data_and_network(self,
                                  outputs_collector=None,
@@ -97,21 +99,9 @@ class DecayLearningRateApplication(SegmentationApplication):
         """
         current_iter = iteration_message.current_iter
         if iteration_message.is_training:
-            f = lambda x,y : self.max_lr*(np.cos(x/90.0*np.pi+y*np.pi)+1)/(x/184.0+1)
-            if current_iter>0 and f(current_iter-1, self.count)<1e-7:
-                self.count+=1
-            self.current_lr = f(current_iter, self.count)
+            f = lambda x : self.init_lr*(np.cos(x/self.theta*np.pi)+1)/(x/self.beta+1)
+            self.current_lr = f(current_iter)
 
-            if current_iter % 10 == 0:
-                loss = self.current_loss.eval()
-                if loss < (1+self.tx)*self.prec_loss and loss>(1-self.tx)*self.prec_loss:
-                    self.cpt +=1
-                else:
-                    self.cpt = 0
-                self.prec_loss = loss
-
-                if self.cpt > 10:
-                    iteration_message.should_stop = True
             iteration_message.data_feed_dict[self.is_validation] = False
         elif iteration_message.is_validation:
             iteration_message.data_feed_dict[self.is_validation] = True
