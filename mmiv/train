@@ -1,4 +1,15 @@
 #!/bin/bash
 
+path=/home/julien/traineesip/mmiv/model
+mmiv=/home/julien/traineesip/mmiv
+new=pwd
+cd $path
+rm *v
+rm *g
+rm -r models
+rm -r logs/0
+cd $mmiv
+rm -r outputs
 ./exec train $1
 ./exec inference $1
+cd $new

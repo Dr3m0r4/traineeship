@@ -9,3 +9,4 @@ mv $path/models ~/documents/results/version_$1/$2
 mv $path/*g ~/documents/results/version_$1/$2
 mv $path/*v ~/documents/results/version_$1/$2
 mv $path/s* ~/documents/results/version_$1/$2
+mv $path/logs/0 $path/logs/version_$1/$2
