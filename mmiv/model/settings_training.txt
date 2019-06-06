@@ -1,4 +1,4 @@
-Input params at 2019-06-05 18:39:03.
+Input params at 2019-06-06 10:24:03.
 [CUSTOM]
 -- num_classes: 2
 -- output_prob: False
@@ -10,18 +10,18 @@ Input params at 2019-06-05 18:39:03.
 -- min_numb_labels: 1
 -- proba_connect: True
 -- evaluation_units: foreground
--- image: ('image',)
 -- weight: ()
--- label: ('label',)
 -- inferred: ()
 -- sampler: ()
+-- label: ('label',)
+-- image: ('image',)
 -- name: net_segment
 [CONFIG_FILE]
--- path: /home/julien/traineeship/mmiv/config/conf_0.ini
+-- path: /home/julien/traineeship/mmiv/config/conf_3.ini
 [IMAGE]
 -- csv_file: 
 -- path_to_search: data/images
--- filename_contains: ('orig',)
+-- filename_contains: ('IOP', 'orig')
 -- filename_not_contains: ()
 -- filename_removefromid: 
 -- interp_order: 1
@@ -32,7 +32,7 @@ Input params at 2019-06-05 18:39:03.
 [LABEL]
 -- csv_file: 
 -- path_to_search: data/labels_bin
--- filename_contains: ('brain',)
+-- filename_contains: ('IOP', 'brain')
 -- filename_not_contains: ()
 -- filename_removefromid: 
 -- interp_order: 0
@@ -89,7 +89,7 @@ Input params at 2019-06-05 18:39:03.
 -- num_ctrl_points: 4
 -- deformation_sigma: 15
 -- proportion_to_deform: 0.5
--- lr: 10.0
+-- lr: 0.001
 -- loss_type: Dice
 -- starting_iter: 0
 -- save_every_n: 25
