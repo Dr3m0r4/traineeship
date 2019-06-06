@@ -13,8 +13,8 @@ if [ $# -gt 0 ]
 then
 	if [ $1 = training ]
 	then
-		cp app/decay_lr_application_$2.py ~/.conda/envs/niftynet/lib/python3.7/site-packages/niftynet/contrib/learning_rate_schedule/decay_lr_application.py
-  		net_run train -a niftynet.contrib.learning_rate_schedule.decay_lr_application.DecayLearningRateApplication -c config/conf_$3.ini
+		cp app/decay_lr_application_$4.py ~/.conda/envs/niftynet/lib/python3.7/site-packages/niftynet/contrib/learning_rate_schedule/decay_lr_application.py
+  		net_run train -a niftynet.contrib.learning_rate_schedule.decay_lr_application.DecayLearningRateApplication -c config/$2/conf_$3.ini
   		cat model/training_niftynet_log | grep CRITICAL
 	elif [ $1 = train ]
 	then
@@ -34,11 +34,12 @@ then
 		do
 			train=`calc $train+1`
 		done
-		liste=`ls config`
+		liste=`ls config/binary_brain`
 		for k in $liste
 		do
 			conf=`calc $conf+1`
 		done
+		echo "usage : exec action labels datas_lr [ version_application ]"
 		echo "the first argument should be training, inference, evaluation or train"
 		echo "if the first argument isn't train, the command should have a second argument"
 		echo "for training, the second argument has $train different possibilities"

@@ -2,9 +2,8 @@
 
 if [ $1 = help ]
 then
-	echo "the first argument choose which application we want to use -> refer to help of exec"
-	echo "the second argument choose which configuration file we want to use -> refer to help of exec"
+	echo "usage : training labels datas_lr version_application"
 else
-	./exec training $1 $2
-	./exec inference $2
+	./exec training $1 $2 $3
+	./exec inference $1 $2
 fi
