@@ -28,8 +28,8 @@ then
 	elif [ $1 = 'help' ]
 	then	
 		liste=`ls app | grep decay`
-		train=-1
-		conf=-1
+		train=0
+		conf=0
 		for k in $liste
 		do
 			train=`calc $train+1`
@@ -41,8 +41,8 @@ then
 		done
 		echo "the first argument should be training, inference, evaluation or train"
 		echo "if the first argument isn't train, the command should have a second argument"
-		echo "for training, the second argument is between 0 and $train"
-		echo "the third argument for training (or the second for other application) is between 0 and $conf"
+		echo "for training, the second argument has $train different possibilities"
+		echo "the third argument for training (or the second for other application) has $conf different possibilities"
 		echo "this argument choose which type of data we will use : all, Guys, HH or IOP"
 	else
 		echo "You did a very bad mistake"

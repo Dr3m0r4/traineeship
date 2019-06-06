@@ -1,0 +1,12 @@
+#!/bin/bash
+
+path=$1
+liste=`ls $path`
+for name in $liste
+do
+	nom=`basename $name .csv`
+	if [ $nom != $name ]
+	then
+		mv $path/$name $path/$path\_$nom.csv
+	fi
+done

@@ -1,4 +1,4 @@
-Input params at 2019-06-06 10:24:03.
+Input params at 2019-06-06 14:54:10.
 [CUSTOM]
 -- num_classes: 2
 -- output_prob: False
@@ -10,18 +10,18 @@ Input params at 2019-06-06 10:24:03.
 -- min_numb_labels: 1
 -- proba_connect: True
 -- evaluation_units: foreground
--- weight: ()
 -- inferred: ()
+-- weight: ()
+-- image: ('image',)
 -- sampler: ()
 -- label: ('label',)
--- image: ('image',)
 -- name: net_segment
 [CONFIG_FILE]
--- path: /home/julien/traineeship/mmiv/config/conf_3.ini
+-- path: /home/julien/traineeship/mmiv/config/conf_lr_e-3.ini
 [IMAGE]
 -- csv_file: 
 -- path_to_search: data/images
--- filename_contains: ('IOP', 'orig')
+-- filename_contains: ('orig',)
 -- filename_not_contains: ()
 -- filename_removefromid: 
 -- interp_order: 1
@@ -32,7 +32,7 @@ Input params at 2019-06-06 10:24:03.
 [LABEL]
 -- csv_file: 
 -- path_to_search: data/labels_bin
--- filename_contains: ('IOP', 'brain')
+-- filename_contains: ('brain',)
 -- filename_not_contains: ()
 -- filename_removefromid: 
 -- interp_order: 0
@@ -94,7 +94,7 @@ Input params at 2019-06-06 10:24:03.
 -- starting_iter: 0
 -- save_every_n: 25
 -- tensorboard_every_n: 10
--- max_iter: 500
+-- max_iter: 1500
 -- max_checkpoints: 40
 -- validation_every_n: -1
 -- validation_max_iter: 1

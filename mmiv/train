@@ -2,4 +2,3 @@
 
 ./exec train $1
 ./exec inference $1
-cd $new
