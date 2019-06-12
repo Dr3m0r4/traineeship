@@ -18,13 +18,13 @@ then
   		cat model/training_niftynet_log | grep CRITICAL
 	elif [ $1 = train ]
 	then
-		net_segment train -c config/conf_$2.ini
+		net_segment train -c config/$2/conf_$3.ini
 	elif [ $1 = inference ]
 	then
-		net_segment inference -c config/conf_$2.ini
+		net_segment inference -c config/$2/conf_$3.ini
 	elif [ $1 = evaluation ]
 	then
-		net_segment evaluation -c config/conf_$2.ini
+		net_segment evaluation -c config/$2/conf_$3.ini
 	elif [ $1 = 'help' ]
 	then	
 		liste=`ls app | grep decay`
