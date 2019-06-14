@@ -1,4 +1,4 @@
-Input params at 2019-06-12 17:22:04.
+Input params at 2019-06-14 08:43:19.
 [CUSTOM]
 -- num_classes: 5
 -- output_prob: False
@@ -10,14 +10,14 @@ Input params at 2019-06-12 17:22:04.
 -- min_numb_labels: 1
 -- proba_connect: True
 -- evaluation_units: foreground
--- weight: ()
 -- sampler: ()
+-- weight: ()
 -- label: ('label',)
 -- inferred: ()
 -- image: ('image',)
 -- name: net_segment
 [CONFIG_FILE]
--- path: /home/julien/traineeship/mmiv/config/ribbon/conf_lr_e-1.ini
+-- path: /home/julien/traineeship/mmiv/config/ribbon/conf_lr_e+2.ini
 [IMAGE]
 -- csv_file: 
 -- path_to_search: data/images
@@ -52,7 +52,7 @@ Input params at 2019-06-12 17:22:04.
 [NETWORK]
 -- name: dense_vnet
 -- activation_function: prelu
--- batch_size: 5
+-- batch_size: 6
 -- smaller_final_batch_mode: pad
 -- decay: 0.0
 -- reg_type: L2
@@ -89,7 +89,7 @@ Input params at 2019-06-12 17:22:04.
 -- num_ctrl_points: 4
 -- deformation_sigma: 15
 -- proportion_to_deform: 0.5
--- lr: 0.1
+-- lr: 100.0
 -- loss_type: Dice
 -- starting_iter: 0
 -- save_every_n: 25

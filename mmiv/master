@@ -19,7 +19,7 @@ else
 	path=/home/julien/traineeship/mmiv
 
 	bash $path/train $labels $data
-	bash $path/dpl static static\_$labels\_$data
+	bash $path/dpl static $labels\_$data
 
 	liste=`ls $path/app`
 
@@ -27,6 +27,6 @@ else
 	do
 		app=`basename ${name#decay_lr_application_} .py`
 		bash $path/training $labels $data $app
-		bash $path/dpl $app $app\_$labels\_$data
+		bash $path/dpl $app $labels\_$data
 	done
 fi

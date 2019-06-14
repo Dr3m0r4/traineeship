@@ -1,10 +1,10 @@
-INFO:niftynet:2019-06-12 17:22:04,417: set CUDA_VISIBLE_DEVICES to 0
-INFO:niftynet:2019-06-12 17:22:04,417: starting segmentation application
-INFO:niftynet:2019-06-12 17:22:04,417: `csv_file = ` not found, writing to "/home/julien/traineeship/mmiv/model/image.csv" instead.
-INFO:niftynet:2019-06-12 17:22:04,417: [image] search file folders, writing csv file /home/julien/traineeship/mmiv/model/image.csv
-INFO:niftynet:2019-06-12 17:22:04,452: `csv_file = ` not found, writing to "/home/julien/traineeship/mmiv/model/label.csv" instead.
-INFO:niftynet:2019-06-12 17:22:04,452: [label] search file folders, writing csv file /home/julien/traineeship/mmiv/model/label.csv
-INFO:niftynet:2019-06-12 17:22:04,490: 
+INFO:niftynet:2019-06-14 08:43:19,391: set CUDA_VISIBLE_DEVICES to 0
+INFO:niftynet:2019-06-14 08:43:19,391: starting segmentation application
+INFO:niftynet:2019-06-14 08:43:19,391: `csv_file = ` not found, writing to "/home/julien/traineeship/mmiv/model/image.csv" instead.
+INFO:niftynet:2019-06-14 08:43:19,391: [image] search file folders, writing csv file /home/julien/traineeship/mmiv/model/image.csv
+INFO:niftynet:2019-06-14 08:43:19,431: `csv_file = ` not found, writing to "/home/julien/traineeship/mmiv/model/label.csv" instead.
+INFO:niftynet:2019-06-14 08:43:19,431: [label] search file folders, writing csv file /home/julien/traineeship/mmiv/model/label.csv
+INFO:niftynet:2019-06-14 08:43:19,475: 
 
 Number of subjects 581, input section names: ['subject_id', 'image', 'label']
 Dataset partitioning:
@@ -12,16 +12,16 @@ Dataset partitioning:
 -- validation 0 cases (0.00%),
 -- inference 175 cases (30.12%).
 
-INFO:niftynet:2019-06-12 17:22:06,617: Image reader: loading 406 subjects from sections ('image',) as input [image]
-INFO:niftynet:2019-06-12 17:22:06,617: Image reader: loading 406 subjects from sections ('label',) as input [label]
-INFO:niftynet:2019-06-12 17:22:06,618: label mapping ready for label:('label',), 2 classes
-INFO:niftynet:2019-06-12 17:22:06,836: initialised uniform sampler {'image': (1, 144, 144, 144, 1, 1), 'image_location': (1, 7), 'label': (1, 144, 144, 144, 1, 1), 'label_location': (1, 7)} 
-WARNING:niftynet:2019-06-12 17:22:06,839: From /home/julien/.conda/envs/niftynet/lib/python3.7/site-packages/niftynet/engine/application_initializer.py:106: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with distribution=normal is deprecated and will be removed in a future version.
+INFO:niftynet:2019-06-14 08:43:21,727: Image reader: loading 406 subjects from sections ('image',) as input [image]
+INFO:niftynet:2019-06-14 08:43:21,728: Image reader: loading 406 subjects from sections ('label',) as input [label]
+INFO:niftynet:2019-06-14 08:43:21,730: label mapping ready for label:('label',), 2 classes
+INFO:niftynet:2019-06-14 08:43:21,953: initialised uniform sampler {'image': (1, 144, 144, 144, 1, 1), 'image_location': (1, 7), 'label': (1, 144, 144, 144, 1, 1), 'label_location': (1, 7)} 
+WARNING:niftynet:2019-06-14 08:43:21,958: From /home/julien/.conda/envs/niftynet/lib/python3.7/site-packages/niftynet/engine/application_initializer.py:106: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with distribution=normal is deprecated and will be removed in a future version.
 Instructions for updating:
 `normal` is a deprecated alias for `truncated_normal`
-INFO:niftynet:2019-06-12 17:22:06,839: using DenseVNet
-INFO:niftynet:2019-06-12 17:22:06,842: Initialising Dataset from 406 subjects...
-WARNING:niftynet:2019-06-12 17:22:06,846: From /home/julien/.conda/envs/niftynet/lib/python3.7/site-packages/niftynet/engine/image_window_dataset.py:300: py_func (from tensorflow.python.ops.script_ops) is deprecated and will be removed in a future version.
+INFO:niftynet:2019-06-14 08:43:21,958: using DenseVNet
+INFO:niftynet:2019-06-14 08:43:21,961: Initialising Dataset from 406 subjects...
+WARNING:niftynet:2019-06-14 08:43:21,965: From /home/julien/.conda/envs/niftynet/lib/python3.7/site-packages/niftynet/engine/image_window_dataset.py:300: py_func (from tensorflow.python.ops.script_ops) is deprecated and will be removed in a future version.
 Instructions for updating:
 tf.py_func is deprecated in TF V2. Instead, use
     tf.py_function, which takes a python function which manipulates tf eager
@@ -30,282 +30,31 @@ tf.py_func is deprecated in TF V2. Instead, use
     means `tf.py_function`s can use accelerators such as GPUs as well as
     being differentiable using a gradient tape.
     
-WARNING:niftynet:2019-06-12 17:22:07,031: From /home/julien/.conda/envs/niftynet/lib/python3.7/site-packages/niftynet/layer/grid_warper.py:291: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+WARNING:niftynet:2019-06-14 08:43:22,135: From /home/julien/.conda/envs/niftynet/lib/python3.7/site-packages/niftynet/layer/grid_warper.py:291: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
 Instructions for updating:
 Use tf.cast instead.
-WARNING:niftynet:2019-06-12 17:22:08,140: From /home/julien/.conda/envs/niftynet/lib/python3.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+WARNING:niftynet:2019-06-14 08:43:23,207: From /home/julien/.conda/envs/niftynet/lib/python3.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
 Instructions for updating:
 Colocations handled automatically by placer.
-WARNING:niftynet:2019-06-12 17:22:08,376: From /home/julien/.conda/envs/niftynet/lib/python3.7/site-packages/niftynet/layer/activation.py:68: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+WARNING:niftynet:2019-06-14 08:43:23,441: From /home/julien/.conda/envs/niftynet/lib/python3.7/site-packages/niftynet/layer/activation.py:68: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
 Instructions for updating:
 Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
-WARNING:niftynet:2019-06-12 17:22:10,418: From /home/julien/.conda/envs/niftynet/lib/python3.7/site-packages/niftynet/layer/loss_segmentation.py:157: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+WARNING:niftynet:2019-06-14 08:43:25,489: From /home/julien/.conda/envs/niftynet/lib/python3.7/site-packages/niftynet/layer/loss_segmentation.py:157: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
 Instructions for updating:
 Use tf.cast instead.
-WARNING:niftynet:2019-06-12 17:22:10,425: From /home/julien/.conda/envs/niftynet/lib/python3.7/site-packages/niftynet/layer/loss_segmentation.py:174: to_int64 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+WARNING:niftynet:2019-06-14 08:43:25,495: From /home/julien/.conda/envs/niftynet/lib/python3.7/site-packages/niftynet/layer/loss_segmentation.py:174: to_int64 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
 Instructions for updating:
 Use tf.cast instead.
-WARNING:niftynet:2019-06-12 17:22:10,436: From /home/julien/.conda/envs/niftynet/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:507: calling sparse_reduce_sum (from tensorflow.python.ops.sparse_ops) with reduction_axes is deprecated and will be removed in a future version.
+WARNING:niftynet:2019-06-14 08:43:25,508: From /home/julien/.conda/envs/niftynet/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:507: calling sparse_reduce_sum (from tensorflow.python.ops.sparse_ops) with reduction_axes is deprecated and will be removed in a future version.
 Instructions for updating:
 reduction_axes is deprecated, use axis instead
-INFO:niftynet:2019-06-12 17:22:20,833: Parameters from random initialisations ...
-INFO:niftynet:2019-06-12 17:23:41,262: training iter 1, loss=0.9370142817497253 (80.116405s)
-INFO:niftynet:2019-06-12 17:23:47,886: training iter 2, loss=0.8098939061164856 (6.623180s)
-INFO:niftynet:2019-06-12 17:23:58,770: training iter 3, loss=0.810722827911377 (10.884209s)
-INFO:niftynet:2019-06-12 17:24:05,050: training iter 4, loss=0.8112474679946899 (6.279021s)
-INFO:niftynet:2019-06-12 17:24:12,809: training iter 5, loss=0.8116138577461243 (7.758954s)
-INFO:niftynet:2019-06-12 17:24:22,615: training iter 6, loss=0.8113195300102234 (9.804910s)
-INFO:niftynet:2019-06-12 17:24:29,207: training iter 7, loss=0.8104805946350098 (6.592115s)
-INFO:niftynet:2019-06-12 17:24:39,646: training iter 8, loss=0.8101003766059875 (10.438271s)
-INFO:niftynet:2019-06-12 17:24:45,985: training iter 9, loss=0.8105742335319519 (6.338890s)
-INFO:niftynet:2019-06-12 17:25:09,193: training iter 10, loss=0.8108294606208801 (23.199068s)
-INFO:niftynet:2019-06-12 17:25:14,874: training iter 11, loss=0.8107534646987915 (5.643743s)
-INFO:niftynet:2019-06-12 17:25:21,026: training iter 12, loss=0.8107398748397827 (6.151923s)
-INFO:niftynet:2019-06-12 17:25:27,023: training iter 13, loss=0.8100774884223938 (5.996442s)
-INFO:niftynet:2019-06-12 17:25:32,575: training iter 14, loss=0.8108912706375122 (5.551566s)
-INFO:niftynet:2019-06-12 17:25:38,874: training iter 15, loss=0.8101741671562195 (6.296674s)
-INFO:niftynet:2019-06-12 17:25:47,529: training iter 16, loss=0.8111814260482788 (8.654971s)
-INFO:niftynet:2019-06-12 17:25:53,770: training iter 17, loss=0.8111139535903931 (6.227640s)
-INFO:niftynet:2019-06-12 17:26:03,704: training iter 18, loss=0.8106676340103149 (9.933610s)
-INFO:niftynet:2019-06-12 17:26:09,944: training iter 19, loss=0.8107941746711731 (6.240047s)
-INFO:niftynet:2019-06-12 17:26:19,500: training iter 20, loss=0.8104717135429382 (9.547318s)
-INFO:niftynet:2019-06-12 17:26:28,805: training iter 21, loss=0.8104070425033569 (9.274867s)
-INFO:niftynet:2019-06-12 17:26:37,603: training iter 22, loss=0.8103369474411011 (8.797185s)
-INFO:niftynet:2019-06-12 17:26:44,739: training iter 23, loss=0.8109122514724731 (7.135895s)
-INFO:niftynet:2019-06-12 17:26:52,217: training iter 24, loss=0.8109521865844727 (7.478081s)
-INFO:niftynet:2019-06-12 17:27:05,209: iter 25 saved: /home/julien/traineeship/mmiv/model/models/model.ckpt
-INFO:niftynet:2019-06-12 17:27:05,209: training iter 25, loss=0.8109911680221558 (10.440353s)
-INFO:niftynet:2019-06-12 17:27:12,551: training iter 26, loss=0.8104830980300903 (7.340896s)
-INFO:niftynet:2019-06-12 17:27:18,516: training iter 27, loss=0.8110334277153015 (5.964788s)
-INFO:niftynet:2019-06-12 17:27:26,471: training iter 28, loss=0.8111591339111328 (7.955195s)
-INFO:niftynet:2019-06-12 17:27:36,229: training iter 29, loss=0.8111718893051147 (9.757635s)
-INFO:niftynet:2019-06-12 17:27:44,626: training iter 30, loss=0.8109666705131531 (8.364588s)
-INFO:niftynet:2019-06-12 17:27:52,940: training iter 31, loss=0.8112079501152039 (8.313901s)
-INFO:niftynet:2019-06-12 17:28:00,233: training iter 32, loss=0.810994029045105 (7.291710s)
-INFO:niftynet:2019-06-12 17:28:06,694: training iter 33, loss=0.810118556022644 (6.461183s)
-INFO:niftynet:2019-06-12 17:28:16,570: training iter 34, loss=0.810416042804718 (9.875915s)
-INFO:niftynet:2019-06-12 17:28:26,113: training iter 35, loss=0.8114140629768372 (9.542377s)
-INFO:niftynet:2019-06-12 17:28:34,001: training iter 36, loss=0.8103721737861633 (7.888000s)
-INFO:niftynet:2019-06-12 17:28:40,608: training iter 37, loss=0.8099316358566284 (6.606599s)
-INFO:niftynet:2019-06-12 17:28:51,687: training iter 38, loss=0.8115720748901367 (11.078490s)
-INFO:niftynet:2019-06-12 17:28:58,216: training iter 39, loss=0.8111823201179504 (6.528958s)
-INFO:niftynet:2019-06-12 17:29:05,569: training iter 40, loss=0.8108232617378235 (7.343363s)
-INFO:niftynet:2019-06-12 17:29:17,134: training iter 41, loss=0.8119127154350281 (11.551775s)
-INFO:niftynet:2019-06-12 17:29:23,492: training iter 42, loss=0.8111996650695801 (6.357764s)
-INFO:niftynet:2019-06-12 17:29:32,366: training iter 43, loss=0.8110054135322571 (8.873468s)
-INFO:niftynet:2019-06-12 17:29:38,629: training iter 44, loss=0.8106598854064941 (6.262848s)
-INFO:niftynet:2019-06-12 17:29:47,828: training iter 45, loss=0.8100796937942505 (9.198143s)
-INFO:niftynet:2019-06-12 17:29:57,915: training iter 46, loss=0.8118215799331665 (10.086444s)
-INFO:niftynet:2019-06-12 17:30:04,047: training iter 47, loss=0.810590922832489 (6.132125s)
-INFO:niftynet:2019-06-12 17:30:13,281: training iter 48, loss=0.8100679516792297 (9.233143s)
-INFO:niftynet:2019-06-12 17:30:21,103: training iter 49, loss=0.8104768991470337 (7.820850s)
-INFO:niftynet:2019-06-12 17:30:31,379: iter 50 saved: /home/julien/traineeship/mmiv/model/models/model.ckpt
-INFO:niftynet:2019-06-12 17:30:31,387: training iter 50, loss=0.8096837997436523 (8.366461s)
-INFO:niftynet:2019-06-12 17:30:38,668: training iter 51, loss=0.8101145625114441 (7.261287s)
-INFO:niftynet:2019-06-12 17:30:46,107: training iter 52, loss=0.8107131123542786 (7.438972s)
-INFO:niftynet:2019-06-12 17:30:55,262: training iter 53, loss=0.8102167844772339 (9.152077s)
-INFO:niftynet:2019-06-12 17:31:02,672: training iter 54, loss=0.8105972409248352 (7.409400s)
-INFO:niftynet:2019-06-12 17:31:12,051: training iter 55, loss=0.8102082014083862 (9.378074s)
-INFO:niftynet:2019-06-12 17:31:18,699: training iter 56, loss=0.8111305236816406 (6.647044s)
-INFO:niftynet:2019-06-12 17:31:27,835: training iter 57, loss=0.8108074069023132 (9.136069s)
-INFO:niftynet:2019-06-12 17:31:38,444: training iter 58, loss=0.8108536601066589 (10.608768s)
-INFO:niftynet:2019-06-12 17:31:44,834: training iter 59, loss=0.8120359182357788 (6.382651s)
-INFO:niftynet:2019-06-12 17:31:53,365: training iter 60, loss=0.8101638555526733 (8.510274s)
-INFO:niftynet:2019-06-12 17:32:02,854: training iter 61, loss=0.8112722635269165 (9.424017s)
-INFO:niftynet:2019-06-12 17:32:09,277: training iter 62, loss=0.8099967837333679 (6.423014s)
-INFO:niftynet:2019-06-12 17:32:19,059: training iter 63, loss=0.8101112246513367 (9.760959s)
-INFO:niftynet:2019-06-12 17:32:25,058: training iter 64, loss=0.8112276792526245 (5.998707s)
-INFO:niftynet:2019-06-12 17:32:33,676: training iter 65, loss=0.811089038848877 (8.617214s)
-INFO:niftynet:2019-06-12 17:32:42,415: training iter 66, loss=0.810278594493866 (8.739153s)
-INFO:niftynet:2019-06-12 17:32:50,184: training iter 67, loss=0.8105050325393677 (7.765050s)
-INFO:niftynet:2019-06-12 17:33:00,643: training iter 68, loss=0.810128390789032 (10.458618s)
-INFO:niftynet:2019-06-12 17:33:09,231: training iter 69, loss=0.8104194402694702 (8.587201s)
-INFO:niftynet:2019-06-12 17:33:15,966: training iter 70, loss=0.8103033304214478 (6.713648s)
-INFO:niftynet:2019-06-12 17:33:26,410: training iter 71, loss=0.8101566433906555 (10.432854s)
-INFO:niftynet:2019-06-12 17:33:32,453: training iter 72, loss=0.8113168478012085 (6.042665s)
-INFO:niftynet:2019-06-12 17:33:40,410: training iter 73, loss=0.8110799789428711 (7.956230s)
-INFO:niftynet:2019-06-12 17:33:44,971: training iter 74, loss=0.8103475570678711 (4.561153s)
-INFO:niftynet:2019-06-12 17:34:03,128: iter 75 saved: /home/julien/traineeship/mmiv/model/models/model.ckpt
-INFO:niftynet:2019-06-12 17:34:03,129: training iter 75, loss=0.8108194470405579 (16.172147s)
-INFO:niftynet:2019-06-12 17:34:10,679: training iter 76, loss=0.8105642199516296 (7.550214s)
-INFO:niftynet:2019-06-12 17:34:17,098: training iter 77, loss=0.8098594546318054 (6.412893s)
-INFO:niftynet:2019-06-12 17:34:26,110: training iter 78, loss=0.8103553652763367 (9.011163s)
-INFO:niftynet:2019-06-12 17:34:31,996: training iter 79, loss=0.8116337060928345 (5.878134s)
-INFO:niftynet:2019-06-12 17:34:41,356: training iter 80, loss=0.8104952573776245 (9.350060s)
-INFO:niftynet:2019-06-12 17:34:50,163: training iter 81, loss=0.8113047480583191 (8.789557s)
-INFO:niftynet:2019-06-12 17:34:56,760: training iter 82, loss=0.8090241551399231 (6.596824s)
-INFO:niftynet:2019-06-12 17:35:09,190: training iter 83, loss=0.8098770976066589 (12.428938s)
-INFO:niftynet:2019-06-12 17:35:15,281: training iter 84, loss=0.8105384111404419 (6.091372s)
-INFO:niftynet:2019-06-12 17:35:22,591: training iter 85, loss=0.8107181787490845 (7.309376s)
-INFO:niftynet:2019-06-12 17:35:33,372: training iter 86, loss=0.8108490109443665 (10.780402s)
-INFO:niftynet:2019-06-12 17:35:40,001: training iter 87, loss=0.8105372190475464 (6.628511s)
-INFO:niftynet:2019-06-12 17:35:48,294: training iter 88, loss=0.8109553456306458 (8.293025s)
-INFO:niftynet:2019-06-12 17:35:54,768: training iter 89, loss=0.8113002777099609 (6.473239s)
-INFO:niftynet:2019-06-12 17:36:04,142: training iter 90, loss=0.8116505742073059 (9.353244s)
-INFO:niftynet:2019-06-12 17:36:12,406: training iter 91, loss=0.8106094598770142 (8.233870s)
-INFO:niftynet:2019-06-12 17:36:20,086: training iter 92, loss=0.810960590839386 (7.679915s)
-INFO:niftynet:2019-06-12 17:36:30,754: training iter 93, loss=0.8108226656913757 (10.667282s)
-INFO:niftynet:2019-06-12 17:36:38,064: training iter 94, loss=0.8099585771560669 (7.309733s)
-INFO:niftynet:2019-06-12 17:36:45,566: training iter 95, loss=0.8099743723869324 (7.501987s)
-INFO:niftynet:2019-06-12 17:36:54,198: training iter 96, loss=0.8110697865486145 (8.631438s)
-INFO:niftynet:2019-06-12 17:37:01,733: training iter 97, loss=0.8102225065231323 (7.534603s)
-INFO:niftynet:2019-06-12 17:37:13,339: training iter 98, loss=0.8117368817329407 (11.604980s)
-INFO:niftynet:2019-06-12 17:37:19,606: training iter 99, loss=0.8099961280822754 (6.266578s)
-INFO:niftynet:2019-06-12 17:37:30,409: iter 100 saved: /home/julien/traineeship/mmiv/model/models/model.ckpt
-INFO:niftynet:2019-06-12 17:37:30,424: training iter 100, loss=0.8101464509963989 (8.499663s)
-INFO:niftynet:2019-06-12 17:37:40,000: training iter 101, loss=0.8112760782241821 (9.560969s)
-INFO:niftynet:2019-06-12 17:37:46,336: training iter 102, loss=0.8106130361557007 (6.335683s)
-INFO:niftynet:2019-06-12 17:37:53,814: training iter 103, loss=0.8107325434684753 (7.477283s)
-INFO:niftynet:2019-06-12 17:38:00,119: training iter 104, loss=0.8097321391105652 (6.297646s)
-INFO:niftynet:2019-06-12 17:38:08,480: training iter 105, loss=0.8119214773178101 (8.359876s)
-INFO:niftynet:2019-06-12 17:38:21,486: training iter 106, loss=0.8119581341743469 (13.006303s)
-INFO:niftynet:2019-06-12 17:38:27,824: training iter 107, loss=0.8111062049865723 (6.337223s)
-INFO:niftynet:2019-06-12 17:38:35,596: training iter 108, loss=0.811406135559082 (7.771632s)
-INFO:niftynet:2019-06-12 17:38:44,589: training iter 109, loss=0.8100126385688782 (8.993215s)
-INFO:niftynet:2019-06-12 17:38:50,844: training iter 110, loss=0.8097479939460754 (6.248232s)
-INFO:niftynet:2019-06-12 17:39:00,603: training iter 111, loss=0.8108251690864563 (9.745738s)
-INFO:niftynet:2019-06-12 17:39:08,256: training iter 112, loss=0.811612606048584 (7.651949s)
-INFO:niftynet:2019-06-12 17:39:16,559: training iter 113, loss=0.8117574453353882 (8.303404s)
-INFO:niftynet:2019-06-12 17:39:25,636: training iter 114, loss=0.8114013671875 (9.076132s)
-INFO:niftynet:2019-06-12 17:39:33,214: training iter 115, loss=0.8112865686416626 (7.577853s)
-INFO:niftynet:2019-06-12 17:39:42,154: training iter 116, loss=0.810772716999054 (8.939642s)
-INFO:niftynet:2019-06-12 17:39:48,311: training iter 117, loss=0.8117545247077942 (6.155582s)
-INFO:niftynet:2019-06-12 17:39:59,115: training iter 118, loss=0.8118500709533691 (10.803984s)
-INFO:niftynet:2019-06-12 17:40:06,887: training iter 119, loss=0.8106740713119507 (7.772088s)
-INFO:niftynet:2019-06-12 17:40:13,067: training iter 120, loss=0.8093380928039551 (6.163619s)
-INFO:niftynet:2019-06-12 17:40:23,367: training iter 121, loss=0.8103310465812683 (10.278373s)
-INFO:niftynet:2019-06-12 17:40:32,022: training iter 122, loss=0.8113606572151184 (8.654102s)
-INFO:niftynet:2019-06-12 17:40:40,612: training iter 123, loss=0.8107330203056335 (8.590044s)
-INFO:niftynet:2019-06-12 17:40:49,103: training iter 124, loss=0.8113304972648621 (8.490511s)
-INFO:niftynet:2019-06-12 17:40:57,708: iter 125 saved: /home/julien/traineeship/mmiv/model/models/model.ckpt
-INFO:niftynet:2019-06-12 17:40:57,709: training iter 125, loss=0.8114696741104126 (6.575256s)
-INFO:niftynet:2019-06-12 17:41:04,610: training iter 126, loss=0.8111177682876587 (6.900551s)
-INFO:niftynet:2019-06-12 17:41:15,167: training iter 127, loss=0.8103038668632507 (10.556008s)
-INFO:niftynet:2019-06-12 17:41:21,803: training iter 128, loss=0.8106033205986023 (6.636321s)
-INFO:niftynet:2019-06-12 17:41:32,069: training iter 129, loss=0.8107227087020874 (10.265117s)
-INFO:niftynet:2019-06-12 17:41:38,466: training iter 130, loss=0.8103950619697571 (6.389922s)
-INFO:niftynet:2019-06-12 17:41:46,940: training iter 131, loss=0.8096100091934204 (8.457813s)
-INFO:niftynet:2019-06-12 17:41:55,802: training iter 132, loss=0.811130166053772 (8.861444s)
-INFO:niftynet:2019-06-12 17:42:03,860: training iter 133, loss=0.8107281923294067 (8.058227s)
-INFO:niftynet:2019-06-12 17:42:12,905: training iter 134, loss=0.8113630414009094 (9.044438s)
-INFO:niftynet:2019-06-12 17:42:21,586: training iter 135, loss=0.8101557493209839 (8.680888s)
-INFO:niftynet:2019-06-12 17:42:28,851: training iter 136, loss=0.8106568455696106 (7.264854s)
-INFO:niftynet:2019-06-12 17:42:37,476: training iter 137, loss=0.8109182119369507 (8.624695s)
-INFO:niftynet:2019-06-12 17:42:44,368: training iter 138, loss=0.8107852935791016 (6.891096s)
-INFO:niftynet:2019-06-12 17:42:52,341: training iter 139, loss=0.810646653175354 (7.972415s)
-INFO:niftynet:2019-06-12 17:43:01,747: training iter 140, loss=0.8099998235702515 (9.398088s)
-INFO:niftynet:2019-06-12 17:43:10,763: training iter 141, loss=0.8108216524124146 (9.002396s)
-INFO:niftynet:2019-06-12 17:43:19,246: training iter 142, loss=0.8101484179496765 (8.482274s)
-INFO:niftynet:2019-06-12 17:43:26,319: training iter 143, loss=0.8101654052734375 (7.072382s)
-INFO:niftynet:2019-06-12 17:43:34,538: training iter 144, loss=0.8109158277511597 (8.218794s)
-INFO:niftynet:2019-06-12 17:43:45,256: training iter 145, loss=0.810631275177002 (10.717001s)
-INFO:niftynet:2019-06-12 17:43:52,709: training iter 146, loss=0.8103575706481934 (7.453077s)
-INFO:niftynet:2019-06-12 17:44:00,259: training iter 147, loss=0.8108159899711609 (7.549912s)
-INFO:niftynet:2019-06-12 17:44:11,646: training iter 148, loss=0.8105636835098267 (11.385655s)
-INFO:niftynet:2019-06-12 17:44:17,983: training iter 149, loss=0.8104358911514282 (6.336506s)
-INFO:niftynet:2019-06-12 17:44:29,491: iter 150 saved: /home/julien/traineeship/mmiv/model/models/model.ckpt
-INFO:niftynet:2019-06-12 17:44:29,499: training iter 150, loss=0.810760498046875 (9.506852s)
-INFO:niftynet:2019-06-12 17:44:35,530: training iter 151, loss=0.810759425163269 (6.016830s)
-INFO:niftynet:2019-06-12 17:44:43,333: training iter 152, loss=0.8105241656303406 (7.802562s)
-INFO:niftynet:2019-06-12 17:44:53,308: training iter 153, loss=0.8105672597885132 (9.974851s)
-INFO:niftynet:2019-06-12 17:44:59,401: training iter 154, loss=0.8113135099411011 (6.093084s)
-INFO:niftynet:2019-06-12 17:45:06,106: training iter 155, loss=0.8105891346931458 (6.702985s)
-INFO:niftynet:2019-06-12 17:45:20,358: training iter 156, loss=0.8099948763847351 (14.251527s)
-INFO:niftynet:2019-06-12 17:45:26,254: training iter 157, loss=0.8098999857902527 (5.895213s)
-INFO:niftynet:2019-06-12 17:45:35,934: training iter 158, loss=0.8110367059707642 (9.679924s)
-INFO:niftynet:2019-06-12 17:45:44,966: training iter 159, loss=0.8107055425643921 (9.031553s)
-INFO:niftynet:2019-06-12 17:45:50,968: training iter 160, loss=0.8110634088516235 (5.993547s)
-INFO:niftynet:2019-06-12 17:46:03,107: training iter 161, loss=0.8110998272895813 (12.125899s)
-INFO:niftynet:2019-06-12 17:46:08,852: training iter 162, loss=0.81072598695755 (5.744936s)
-INFO:niftynet:2019-06-12 17:46:17,341: training iter 163, loss=0.8112157583236694 (8.488611s)
-INFO:niftynet:2019-06-12 17:46:24,026: training iter 164, loss=0.8103230595588684 (6.684286s)
-INFO:niftynet:2019-06-12 17:46:32,046: training iter 165, loss=0.810843825340271 (8.019573s)
-INFO:niftynet:2019-06-12 17:46:44,813: training iter 166, loss=0.8109136819839478 (12.766545s)
-INFO:niftynet:2019-06-12 17:46:50,814: training iter 167, loss=0.8114816546440125 (6.000412s)
-INFO:niftynet:2019-06-12 17:46:59,618: training iter 168, loss=0.8102787733078003 (8.803954s)
-INFO:niftynet:2019-06-12 17:47:09,126: training iter 169, loss=0.8099130392074585 (9.507709s)
-INFO:niftynet:2019-06-12 17:47:15,320: training iter 170, loss=0.8103788495063782 (6.186010s)
-INFO:niftynet:2019-06-12 17:47:24,219: training iter 171, loss=0.8099595308303833 (8.864432s)
-INFO:niftynet:2019-06-12 17:47:30,217: training iter 172, loss=0.8109979629516602 (5.997754s)
-INFO:niftynet:2019-06-12 17:47:41,450: training iter 173, loss=0.81011962890625 (11.232431s)
-INFO:niftynet:2019-06-12 17:47:49,977: training iter 174, loss=0.8117474317550659 (8.526827s)
-INFO:niftynet:2019-06-12 17:47:58,570: iter 175 saved: /home/julien/traineeship/mmiv/model/models/model.ckpt
-INFO:niftynet:2019-06-12 17:47:58,572: training iter 175, loss=0.8108898997306824 (6.545481s)
-INFO:niftynet:2019-06-12 17:48:06,798: training iter 176, loss=0.8119997978210449 (8.224041s)
-INFO:niftynet:2019-06-12 17:48:16,603: training iter 177, loss=0.8104556798934937 (9.805119s)
-INFO:niftynet:2019-06-12 17:48:22,946: training iter 178, loss=0.8105217814445496 (6.342756s)
-INFO:niftynet:2019-06-12 17:48:30,546: training iter 179, loss=0.8103607892990112 (7.599198s)
-INFO:niftynet:2019-06-12 17:48:36,691: training iter 180, loss=0.8109585046768188 (6.117536s)
-INFO:niftynet:2019-06-12 17:48:50,217: training iter 181, loss=0.8103349804878235 (13.502092s)
-INFO:niftynet:2019-06-12 17:48:56,353: training iter 182, loss=0.810991644859314 (6.135860s)
-INFO:niftynet:2019-06-12 17:49:04,637: training iter 183, loss=0.8112499117851257 (8.283512s)
-INFO:niftynet:2019-06-12 17:49:13,616: training iter 184, loss=0.8101829290390015 (8.977995s)
-INFO:niftynet:2019-06-12 17:49:19,448: training iter 185, loss=0.810925304889679 (5.831699s)
-INFO:niftynet:2019-06-12 17:49:32,013: training iter 186, loss=0.8107792139053345 (12.564845s)
-INFO:niftynet:2019-06-12 17:49:38,061: training iter 187, loss=0.8110923767089844 (6.047555s)
-INFO:niftynet:2019-06-12 17:49:48,766: training iter 188, loss=0.8117921948432922 (10.705055s)
-INFO:niftynet:2019-06-12 17:49:54,573: training iter 189, loss=0.8110300302505493 (5.806653s)
-INFO:niftynet:2019-06-12 17:50:03,234: training iter 190, loss=0.8104702830314636 (8.636766s)
-INFO:niftynet:2019-06-12 17:50:11,939: training iter 191, loss=0.8111308813095093 (8.690880s)
-INFO:niftynet:2019-06-12 17:50:18,574: training iter 192, loss=0.8108358383178711 (6.635077s)
-INFO:niftynet:2019-06-12 17:50:27,749: training iter 193, loss=0.8107917904853821 (9.174591s)
-INFO:niftynet:2019-06-12 17:50:35,405: training iter 194, loss=0.8109784126281738 (7.655365s)
-INFO:niftynet:2019-06-12 17:50:43,704: training iter 195, loss=0.8099892735481262 (8.298347s)
-INFO:niftynet:2019-06-12 17:50:52,326: training iter 196, loss=0.8106956481933594 (8.621720s)
-INFO:niftynet:2019-06-12 17:50:59,220: training iter 197, loss=0.8103903532028198 (6.893611s)
-INFO:niftynet:2019-06-12 17:51:09,894: training iter 198, loss=0.8108817338943481 (10.673973s)
-INFO:niftynet:2019-06-12 17:51:16,350: training iter 199, loss=0.8109709620475769 (6.455246s)
-INFO:niftynet:2019-06-12 17:51:27,943: iter 200 saved: /home/julien/traineeship/mmiv/model/models/model.ckpt
-INFO:niftynet:2019-06-12 17:51:27,951: training iter 200, loss=0.8100973963737488 (9.439492s)
-INFO:niftynet:2019-06-12 17:51:34,080: training iter 201, loss=0.8106175661087036 (6.117148s)
-INFO:niftynet:2019-06-12 17:51:42,643: training iter 202, loss=0.8106307983398438 (8.562812s)
-INFO:niftynet:2019-06-12 17:51:52,518: training iter 203, loss=0.8100250363349915 (9.875289s)
-INFO:niftynet:2019-06-12 17:51:58,757: training iter 204, loss=0.8099884986877441 (6.238205s)
-INFO:niftynet:2019-06-12 17:52:08,314: training iter 205, loss=0.8104937672615051 (9.556923s)
-INFO:niftynet:2019-06-12 17:52:17,187: training iter 206, loss=0.8106905817985535 (8.872353s)
-INFO:niftynet:2019-06-12 17:52:23,581: training iter 207, loss=0.8106138110160828 (6.393826s)
-INFO:niftynet:2019-06-12 17:52:33,472: training iter 208, loss=0.8109289407730103 (9.890724s)
-INFO:niftynet:2019-06-12 17:52:39,463: training iter 209, loss=0.8109056353569031 (5.990069s)
-INFO:niftynet:2019-06-12 17:52:49,049: training iter 210, loss=0.8110307455062866 (9.574293s)
-INFO:niftynet:2019-06-12 17:52:57,534: training iter 211, loss=0.8097048997879028 (8.449575s)
-INFO:niftynet:2019-06-12 17:53:04,762: training iter 212, loss=0.8103432655334473 (7.228617s)
-INFO:niftynet:2019-06-12 17:53:13,489: training iter 213, loss=0.8105637431144714 (8.725830s)
-INFO:niftynet:2019-06-12 17:53:21,962: training iter 214, loss=0.8112678527832031 (8.473132s)
-INFO:niftynet:2019-06-12 17:53:32,767: training iter 215, loss=0.8102447390556335 (10.804853s)
-INFO:niftynet:2019-06-12 17:53:38,594: training iter 216, loss=0.8113271594047546 (5.826586s)
-INFO:niftynet:2019-06-12 17:53:48,080: training iter 217, loss=0.8110252618789673 (9.485496s)
-INFO:niftynet:2019-06-12 17:53:55,126: training iter 218, loss=0.8115581274032593 (7.045285s)
-INFO:niftynet:2019-06-12 17:54:03,040: training iter 219, loss=0.8104795217514038 (7.914306s)
-INFO:niftynet:2019-06-12 17:54:12,492: training iter 220, loss=0.8103824853897095 (9.441885s)
-INFO:niftynet:2019-06-12 17:54:19,639: training iter 221, loss=0.8110345005989075 (7.109268s)
-INFO:niftynet:2019-06-12 17:54:29,085: training iter 222, loss=0.8110300302505493 (9.445711s)
-INFO:niftynet:2019-06-12 17:54:37,327: training iter 223, loss=0.8109421730041504 (8.241544s)
-INFO:niftynet:2019-06-12 17:54:45,851: training iter 224, loss=0.8105612993240356 (8.523896s)
-INFO:niftynet:2019-06-12 17:54:57,836: iter 225 saved: /home/julien/traineeship/mmiv/model/models/model.ckpt
-INFO:niftynet:2019-06-12 17:54:57,837: training iter 225, loss=0.8114174604415894 (9.879097s)
-INFO:niftynet:2019-06-12 17:55:04,182: training iter 226, loss=0.8100956082344055 (6.343238s)
-INFO:niftynet:2019-06-12 17:55:10,403: training iter 227, loss=0.8099128007888794 (6.220886s)
-INFO:niftynet:2019-06-12 17:55:17,978: training iter 228, loss=0.810791015625 (7.574192s)
-INFO:niftynet:2019-06-12 17:55:26,707: training iter 229, loss=0.8108291625976562 (8.728910s)
-INFO:niftynet:2019-06-12 17:55:35,724: training iter 230, loss=0.8105835914611816 (9.005093s)
-INFO:niftynet:2019-06-12 17:55:43,627: training iter 231, loss=0.8108004331588745 (7.884564s)
-INFO:niftynet:2019-06-12 17:55:51,482: training iter 232, loss=0.8114573359489441 (7.854214s)
-INFO:niftynet:2019-06-12 17:56:02,647: training iter 233, loss=0.8116054534912109 (11.164879s)
-INFO:niftynet:2019-06-12 17:56:08,929: training iter 234, loss=0.810995876789093 (6.281164s)
-INFO:niftynet:2019-06-12 17:56:17,205: training iter 235, loss=0.8106697201728821 (8.274798s)
-INFO:niftynet:2019-06-12 17:56:21,474: training iter 236, loss=0.811510443687439 (4.269124s)
-INFO:niftynet:2019-06-12 17:56:38,050: training iter 237, loss=0.810381293296814 (16.575840s)
-INFO:niftynet:2019-06-12 17:56:44,490: training iter 238, loss=0.810707688331604 (6.439452s)
-INFO:niftynet:2019-06-12 17:56:53,413: training iter 239, loss=0.8115261197090149 (8.922464s)
-INFO:niftynet:2019-06-12 17:57:02,344: training iter 240, loss=0.8104337453842163 (8.919137s)
-INFO:niftynet:2019-06-12 17:57:08,835: training iter 241, loss=0.8106656074523926 (6.472198s)
-INFO:niftynet:2019-06-12 17:57:20,831: training iter 242, loss=0.810897946357727 (11.996500s)
-INFO:niftynet:2019-06-12 17:57:26,936: training iter 243, loss=0.8110761642456055 (6.104047s)
-INFO:niftynet:2019-06-12 17:57:35,543: training iter 244, loss=0.8110979199409485 (8.607204s)
-INFO:niftynet:2019-06-12 17:57:42,387: training iter 245, loss=0.8109216690063477 (6.808221s)
-INFO:niftynet:2019-06-12 17:57:50,297: training iter 246, loss=0.8105143308639526 (7.909921s)
-INFO:niftynet:2019-06-12 17:58:01,843: training iter 247, loss=0.8109521865844727 (11.540267s)
-INFO:niftynet:2019-06-12 17:58:08,090: training iter 248, loss=0.8109517097473145 (6.246875s)
-INFO:niftynet:2019-06-12 17:58:16,358: training iter 249, loss=0.8106203079223633 (8.268237s)
-INFO:niftynet:2019-06-12 17:58:28,215: iter 250 saved: /home/julien/traineeship/mmiv/model/models/model.ckpt
-INFO:niftynet:2019-06-12 17:58:28,229: training iter 250, loss=0.8114486932754517 (9.615062s)
+INFO:niftynet:2019-06-14 08:43:37,112: Parameters from random initialisations ...
+INFO:niftynet:2019-06-14 08:45:10,603: training iter 1, loss=0.887121856212616 (93.490314s)
+INFO:niftynet:2019-06-14 08:45:17,656: training iter 2, loss=0.8108546137809753 (7.052915s)
+INFO:niftynet:2019-06-14 08:45:25,339: training iter 3, loss=0.810609757900238 (7.682179s)
+INFO:niftynet:2019-06-14 08:45:33,258: training iter 4, loss=0.8105835914611816 (7.918529s)
+INFO:niftynet:2019-06-14 08:45:40,924: training iter 5, loss=0.8106899857521057 (7.666166s)
+INFO:niftynet:2019-06-14 08:45:51,045: training iter 6, loss=0.8104837536811829 (10.120502s)
+INFO:niftynet:2019-06-14 08:46:03,027: training iter 7, loss=0.811164915561676 (11.980832s)
+INFO:niftynet:2019-06-14 08:46:13,354: training iter 8, loss=0.810194194316864 (10.325948s)
+INFO:niftynet:2019-06-14 08:46:21,620: training iter 9, loss=0.8110482692718506 (8.266282s)
