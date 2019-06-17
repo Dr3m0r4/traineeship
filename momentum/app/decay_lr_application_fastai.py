@@ -42,14 +42,15 @@ class Scheduler():
 def steps(dico):
     return [Scheduler(step, n_iter) for (step, n_iter) in zip(dico['steps_cfg'], dico['phases'])]
 
-def rule(train, lr_scheds, idx_s):
+def rule(train, lr_scheds, mom_scheds, idx_s):
     if train :
         if idx_s >= len(lr_scheds):
             return {'stop' : True}
         lr = lr_scheds[idx_s].step()
+        mom = mom_scheds[idx_s].step()
         if lr_scheds[idx_s].is_done:
             idx_s += 1
-        return {'lr' : lr, 'mom' : None, 'idx' : idx_s}
+        return {'lr' : lr, 'mom' : mom,'idx' : idx_s}
 
 class DecayLearningRateApplication(SegmentationApplication):
     REQUIRED_CONFIG_SECTION = "SEGMENTATION"
@@ -70,10 +71,14 @@ class DecayLearningRateApplication(SegmentationApplication):
         final_div = div_factor * 1e3
         low_lr = max_lr/div_factor
         min_lr = max_lr/final_div
-        step_cfg = ((low_lr, max_lr), (max_lr, min_lr))
+        lr_cfg = ((low_lr, max_lr), (max_lr, min_lr))
+        moms = action_param.mom
+        mom_cfg=(moms,(moms[1],moms[0]))
 
-        self.lr_prop = steps({'steps_cfg':step_cfg, 'phases':phases})
+        self.lr_prop = steps({'steps_cfg':lr_cfg, 'phases':phases})
+        self.mom_prop = steps({'steps_cfg':mom_cfg,'phases':phases})
         self.current_lr = self.lr_prop[0].start
+        self.mom = self.mom_prop[0].start
         self.res = {}
         print("\n\nThe maximum learning rate should be greater than 1e-3\n\n")
 

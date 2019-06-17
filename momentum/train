@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [ $1 = help ]
+then
+	echo "usage : train labels_data"
+else
+	./exec train $1 $2
+	./exec inference $1 $2
+fi

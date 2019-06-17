@@ -1,0 +1,12 @@
+#!/bin/bash
+
+version=$1
+name=$2
+path=model
+
+mv outputs ~/documents/results/version\_$1/$1\_$2
+mv $path/models ~/documents/results/version\_$1/$1\_$2
+mv $path/*g ~/documents/results/version\_$1/$1\_$2
+mv $path/*v ~/documents/results/version\_$1/$1\_$2
+mv $path/s* ~/documents/results/version\_$1/$1\_$2
+mv $path/logs/0 $path/logs/version\_$1/$2
