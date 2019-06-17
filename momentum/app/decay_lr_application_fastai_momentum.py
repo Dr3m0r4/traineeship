@@ -60,6 +60,7 @@ class DecayLearningRateApplication(SegmentationApplication):
             self, net_param, action_param, is_training)
         tf.logging.info('starting decay learning segmentation application')
         self.learning_rate = None
+        self.momentum = None
         max_lr = action_param.lr
         self.max = action_param.max_iter
         pct = 1/max_lr if max_lr > 3 else 0.3
@@ -72,7 +73,7 @@ class DecayLearningRateApplication(SegmentationApplication):
         low_lr = max_lr/div_factor
         min_lr = max_lr/final_div
         lr_cfg = ((low_lr, max_lr), (max_lr, min_lr))
-        moms = action_param.mom
+        moms = (action_param.mom, action_param.mom_end)
         mom_cfg=(moms,(moms[1],moms[0]))
 
         self.lr_prop = steps({'steps_cfg':lr_cfg, 'phases':phases})
@@ -80,7 +81,7 @@ class DecayLearningRateApplication(SegmentationApplication):
         self.current_lr = self.lr_prop[0].start
         self.mom = self.mom_prop[0].start
         self.res = {}
-        print("\n\nThe maximum learning rate should be greater than 1e-3\n\n")
+        # print("\n\nThe maximum learning rate should be greater than 1e-3\n\n")
 
     def connect_data_and_network(self,
                                  outputs_collector=None,
@@ -103,10 +104,12 @@ class DecayLearningRateApplication(SegmentationApplication):
 
             with tf.name_scope('Optimiser'):
                 self.learning_rate = tf.placeholder(tf.float64, shape=[])
+                self.momentum = tf.placeholder(tf.float64, shape=[])
+                assert self.action_param.optimiser == 'momentum'
                 optimiser_class = OptimiserFactory.create(
                     name=self.action_param.optimiser)
                 self.optimiser = optimiser_class.get_instance(
-                   learning_rate=self.learning_rate)
+                   learning_rate=self.learning_rate, momentum=self.momentum)
             loss_func = LossFunction(
                 n_class=self.segmentation_param.num_classes,
                 loss_type=self.action_param.loss_type)
@@ -134,6 +137,9 @@ class DecayLearningRateApplication(SegmentationApplication):
                 var=self.learning_rate, name='lr',
                 average_over_devices=False, collection=CONSOLE)
             outputs_collector.add_to_collection(
+                var=self.momentum, name='mom',
+                average_over_devices=False, collection=CONSOLE)
+            outputs_collector.add_to_collection(
                 var=data_loss, name='dice_loss',
                 average_over_devices=True, summary_type='scalar',
                 collection=TF_SUMMARIES)
@@ -153,8 +159,10 @@ class DecayLearningRateApplication(SegmentationApplication):
             self.res = rule(iteration_message.is_training, self.lr_prop, self.res.get('idx', 0))
             iteration_message.should_stop = self.res.get('stop', False)
             self.current_lr = self.res.get('lr',0)
+            self.mom = self.res.get('mom',1)
 
             iteration_message.data_feed_dict[self.is_validation] = False
         elif iteration_message.is_validation:
             iteration_message.data_feed_dict[self.is_validation] = True
         iteration_message.data_feed_dict[self.learning_rate] = self.current_lr
+        iteration_message.data_feed_dict[self.momentum] = self.mom
