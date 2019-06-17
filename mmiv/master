@@ -17,6 +17,7 @@ else
 	labels=$1
 	data=$2
 	path=/home/julien/traineeship/mmiv
+	rm $path/model/histog*
 
 	bash $path/train $labels $data
 	bash $path/dpl static $labels\_$data

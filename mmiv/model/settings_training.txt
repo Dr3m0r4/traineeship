@@ -1,4 +1,4 @@
-Input params at 2019-06-14 08:43:19.
+Input params at 2019-06-17 10:09:09.
 [CUSTOM]
 -- num_classes: 5
 -- output_prob: False
@@ -10,14 +10,14 @@ Input params at 2019-06-14 08:43:19.
 -- min_numb_labels: 1
 -- proba_connect: True
 -- evaluation_units: foreground
--- sampler: ()
--- weight: ()
 -- label: ('label',)
--- inferred: ()
 -- image: ('image',)
+-- weight: ()
+-- inferred: ()
+-- sampler: ()
 -- name: net_segment
 [CONFIG_FILE]
--- path: /home/julien/traineeship/mmiv/config/ribbon/conf_lr_e+2.ini
+-- path: /home/julien/traineeship/mmiv/config/ribbon/conf_lr_e+1.ini
 [IMAGE]
 -- csv_file: 
 -- path_to_search: data/images
@@ -89,7 +89,7 @@ Input params at 2019-06-14 08:43:19.
 -- num_ctrl_points: 4
 -- deformation_sigma: 15
 -- proportion_to_deform: 0.5
--- lr: 100.0
+-- lr: 10.0
 -- loss_type: Dice
 -- starting_iter: 0
 -- save_every_n: 25
