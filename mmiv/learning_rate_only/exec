@@ -1,0 +1,54 @@
+#!/bin/bash
+
+pati=/home/julien/traineeship/mmiv/learning_rate_only
+pato=`pwd`
+cd $pati
+
+calc()
+{
+	awk "BEGIN{print $*}";
+}
+
+if [ $# -gt 0 ]
+then
+	if [ $1 = training ]
+	then
+		cp app/decay_lr_application_$4.py ~/.conda/envs/niftynet/lib/python3.7/site-packages/niftynet/contrib/learning_rate_schedule/decay_lr_application.py
+  		net_run train -a niftynet.contrib.learning_rate_schedule.decay_lr_application.DecayLearningRateApplication -c config/$2/conf_$3.ini
+  		cat model/training_niftynet_log | grep CRITICAL
+	elif [ $1 = train ]
+	then
+		net_segment train -c config/$2/conf_$3.ini
+	elif [ $1 = inference ]
+	then
+		net_segment inference -c config/$2/conf_$3.ini
+	elif [ $1 = evaluation ]
+	then
+		net_segment evaluation -c config/$2/conf_$3.ini
+	elif [ $1 = 'help' ]
+	then	
+		liste=`ls app | grep decay`
+		train=0
+		conf=0
+		for k in $liste
+		do
+			train=`calc $train+1`
+		done
+		liste=`ls config/binary_brain`
+		for k in $liste
+		do
+			conf=`calc $conf+1`
+		done
+		echo "usage : exec action labels datas_lr [ version_application ]"
+		echo "the first argument should be training, inference, evaluation or train"
+		echo "if the first argument isn't train, the command should have a second argument"
+		echo "for training, the second argument has $train different possibilities"
+		echo "the third argument for training (or the second for other application) has $conf different possibilities"
+		echo "this argument choose which type of data we will use : all, Guys, HH or IOP"
+	else
+		echo "You did a very bad mistake"
+	fi
+else
+	echo "You miss a good thing"
+fi
+cd $pato
