@@ -28,9 +28,10 @@ class DecayLearningRateApplication(SegmentationApplication):
     def connect_data_and_network(self,
                                  outputs_collector=None,
                                  gradients_collector=None):
-        data_dict = self.get_sampler()[0][0].pop_batch_op()
-        image = tf.cast(data_dict['image'], tf.float32)
-        net_out = self.net(image, self.is_training)
+        def switch_sampler(for_training):
+            with tf.name_scope('train' if for_training else 'validation'):
+                sampler = self.get_sampler()[0][0 if for_training else -1]
+                return sampler.pop_batch_op()
 
         if self.is_training:
             if self.action_param.validation_every_n > 0:

@@ -2,11 +2,26 @@
 
 version=$1
 name=$2\_mom
-path=model
+path=/home/julien/traineeship/mmiv/momentum/model
+doc=/home/julien/documents/results/version\_$version
 
-mv outputs ~/documents/results/version\_$1/$1\_$name
-mv $path/models ~/documents/results/version\_$1/$1\_$name
-mv $path/*g ~/documents/results/version\_$1/$1\_$name
-mv $path/*v ~/documents/results/version\_$1/$1\_$name
-mv $path/s* ~/documents/results/version\_$1/$1\_$name
-mv $path/logs/0 $path/logs/version\_$1/$name
+if [ -d $doc ]
+then
+	echo ""
+else
+	mkdir -p $doc
+fi
+
+if [ -d $path ]
+then
+	echo ""
+else
+	mkdir -p $path
+fi
+
+mv outputs $doc/$version\_$name
+mv $path/models $doc/$version\_$name
+mv $path/*g $doc/$version\_$name
+mv $path/*v $doc/$version\_$name
+mv $path/s* $doc/$version\_$name
+mv $path/logs/0 $path/logs/version\_$version/$name
