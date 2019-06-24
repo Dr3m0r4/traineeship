@@ -1,22 +1,24 @@
 #!/bin/bash
 
-version=$1
+calc()
+{
+	awk "BEGIN{print $*}";
+}
+
+version=version\_$1
 name=$2\_mom
 path=/home/julien/traineeship/mmiv/momentum/model
-doc=/home/julien/documents/results/version\_$version
+doc=/home/julien/documents/results/$version
+mom=$path/logs/$version
 
-if [ -d $doc ]
+if [ ! -d $doc ]
 then
-	echo ""
-else
 	mkdir -p $doc
 fi
 
-if [ -d $path ]
+if [ ! -d $mom ]
 then
-	echo ""
-else
-	mkdir -p $path
+	mkdir -p $mom
 fi
 
 mv outputs $doc/$version\_$name
@@ -24,4 +26,11 @@ mv $path/models $doc/$version\_$name
 mv $path/*g $doc/$version\_$name
 mv $path/*v $doc/$version\_$name
 mv $path/s* $doc/$version\_$name
-mv $path/logs/0 $path/logs/version\_$version/$name
+
+
+i=0
+while [ ! -d $path/logs/$i ]
+do
+	i=`calc $i+1`
+done
+mv $path/logs/$i $mom/$name
