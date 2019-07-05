@@ -7,9 +7,10 @@ calc()
 
 version=version\_$1
 name=$2\_mom
-path=/home/julien/traineeship/mmiv/momentum/model
+path=/home/julien/traineeship/mmiv/momentum
+model=$path/model
 doc=/home/julien/documents/results/$version
-mom=$path/logs/$version
+mom=$model/logs/$version
 
 if [ ! -d $doc ]
 then
@@ -21,16 +22,26 @@ then
 	mkdir -p $mom
 fi
 
-mv outputs $doc/$version\_$name
-mv $path/models $doc/$version\_$name
-mv $path/*g $doc/$version\_$name
-mv $path/*v $doc/$version\_$name
-mv $path/s* $doc/$version\_$name
+k=0
+racine="$doc/$version_$name"
+fold=$racine\_$k
+while [ -d $fold ]
+do
+	k=`calc $k+1`
+	fold=$racine\_$k
+done
+mkdir -p $fold
+
+mv $path/outputs $fold
+mv $model/models $fold
+mv $model/*g $fold
+mv $model/*v $fold
+mv $model/s* $fold
 
 
 i=0
-while [ ! -d $path/logs/$i ]
+while [ ! -d $model/logs/$i ]
 do
 	i=`calc $i+1`
 done
-mv $path/logs/$i $mom/$name
+mv $model/logs/$i $mom/$name\_$k

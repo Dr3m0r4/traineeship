@@ -50,7 +50,7 @@ class DecayLearningRateApplication(SegmentationApplication):
             with tf.name_scope('Optimiser'):
                 self.learning_rate = tf.placeholder(tf.float64, shape=[])
                 self.momentum = tf.placeholder(tf.float64, shape=[])
-                assert self.action_param.optimiser == 'momentum'
+                
                 optimiser_class = OptimiserFactory.create(
                     name=self.action_param.optimiser)
                 self.optimiser = optimiser_class.get_instance(
