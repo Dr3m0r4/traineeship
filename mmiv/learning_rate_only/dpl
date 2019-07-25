@@ -1,12 +1,47 @@
 #!/bin/bash
 
-version=$1
-name=$2
-path=model
+calc()
+{
+	awk "BEGIN{print $*}";
+}
 
-mv outputs ~/documents/results/version\_$1/$1\_$2
-mv $path/models ~/documents/results/version\_$1/$1\_$2
-mv $path/*g ~/documents/results/version\_$1/$1\_$2
-mv $path/*v ~/documents/results/version\_$1/$1\_$2
-mv $path/s* ~/documents/results/version\_$1/$1\_$2
-mv $path/logs/0 $path/logs/version\_$1/$2
+version=version\_$1
+name=$2\_mom
+path=/home/julien/traineeship/mmiv/learning_rate_only
+model=$path/model
+doc=/home/julien/documents/results/$version
+mom=$model/logs/$version
+
+if [ ! -d $doc ]
+then
+	mkdir -p $doc
+fi
+
+if [ ! -d $mom ]
+then
+	mkdir -p $mom
+fi
+
+k=0
+racine="$doc/$version_$name"
+fold=$racine\_$k
+while [ -d $fold ]
+do
+	k=`calc $k+1`
+	fold=$racine\_$k
+done
+mkdir -p $fold
+
+mv $path/outputs $fold
+mv $model/models $fold
+mv $model/*g $fold
+mv $model/*v $fold
+mv $model/s* $fold
+
+
+i=0
+while [ ! -d $model/logs/$i ]
+do
+	i=`calc $i+1`
+done
+mv $model/logs/$i $mom/$name\_$k

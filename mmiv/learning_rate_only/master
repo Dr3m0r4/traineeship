@@ -5,7 +5,7 @@ then
 	echo "usage : master labels datas_type"
 	echo "the type of labels are the name of folders in the config folder"
 	ls config
-	echo "the type of data are in the previous folder : it's the name of this folder whithout suffix and prefix"
+	echo "the type of data are in the previous folder : it's the name of this file whithout suffix and prefix"
 
 	liste=`ls config/binary_brain`
 	for name in $liste
@@ -16,7 +16,7 @@ then
 else
 	labels=$1
 	data=$2
-	path=/home/julien/traineeship/mmiv
+	path=/home/julien/traineeship/mmiv/learning_rate_only
 	rm $path/model/histog*
 
 	bash $path/train $labels $data
