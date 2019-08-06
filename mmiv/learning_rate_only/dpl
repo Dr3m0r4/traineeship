@@ -6,7 +6,7 @@ calc()
 }
 
 version=version\_$1
-name=$2\_mom
+name=$2\_lr
 path=/home/julien/traineeship/mmiv/learning_rate_only
 model=$path/model
 doc=/home/julien/documents/results/$version
