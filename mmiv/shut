@@ -1,8 +1,0 @@
-#!/bin/bash
-
-while [ `pgrep master` > 0 ]
-do
-	touch pf
-	rm pf
-done
-shutdown
