@@ -106,7 +106,7 @@ class DecayLearningRateApplication(SegmentationApplication):
         """
         current_iter = iteration_message.current_iter
         if iteration_message.is_training:
-            f = lambda x : self.init_lr*(np.cos(x/self.theta*np.pi)+1)/(x/self.beta+1)
+            f = lambda x : (self.init_lr*(np.cos(x/self.theta*np.pi)+1)/(x/self.beta+1))/2
             self.current_lr = f(current_iter)
 
             iteration_message.data_feed_dict[self.is_validation] = False
