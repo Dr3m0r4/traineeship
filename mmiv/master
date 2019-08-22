@@ -13,6 +13,7 @@ then
 		name=`basename ${name#conf_} .ini`
 		echo $name
 	done
+	
 else
 	labels=$1
 	data=$2

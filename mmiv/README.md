@@ -1,6 +1,6 @@
 # MMIV
 
-You can find there what I did during my Intership in the `MMIV laboratory`
+You can find there what I did during my Internship in the `MMIV laboratory`
 
 ## Hierarchy of folders
 
@@ -18,3 +18,7 @@ You can find there what I did during my Intership in the `MMIV laboratory`
 The files in this folder permit you to run a `NiftyNet` neural network without too much thinking
 
   > I hope so
+
+-------
+
+There is only the `jupyter notebook` that is here only for showing different function of learning rate modification
