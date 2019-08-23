@@ -1,6 +1,7 @@
 #!/bin/bash
 
-pati=/home/julien/traineeship/mmiv/momentum
+type=$2
+pati=/home/julien/traineeship/mmiv/$type
 pato=`pwd`
 cd $pati
 
@@ -13,18 +14,18 @@ if [ $# -gt 0 ]
 then
 	if [ $1 = training ]
 	then
-		cp app/decay_lr_application_$4.py ~/.conda/envs/niftynet/lib/python3.7/site-packages/niftynet/contrib/learning_rate_schedule/decay_lr_application.py
-  	python ./niftynet/bin/net_run.py train -a niftynet.contrib.learning_rate_schedule.decay_lr_application.DecayLearningRateApplication -c config/$2/conf_$3.ini
+		cp app/decay_lr_application_$5.py ~/.conda/envs/niftynet/lib/python3.7/site-packages/niftynet/contrib/learning_rate_schedule/decay_lr_application.py
+  		net_run train -a niftynet.contrib.learning_rate_schedule.decay_lr_application.DecayLearningRateApplication -c config/$3/conf_$4.ini
 		cat model/training_niftynet_log | grep CRITICAL
 	elif [ $1 = train ]
 	then
-		python ./niftynet/bin/net_segment.py train -c config/$2/conf_$3.ini
+		net_segment train -c config/$3/conf_$4.ini
 	elif [ $1 = inference ]
 	then
-		python ./niftynet/bin/net_segment.py inference -c config/$2/conf_$3.ini
+		net_segment inference -c config/$3/conf_$4.ini
 	elif [ $1 = evaluation ]
 	then
-		python ./niftynet/bin/net_segment.py evaluation -c config/$2/conf_$3.ini
+		net_segment evaluation -c config/$3/conf_$4.ini
 	elif [ $1 = 'help' ]
 	then
 		liste=`ls app | grep decay`
@@ -39,7 +40,7 @@ then
 		do
 			conf=`calc $conf+1`
 		done
-		echo "usage : exec action labels datas_lr [ version_application ]"
+		echo "usage : exec action type labels datas_lr [ version_application ]"
 		echo "the first argument should be training, inference, evaluation or train"
 		echo "if the first argument isn't train, the command should have a second argument"
 		echo "for training, the second argument has $train different possibilities"

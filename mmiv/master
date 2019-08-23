@@ -13,22 +13,22 @@ then
 		name=`basename ${name#conf_} .ini`
 		echo $name
 	done
-	
 else
-	labels=$1
-	data=$2
-	path=/home/julien/traineeship/mmiv/momentum
+	labels=$2
+	data=$3
+	type=$1
+	path=/home/julien/traineeship/mmiv/$type
 	rm $path/model/histog*
 
-	bash $path/train $labels $data
-	bash $path/dpl static $labels\_$data
+	bash ./train $type $labels $data
+	bash ./dpl $type static $labels\_$data
 
 	liste=`ls $path/app`
 
 	for name in $liste
 	do
 		app=`basename ${name#decay_lr_application_} .py`
-		bash $path/training $labels $data $app
-		bash $path/dpl $app $labels\_$data
+		bash ./training $type $labels $data $app
+		bash ./dpl $type $app $labels\_$data
 	done
 fi
