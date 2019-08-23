@@ -4,6 +4,6 @@ if [ $1 = help ]
 then
 	echo "usage : training labels datas_lr version_application"
 else
-	./exec training $1 $2 $3
-	./exec inference $1 $2
+	./exec training $1 $2 $3 $4 $5
+	./exec inference $1 $2 $3 $4
 fi

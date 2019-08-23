@@ -5,9 +5,10 @@ calc()
 	awk "BEGIN{print $*}";
 }
 
-version=version\_$1
-name=$2\_mom
-path=/home/julien/traineeship/mmiv/momentum
+type=$1
+version=version\_$2
+name=$3\_mom
+path=/home/julien/traineeship/mmiv/$type
 model=$path/model
 doc=/home/julien/documents/results/$version
 mom=$model/logs/$version
