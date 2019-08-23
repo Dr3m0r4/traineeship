@@ -17,7 +17,7 @@ You can find there what I did during my Internship in the `MMIV laboratory`
 
 The files in this folder permit you to run a `NiftyNet` neural network without too much thinking
 
-  > I hope so
+      > I hope so
 
 -------
 
