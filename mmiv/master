@@ -4,10 +4,10 @@ if [ $1 = help ]
 then
 	echo "usage : master labels datas_type"
 	echo "the type of labels are the name of folders in the config folder"
-	ls config
+	ls "momentum/config"
 	echo "the type of data are in the previous folder : it's the name of this file whithout suffix and prefix"
 
-	liste=`ls config/binary_brain`
+	liste=`ls momentum/config/binary_brain`
 	for name in $liste
 	do
 		name=`basename ${name#conf_} .ini`
