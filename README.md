@@ -1,4 +1,4 @@
-# Traineeship in the MMIV laboratory in Bergen
+# Traineeship in the Mohn Medical Imaging and Visualization Center (MMIV) in Bergen
 
 ## Use of NiftyNet
 
